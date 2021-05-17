@@ -6,110 +6,153 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raccogliere pietre</title>
-    <link rel="stylesheet" href="https://use.typekit.net/kxp0xty.css">
+    <!-- <link rel="stylesheet" href="https://use.typekit.net/kxp0xty.css"> -->
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=Oswald&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header id="header">
         <div class="header-inner">
-            <a href="index.html" class="link link-home">
+            <a href="index.html" class="link">
                 <h1>Enrico Malatesta</h1>
             </a>
-            <a href="#about" class="link link-about" id="about-btn">
+            <a href="#about" class="link" id="about-btn">
                 <p>About</p>
             </a>
-            <a href="#info" class="link link-pietre" id="info-btn">
+            <a href="#info" class="link" id="info-btn">
                 <p>Raccogliere pietre</p>
             </a>
             <a href="https://lilystar1000.com/" target="_blank">
                 <div class="lily"></div>
             </a>
-            <a href="mailto:malatesta.e@gmail.com" class="link link-email">
+            <a href="mailto:malatesta.e@gmail.com" class="link">
                 <p>Email</p>
             </a>
         </div>
     </header>
 
+    <header id="header-mobile">
+        <div class="header-inner">
+            <a href="index.html" class="link">
+                <h1>Enrico Malatesta</h1>
+            </a>
+            <a href="#menu-mobile" class="link" id="menu-btn">
+                <p>Menu</p>
+            </a>
+        </div>
+    </header>
+
+
+    <nav id="menu-mobile">
+        <div class="menu-mobile-inner">
+            <a href="index.html" class="link link-mobile">
+                <p>Home</p>
+            </a>
+            <a href="#info" class="link link-mobile" id="info-btn-mobile">
+                <p>Raccogliere pietre</p>
+            </a>
+        </div>
+    </nav>
+
     <div class="about" id="about">
-        <div class="about-content">
-            <div class="about-content-text">
-                <p>Enrico Malatesta is an Italian percussionist and sound researcher active in the field of experimental
-                    music, sound intervention and performance. His practice explores the relations between sound, space
-                    and body, the vitality of materials and the morphology of surfaces, with particular attention to the
-                    percussive acts. His research path is characterized by a strong emphasis on the ability to produce
-                    multiple information with simple actions, the motion and definition of the experience of listening
-                    and sustainability of the presence of the performer through the sound.</p>
-                <p>In 2016, with Giovanni Lami and Glauco Salvo, he founded MU, a independent association devoted to
-                    sound-experiences, acting as a listening platform to develop and bring fresh and smart gigs,
-                    workshops, listening sessions in our area.</p>
+        <div class="about-wrapper">
+            <div class="about-content">
+                <div class="about-content-text">
+                    <p>Enrico Malatesta is an Italian percussionist and sound researcher active in the field of
+                        experimental
+                        music, sound intervention and performance. His practice explores the relations between sound,
+                        space
+                        and body, the vitality of materials and the morphology of surfaces, with particular attention to
+                        the
+                        percussive acts. His research path is characterized by a strong emphasis on the ability to
+                        produce
+                        multiple information with simple actions, the motion and definition of the experience of
+                        listening
+                        and sustainability of the presence of the performer through the sound.</p>
+                    <p>In 2016, with Giovanni Lami and Glauco Salvo, he founded MU, a independent association devoted to
+                        sound-experiences, acting as a listening platform to develop and bring fresh and smart gigs,
+                        workshops, listening sessions in our area.</p>
+                </div>
+                <div class="about-captions">
+                    <!-- <p>Website Info</p> -->
+                    <!-- <p>Design & Code Giulia Polenta</p> -->
+                    <p>© 2021 Enrico Malatesta</p>
+                </div>
             </div>
-            <div class="about-captions">
-                <p>Website Info</p>
-                <p>Design & Code Giulia Polenta</p>
-                <p>© 2021 Enrico Malatesta</p>
+            <div class="about-image">
+                <div class="about-contact">
+                    <div class="about-contact-link">
+                        <a href="https://lilystar1000.com/">Facedook</a>
+                    </div>
+                    <div class="about-contact-link">
+                        <a href="https://lilystar1000.com/">Instagram</a>
+                    </div>
+                    <div class="about-contact-link">
+                        <a href="https://lilystar1000.com/">Vimeo</a>
+                    </div>
+                    <div class="about-contact-link">
+                        <a href="https://lilystar1000.com/">Email</a>
+                    </div>
+                    <div class="about-contact-link">
+                        <a href="http://www.mmmu.it/" target="_blank">MU website</a>
+                    </div>
+                </div>
+                <img src="assets/enrico.png" width="100%">
+
             </div>
         </div>
-        <div class="about-image">
-            <div class="about-contact">
-                <div class="about-contact-link">
-                    <a href="https://lilystar1000.com/">Facedook</a>
-                </div>
-                <div class="about-contact-link">
-                    <a href="https://lilystar1000.com/">Instagram</a>
-                </div>
-                <div class="about-contact-link">
-                    <a href="https://lilystar1000.com/">Vimeo</a>
-                </div>
-                <div class="about-contact-link">
-                    <a href="https://lilystar1000.com/">Email</a>
-                </div>
-                <div class="about-contact-link">
-                    <a href="http://www.mmmu.it/" target="_blank">MU website</a>
-                </div>
-            </div>
-            <img src="assets/enrico.png" width="100%">
-        </div>
-        <div id="about-cls" class="about-close">Close</div>
+
+
+        <div id="about-cls" class="about-close"><a class="link">Close</a></div>
     </div>
 
     <div class="info" id="info">
-        <div class="info-content">
-            <div class="info-content-text">
-                <p>Raccogliere Pietre is an online project. It is an open collection of listening exercises, scores and
-                    texts started in 2009; the content of this journal revolves around my researches in the field of
-                    performing arts, music/musical instruments and sound ecology.</p>
-                <p>It is unregularly updated and each page is available separately from the others through free dowload
-                    pdf files from this website.</p>
-                <p>Currently only in Italian, sorry!</p>
-                <p class="light-font">Raccogliere Pietre è un progetto online; consiste in una raccolta di esercizi di
-                    ascolto, partiture e
-                    testi iniziata nel 2009; il contenuto di questo diario evolve attorno alle mie ricerche nel campo
-                    delle arti performative, della musica, dell’organologia e dell’ecologia del suono.</p>
-                <p class="light-font">Il progetto è aggiornato a cadenza irregolare; ogni pagina è disponibile
-                    separatamente dalle altre
-                    tramite download di file pdf.</p>
+        <div class="info-wrapper">
+            <div class="info-content">
+                <div class="info-content-text">
+                    <p>Raccogliere Pietre is an online project. It is an open collection of listening exercises, scores
+                        and
+                        texts started in 2009; the content of this journal revolves around my researches in the field of
+                        performing arts, music/musical instruments and sound ecology.</p>
+                    <p>It is unregularly updated and each page is available separately from the others through free
+                        dowload
+                        pdf files from this website.</p>
+                    <p>Currently only in Italian, sorry!</p>
+                    <p class="light-font">Raccogliere Pietre è un progetto online; consiste in una raccolta di esercizi
+                        di
+                        ascolto, partiture e
+                        testi iniziata nel 2009; il contenuto di questo diario evolve attorno alle mie ricerche nel
+                        campo
+                        delle arti performative, della musica, dell’organologia e dell’ecologia del suono.</p>
+                    <p class="light-font">Il progetto è aggiornato a cadenza irregolare; ogni pagina è disponibile
+                        separatamente dalle altre
+                        tramite download di file pdf.</p>
+                </div>
             </div>
         </div>
-        <div id="info-cls" class="info-close">Close</div>
+        <div id="info-cls" class="info-close"><a class="link">Close</a></div>
     </div>
 
 
-    <section class="page">
+    <section class="page" id="container">
 
         <div class="page-menu">
             <ul class="page-menu-list">
-                <li class="page-menu-item move-to-right"><a href="#ra">RA</a></li>
-                <li class="page-menu-item move-to-right"><a href="#la-bessa">Riserva Naturale Speciale della Bessa</a>
+                <li class="page-menu-item"><a href="#ra" class="link">RA</a></li>
+                <li class="page-menu-item"><a href="#la-bessa" class="link">Riserva Naturale Speciale della Bessa</a>
                 </li>
-                <li class="page-menu-item move-to-right"><a>Sapis</a></li>
-                <li class="page-menu-item move-to-right"><a>La medusa è un ispes&hyphen;simento dell'acqua</a></li>
-                <li class="page-menu-item move-to-right"><a>R #1 da sinistra verso destra</a></li>
-                <li class="page-menu-item move-to-right"><a>R #2 vuoto alle spalle</a></li>
-                <li class="page-menu-item move-to-right"><a>Piallassa</a></li>
-                <li class="page-menu-item move-to-right"><a>Ponte sul Fosso Grosso</a></li>
-                <li class="page-menu-item move-to-right"><a>Fare polvere</a></li>
-                <li class="page-menu-item move-to-right"><a>Sinewave_1 <span
+                <li class="page-menu-item"><a class="link">Sapis</a></li>
+                <li class="page-menu-item"><a class="link">La medusa è un ispessimento dell'acqua</a></li>
+                <li class="page-menu-item"><a class="link">R #1 da sinistra verso destra</a></li>
+                <li class="page-menu-item"><a class="link">R #2 vuoto alle spalle</a></li>
+                <li class="page-menu-item"><a class="link">Piallassa</a></li>
+                <li class="page-menu-item"><a class="link">Ponte sul Fosso Grosso</a></li>
+                <li class="page-menu-item"><a class="link">Fare polvere</a></li>
+                <li class="page-menu-item"><a class="link">Sinewave_1 <span
                             style="font-style: italic;">indaco</span></a></li>
             </ul>
         </div>
@@ -160,12 +203,12 @@
                         e successivo. Il colpo
                         deve essere presentato con la massima trasparenza nei confronti del suono della pioggia.</p>
                 </div>
-                <a href="assets/RA.pdf" target="_blank" class="download-btn">Download PDF</a>
+                <a href="assets/RA.pdf" target="_blank" class="download-btn link">Download PDF</a>
             </div>
             <div id="la-bessa" class="page-item-wrapper">
                 <div class="page-item-icons">
-                    <img src="assets/meandri.png">
-                    <img src="assets/triangoli.png">
+                    <img src="assets/meandri.png" alt="Graphic representation of a river's meander">
+                    <img src="assets/triangoli.png" alt="Graphic representation of a pile of triangles">
                 </div>
                 <div class="page-item-text">
                     <h2 class="page-item-title">La Bessa <sup>1</sup></h2>
@@ -213,65 +256,12 @@
 
         <div class="page-images move-to-top">
             <div class="page-images-wrapper">
-                <div class="page-images-notes">
-                    <p>Images and brief descriptions of places, territories and buildings mentioned in the exercises
-                        and scores of Raccogliere Pietre and which I use to attend for my personal practices.</p>
-                </div>
-            </div>
-            <div class="page-images-wrapper">
-                <img src="assets/place-1.jpg" width="100%">
-                <div class="page-images-notes">
-                    <p>Piallassa della Baiona</p>
-                    <p>Ravenna – Italy</p>
-                </div>
-            </div>
-            <div class="page-images-wrapper">
-                <img src="assets/place-2.jpg" width="100%">
-                <div class="page-images-notes">
-                    <p>Ponte di Ferro sul Fosso Grosso</p>
-                    <p>Cesena</p>
-                </div>
-            </div>
-            <div class="page-images-wrapper">
-                <img src="assets/place-3.jpg" width="100%">
-                <div class="page-images-notes">
-                    <p>Riserva Naturale Speciale della Bessa</p>
-                    <p>Alpi Biellesi, Biella – Italy</p>
-                    <div class="page-images-description light-font">
-                        <p>The territory of the Bessa is characterized by huge expanses of stones surrounded by
-                            vegetation; this specific conformation is not due to natural phenomena, but rather to
-                            the
-                            fact that during the Roman empire thousands of people were employed in a gold mine
-                            producing
-                            processing waste of such vastness to seem the result of a geological process. We have
-                            first
-                            explored these heaps in the summer 2017; we were immediately struck by the intensity of
-                            the
-                            territory and how to practice forms of active listening and movement in it explicit some
-                            rudiments of our sound research which is focused on the investigation of ecological
-                            perception. In the Bessa the attention to the sound must be accompanied by a constant
-                            body
-                            presence; the stones tend to move under the weight of the footsteps, producing sound and
-                            making us part of the production of a context, of its ever under-construction
-                            morphology.
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-            <div class="page-images-wrapper">
-                <img src="assets/place-4.jpg" width="100%">
-                <div class="page-images-notes">
-                    <p>Farm – Borgo di Ronta</p>
-                    <p>Cesena</p>
-                </div>
-            </div>
-            <div class="page-images-wrapper">
-                <img src="assets/place-5.jpg" width="100%">
-                <div class="page-images-notes">
-                    <p>Cantina Sociale</p>
-                    <p>Savignano sul Rubicone</p>
-                </div>
+                <img src="assets/place-1.jpg" width="100%" alt="Piallassa della Baiona in Ravenna">
+                <img src="assets/place-2.jpg" width="100%" alt="Ponte di Ferro sul Fosso Grosso in Cesena">
+                <img src="assets/place-3.jpg" width="100%"
+                    alt="Riserva Naturale Speciale della Bessa, Alpi Biellesi in Biella">
+                <img src="assets/place-4.jpg" width="100%" alt="Farm at Borgo di Ronta in Cesena">
+                <img src="assets/place-5.jpg" width="100%" alt="Cantina Sociale in Savignano al Rubicone">
             </div>
         </div>
     </section>
