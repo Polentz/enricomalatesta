@@ -5,8 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        content="Enrico Malatesta is an Italian percussionist and sound researcher active in the field of experimental music, sound intervention and performance."
+        name="description">
+    <meta content="Enrico Malatesta" property="og:title">
+    <meta
+        content="Enrico Malatesta is an Italian percussionist and sound researcher active in the field of experimental music, sound intervention and performance."
+        property="og:description">
+    <meta content="assets/superficie-6.jpg" property="og:image">
+    <meta property="og:url" content="https://enricomalatesta.com/">
+    <meta content="Enrico Malatesta" property="twitter:title">
+    <meta
+        content="Enrico Malatesta is an Italian percussionist and sound researcher active in the field of experimental music, sound intervention and performance."
+        property="twitter:description">
+    <meta content="assets/superficie-10.jpg" property="twitter:image">
+    <meta property="og:type" content="https://enricomalatesta.com/">
+    <meta content="summary_large_image" name="twitter:card">
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/faviconem-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/faviconem-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/faviconem-72.png">
+
+    <link href="assets/faviconem-72.png" rel="shortcut icon" type="image/x-icon">
+    <link href="assets/faviconem-256.png" rel="apple-touch-icon">
+
     <title>Enrico Malatesta</title>
-    <!-- <link rel="stylesheet" href="https://use.typekit.net/kxp0xty.css"> -->
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -16,10 +39,11 @@
 
 <body>
 
+    <!-- non editabile -->
     <header id="header">
         <div class="header-inner">
             <a href="index.html" class="link">
-                <h1>Enrico Malatesta</h1>
+                <p>Enrico Malatesta</p>
             </a>
             <a href="#about" class="link" id="about-btn">
                 <p>About</p>
@@ -36,10 +60,11 @@
         </div>
     </header>
 
+    <!-- non editabile -->
     <header id="header-mobile">
         <div class="header-inner">
             <a href="index.html" class="link">
-                <h1>Enrico Malatesta</h1>
+                <p>Enrico Malatesta</p>
             </a>
             <a href="#menu-mobile" class="link" id="menu-btn">
                 <p>Menu</p>
@@ -47,7 +72,7 @@
         </div>
     </header>
 
-
+    <!-- non editabile -->
     <nav id="menu-mobile">
         <div class="menu-mobile-inner">
             <a href="#about" class="link link-mobile" id="about-btn-mobile">
@@ -62,51 +87,60 @@
         </div>
     </nav>
 
+    <!-- editabile solo il testo -->
     <div class="about" id="about">
         <div class="about-wrapper">
-            <div class="about-content">
-                <div class="about-content-text">
-                    <p>Enrico Malatesta is an Italian percussionist and sound researcher active in the field of
-                        experimental
-                        music, sound intervention and performance. His practice explores the relations between sound,
-                        space
-                        and body, the vitality of materials and the morphology of surfaces, with particular attention to
-                        the
-                        percussive acts. His research path is characterized by a strong emphasis on the ability to
-                        produce
-                        multiple information with simple actions, the motion and definition of the experience of
-                        listening
-                        and sustainability of the presence of the performer through the sound.</p>
-                    <p>In 2016, with Giovanni Lami and Glauco Salvo, he founded MU, a independent association devoted to
-                        sound-experiences, acting as a listening platform to develop and bring fresh and smart gigs,
+            <div class="about-content cms-editable" id="about-content">
+                <div class="about-content-text cms-lock">
+                    <p class="cms-unlock">Enrico Malatesta is an Italian percussionist and sound researcher active in
+                        the field of
+                        experimental music, sound intervention and performance. His practice explores the relations
+                        between sound, space and body, the vitality of materials and the morphology of surfaces, with
+                        particular attention to the percussive acts. His research path is characterized by a strong
+                        emphasis on the ability to produce multiple information with simple actions, the motion and
+                        definition of the experience of listening and sustainability of the presence of the performer
+                        through the sound.</p>
+                    <p class="cms-unlock">In 2016, with Giovanni Lami and Glauco Salvo, he founded MU, an independent
+                        association devoted
+                        to sound-experiences, acting as a listening platform to develop and bring fresh and smart gigs,
                         workshops, listening sessions in our area.</p>
                 </div>
-                <div class="about-captions">
-                    <!-- <p>Website Info</p> -->
-                    <!-- <p>Design & Code Giulia Polenta</p> -->
+                <div class="about-captions cms-lock">
+                    <p>Website Info</p>
+                    <p>Design & Code Giulia Polenta</p>
                     <p>© 2021 Enrico Malatesta</p>
                 </div>
             </div>
             <div class="about-image">
-                <div class="about-contact">
-                    <div class="about-contact-link">
-                        <a href="https://lilystar1000.com/">Facedook</a>
-                    </div>
-                    <div class="about-contact-link">
-                        <a href="https://lilystar1000.com/">Instagram</a>
-                    </div>
-                    <div class="about-contact-link">
-                        <a href="https://lilystar1000.com/">Vimeo</a>
-                    </div>
-                    <div class="about-contact-link">
-                        <a href="https://lilystar1000.com/">Email</a>
-                    </div>
-                    <div class="about-contact-link">
-                        <a href="http://www.mmmu.it/" target="_blank">MU website</a>
+
+                <!-- solo i link repeatable e editable -->
+                <div class="about-contact cms-editable" id="about-contact">
+                    <div class="cms-editable cms-lock">
+                        <div class="about-contact-link cms-repeatable">
+                            <a class="cms-editable" id="fb-link" href="https://www.facebook.com/enrico.malatesta.165"
+                                target="_blank">Facebook</a>
+                        </div>
+                        <div class="about-contact-link cms-repeatable">
+                            <a class="cms-editable" id="ig-link" href="https://www.instagram.com/_enricomalatesta_/"
+                                target="_blank">Instagram</a>
+                        </div>
+                        <div class="about-contact-link cms-repeatable">
+                            <a class="cms-editable" id="vm-link" href="https://vimeo.com/enricomalatesta"
+                                target="_blank">Vimeo</a>
+                        </div>
+                        <!-- <div class="about-contact-link cms-repeatable">
+                            <a class="cms-editable" id="mail-link" href="https://lilystar1000.com/">Email</a>
+                        </div> -->
+                        <div class="about-contact-link cms-repeatable">
+                            <a class="cms-editable" id="mu-link" href="http://www.mmmu.it/" target="_blank">MU
+                                website</a>
+                        </div>
                     </div>
                 </div>
-                <img src="assets/enrico.png" width="100%" alt="A portrait of Enrico Malatesta">
 
+                <!-- img editable -->
+                <img class="cms-editable" id="portrait-img" src="assets/enrico.png"
+                    alt="A portrait of Enrico Malatesta">
             </div>
         </div>
 
@@ -119,32 +153,25 @@
             <div class="main-hero">
                 <div class="move-to-top">
                     <div class="main-hero-image">
-                        <img src="assets/copertina.jpg" width="100%" alt="A detail of a carved surface">
+                        <img class="cms-editable" id="main-hero-image" src="assets/copertina.jpg"
+                            alt="A detail of a carved surface">
                     </div>
                     <div class="main-hero-text">
-                        <h2>E SÔNA</h2>
-                        <p>E SÔNA (“It sounds” in Romagna dialect) is the title of the project developed by artist
-                            Enrico
-                            Malatesta for Aequusol VER MMXXI. The work – which will have an evolution time corresponding
-                            to
-                            the duration of the entire Spring season – investigates the relationship between sound as a
-                            medium, form of movement and space, connecting elements of folklore and rural Romagna
-                            rituality
-                            with decadent, hidden and rarely perceived factors of the agricultural landscape of Abruzzo.
-                            It
-                            will manifest itself with performative actions and pedagogical programs dedicated to active
-                            listening in relation to material culture and the role of sound and acoustic phenomena,
-                            starting
-                            with beliefs and pagan liturgies originating in rural Romagna. Fulcrum of the research is
-                            the
-                            Cavéja Dagli Anëll, an ancient sound shaking device, equipped with tuned metal rings and
-                            used
-                            both in agricultural work and in particular superstitious-propitiatory rituals. The intent
-                            is to
-                            transfer the energy of these instruments in the context of the performing arts, going beyond
-                            the
-                            boundaries and the concept of local culture and restoring vitality to memory and popular
-                            sound
+                        <h2 class="cms-editable">E SÔNA</h2>
+                        <p class="cms-editable">E SÔNA (“It sounds” in Romagna dialect) is the title of the project
+                            developed by artist Enrico Malatesta for Aequusol VER MMXXI. The work – which will have an
+                            evolution time corresponding to the duration of the entire Spring season – investigates the
+                            relationship between sound as a medium, form of movement and space, connecting elements of
+                            folklore and rural Romagna rituality with decadent, hidden and rarely perceived factors of
+                            the agricultural landscape of Abruzzo.
+                            It will manifest itself with performative actions and pedagogical programs dedicated to
+                            active listening in relation to material culture and the role of sound and acoustic
+                            phenomena, starting with beliefs and pagan liturgies originating in rural Romagna. Fulcrum
+                            of the research is the Cavéja Dagli Anëll, an ancient sound shaking device, equipped with
+                            tuned metal rings and used both in agricultural work and in particular
+                            superstitious-propitiatory rituals. The intent is to transfer the energy of these
+                            instruments in the context of the performing arts, going beyond the boundaries and the
+                            concept of local culture and restoring vitality to memory and popular sound
                             habits in the contemporary context.</p>
                     </div>
                 </div>
@@ -209,15 +236,15 @@
 
             <div class="main-images">
                 <div class="main-images-wrapper move-to-top">
-                    <img src="assets/superficie-1.jpg" width="100%" alt="A detail of a drum lether surface">
-                    <img src="assets/superficie-2.jpg" width="100%" alt="A detail of a drum lether surface">
-                    <img src="assets/superficie-3.jpg" width="100%" alt="A detail of a drum lether surface">
-                    <img src="assets/superficie-4.jpg" width="100%" alt="A detail of a drum lether surface">
-                    <img src="assets/superficie-5.jpg" width="100%" alt="A detail of a drum lether surface">
-                    <img src="assets/superficie-6.jpg" width="100%" alt="A detail of a drum lether surface">
-                    <img src="assets/superficie-7.jpg" width="100%" alt="A detail of a drum lether surface">
-                    <img src="assets/superficie-8.jpg" width="100%" alt="A detail of a drum lether surface">
-                    <img src="assets/superficie-9.jpg" width="100%" alt="A detail of a drum lether surface">
+                    <img src="assets/superficie-1.jpg" alt="A detail of a drum lether surface">
+                    <img src="assets/superficie-2.jpg" alt="A detail of a drum lether surface">
+                    <img src="assets/superficie-3.jpg" alt="A detail of a drum lether surface">
+                    <img src="assets/superficie-4.jpg" alt="A detail of a drum lether surface">
+                    <img src="assets/superficie-5.jpg" alt="A detail of a drum lether surface">
+                    <img src="assets/superficie-6.jpg" alt="A detail of a drum lether surface">
+                    <img src="assets/superficie-7.jpg" alt="A detail of a drum lether surface">
+                    <img src="assets/superficie-8.jpg" alt="A detail of a drum lether surface">
+                    <img src="assets/superficie-9.jpg" alt="A detail of a drum lether surface">
                 </div>
             </div>
 
@@ -226,7 +253,6 @@
         </section>
     </section>
     <script type="text/javascript" src="script.js"></script>
-    <!-- <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script> -->
 </body>
 
 </html>
