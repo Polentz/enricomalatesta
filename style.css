@@ -244,6 +244,14 @@ img {
     text-transform: uppercase;
 }
 
+.main-hero-text p {
+    margin-bottom: 10px;
+}
+
+.main-hero-text p:last-child {
+    margin-bottom: 0;
+}
+
 .main-images,
 .main-agenda,
 .page-images,
