@@ -26,7 +26,11 @@ span::-moz-selection,
 br::-moz-selection, 
 sup::-moz-selection, 
 img::-moz-selection, 
-div::-moz-selection {
+div::-moz-selection,
+strong::-moz-selection,
+em::-moz-selection,
+i::-moz-selection,
+u::-moz-selection {
     color: #ffb500;
 }
 
@@ -38,7 +42,11 @@ span::selection,
 br::selection,
 sup::selection,
 img::selection,
-div::selection {
+div::selection,
+strong::selection,
+em::selection,
+i::selection,
+u::selection {
     color: #ffb500;
 }
 
@@ -128,13 +136,13 @@ img {
     padding-bottom: 2px;
 }
 
-.link {
+a {
     cursor: pointer;
     position: relative;
 }
 
-.link::before,
-.link::after {
+a::before,
+a::after {
     position: absolute;
     width: 100%;
     height: 1px;
@@ -144,11 +152,11 @@ img {
     pointer-events: none;
 }
 
-.link::before {
+a::before {
     content: '';
 }
 
-.link::before {
+a::before {
     -webkit-transform-origin: 100% 50%;
         -ms-transform-origin: 100% 50%;
             transform-origin: 100% 50%;
@@ -161,12 +169,17 @@ img {
     transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
-.link:hover::before {
+a:hover::before {
     -webkit-transform-origin: 0% 50%;
         -ms-transform-origin: 0% 50%;
             transform-origin: 0% 50%;
     -webkit-transform: scale3d(1, 1, 1);
             transform: scale3d(1, 1, 1);
+}
+
+.no-style::before,
+.no-style::after {
+    content: none;
 }
 
 .home {
@@ -274,10 +287,10 @@ img {
     margin-bottom: 5px;
 }
 
-.main-images-wrapper img:last-child,
+/* .main-images-wrapper img:last-child,
 .page-images-wrapper img:last-child {
     margin-bottom: -5px;
-}
+} */
 
 .main-agenda {
     padding: 10px;
@@ -303,10 +316,10 @@ img {
     margin-bottom: 0;
 }
 
-.main-agenda-wrapper p,
+/* .main-agenda-wrapper p,
 .main-agenda-wrapper a {
     font-size: 14px;
-}
+} */
 
 .main-agenda-wrapper p:nth-child(1) {
     font-family: "Fira Sans", sans-serif;
@@ -459,16 +472,6 @@ img {
 
 .about-contact {
     padding: 10px;
-}
-
-.about-contact a {
-    -webkit-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-.about-contact a:hover {
-    padding-left: 15px;
 }
 
 .about-close,
