@@ -380,7 +380,7 @@ a:hover::before {
             transform: translate(-50%, 0);
     z-index: 999;
     background-color: #fff;
-    overflow-y: scroll;
+    overflow-y: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
     opacity: 0;
