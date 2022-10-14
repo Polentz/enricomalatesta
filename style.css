@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -18,14 +18,14 @@ body {
     animation: fade-in 1.5s 1 ease;
 }
 
-a::-moz-selection, 
-p::-moz-selection, 
-h1::-moz-selection, 
-h2::-moz-selection, 
-span::-moz-selection, 
-br::-moz-selection, 
-sup::-moz-selection, 
-img::-moz-selection, 
+a::-moz-selection,
+p::-moz-selection,
+h1::-moz-selection,
+h2::-moz-selection,
+span::-moz-selection,
+br::-moz-selection,
+sup::-moz-selection,
+img::-moz-selection,
 div::-moz-selection,
 strong::-moz-selection,
 em::-moz-selection,
@@ -51,7 +51,7 @@ u::selection {
 }
 
 a {
-    color:#0f0f0f;
+    color: #0f0f0f;
     text-decoration: none;
 }
 
@@ -71,29 +71,67 @@ img {
 }
 
 @-webkit-keyframes logo-style {
-    0% { background-color: #ffb500; }
-    25% { background-color: #0f52fb; }
-    50% { background-color: #ee69f8; }
-    75% { background-color: #0f52fb; }
-    100% { background-color: #ffb500; }
+    0% {
+        background-color: #ffb500;
+    }
+
+    25% {
+        background-color: #0f52fb;
+    }
+
+    50% {
+        background-color: #ee69f8;
+    }
+
+    75% {
+        background-color: #0f52fb;
+    }
+
+    100% {
+        background-color: #ffb500;
+    }
 }
 
 @keyframes logo-style {
-    0% { background-color: #ffb500; }
-    25% { background-color: #0f52fb; }
-    50% { background-color: #ee69f8; }
-    75% { background-color: #0f52fb; }
-    100% { background-color: #ffb500; }
+    0% {
+        background-color: #ffb500;
+    }
+
+    25% {
+        background-color: #0f52fb;
+    }
+
+    50% {
+        background-color: #ee69f8;
+    }
+
+    75% {
+        background-color: #0f52fb;
+    }
+
+    100% {
+        background-color: #ffb500;
+    }
 }
 
 @-webkit-keyframes fade-in {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes fade-in {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 #header {
@@ -114,11 +152,11 @@ img {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     padding: 10px;
     font-family: "Oswald";
     font-weight: 400;
@@ -158,10 +196,10 @@ a::before {
 
 a::before {
     -webkit-transform-origin: 100% 50%;
-        -ms-transform-origin: 100% 50%;
-            transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
     -webkit-transform: scale3d(0, 1, 1);
-            transform: scale3d(0, 1, 1);
+    transform: scale3d(0, 1, 1);
     -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
     -o-transition: transform 0.3s;
@@ -171,10 +209,10 @@ a::before {
 
 a:hover::before {
     -webkit-transform-origin: 0% 50%;
-        -ms-transform-origin: 0% 50%;
-            transform-origin: 0% 50%;
+    -ms-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
     -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
 }
 
 .no-style::before,
@@ -190,11 +228,11 @@ a:hover::before {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     position: relative;
 }
 
@@ -231,18 +269,21 @@ a:hover::before {
     padding: 0 10px;
 }
 
-.main-hero div {
-    margin-bottom: 20px;
-}
-
-.main-hero div:last-child {
-    margin-bottom: 0;
-}
-
-.main-hero-image {
+.main-hero-wrapper {
+    margin-bottom: 60px;
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+}
+
+.main-hero-image {
+    display: grid;
+    gap: 12px;
+    grid-auto-flow: column;
+    margin-bottom: 10px;
+    /* -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; */
 }
 
 .main-hero-text {
@@ -253,7 +294,7 @@ a:hover::before {
     font-family: "Oswald";
     font-size: 16px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     text-transform: uppercase;
 }
 
@@ -287,11 +328,6 @@ a:hover::before {
     margin-bottom: 5px;
 }
 
-/* .main-images-wrapper img:last-child,
-.page-images-wrapper img:last-child {
-    margin-bottom: -5px;
-} */
-
 .main-agenda {
     padding: 10px;
     order: 3;
@@ -315,11 +351,6 @@ a:hover::before {
 .main-agenda-wrapper:last-child {
     margin-bottom: 0;
 }
-
-/* .main-agenda-wrapper p,
-.main-agenda-wrapper a {
-    font-size: 14px;
-} */
 
 .main-agenda-wrapper p:nth-child(1) {
     font-family: "Fira Sans", sans-serif;
@@ -360,13 +391,24 @@ a:hover::before {
     margin: 0 20px;
     border-radius: 50%;
     -webkit-box-shadow: 0 0 5px 2px #ffb500;
-            box-shadow: 0 0 5px 2px #ffb500;
+    box-shadow: 0 0 5px 2px #ffb500;
 }
 
 .lily:hover {
     animation: logo-style 4s ease-in-out infinite alternate-reverse;
     -webkit-animation: logo-style 4s ease-in-out infinite alternate-reverse;
     -moz-animation: logo-style 4s ease-in-out infinite alternate-reverse;
+}
+
+.lily::before,
+.lily::after,
+.mu::before,
+.mu::after {
+    content: none;
+}
+
+.mu {
+    width: 40px;
 }
 
 .about {
@@ -376,8 +418,8 @@ a:hover::before {
     bottom: 14vh;
     left: 50%;
     -webkit-transform: translate(-50%, 0);
-        -ms-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
     z-index: 999;
     background-color: #fff;
     overflow-y: hidden;
@@ -387,7 +429,7 @@ a:hover::before {
     pointer-events: none;
     border: solid 1px #0f0f0f;
     -webkit-box-shadow: 0 0 15px 5px #fff;
-            box-shadow: 0 0 15px 5px #fff;
+    box-shadow: 0 0 15px 5px #fff;
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -409,8 +451,8 @@ a:hover::before {
     bottom: 12vh;
     left: 50%;
     -webkit-transform: translate(-50%, 0);
-        -ms-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
     z-index: 999;
     background-color: #fff;
     overflow-y: scroll;
@@ -420,7 +462,7 @@ a:hover::before {
     pointer-events: none;
     border: solid 1px #0f0f0f;
     -webkit-box-shadow: 0 0 15px 5px #fff;
-            box-shadow: 0 0 15px 5px #fff;
+    box-shadow: 0 0 15px 5px #fff;
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -463,15 +505,19 @@ a:hover::before {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .about-contact {
     padding: 10px;
+}
+
+.about-contact-link:last-child {
+    margin-top: 20px;
 }
 
 .about-close,
@@ -555,8 +601,8 @@ a:hover::before {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: space-between;
-        -ms-flex-pack: space-between;
-            justify-content: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
     height: 15vh;
     width: auto;
 }
@@ -594,7 +640,7 @@ a:hover::before {
     display: none;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
     body {
         overflow-y: scroll;
         -ms-overflow-style: none;
@@ -656,10 +702,15 @@ a:hover::before {
         background-color: #fff;
         z-index: 999;
     }
-    
+
+    .about.open,
+    .info.open {
+        overflow-y: scroll;
+    }
+
     #menu-mobile {
         display: block;
-        height: 10vh;
+        height: auto;
         width: 100vw;
         position: fixed;
         bottom: 10vh;
@@ -693,28 +744,23 @@ a:hover::before {
     .menu-mobile-inner {
         height: 100%;
         width: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        padding: 10px 20px;
         font-family: "Oswald", sans-serif;
         font-weight: 400;
         font-size: 16px;
         text-transform: uppercase;
-        -ms-flex-line-pack: center;
-            align-content: center;
-        -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .menu-mobile-inner a:nth-of-type(odd) {
+        justify-self: start;
+    }
+
+    .menu-mobile-inner a:nth-of-type(even) {
+        justify-self: end;
     }
 
     .lily {
@@ -723,15 +769,15 @@ a:hover::before {
 
     .about {
         width: 100vw;
-        height: 80vh;
+        height: 90vh;
         position: fixed;
         top: 0;
         left: 0;
         -webkit-transform: none;
-            -ms-transform: none;
-                transform: none;
+        -ms-transform: none;
+        transform: none;
         -webkit-box-shadow: none;
-                box-shadow: none;
+        box-shadow: none;
         border: none;
     }
 
@@ -770,7 +816,7 @@ a:hover::before {
     .page::-webkit-scrollbar {
         display: none;
     }
-    
+
 
     .page-menu {
         display: none;
@@ -796,11 +842,11 @@ a:hover::before {
 
     .info {
         width: 100vw;
-        height: 80vh;
+        height: 90vh;
         position: fixed;
         top: 0;
         -webkit-box-shadow: none;
-                box-shadow: none;
+        box-shadow: none;
         border: none;
     }
 
@@ -814,7 +860,7 @@ a:hover::before {
         padding: 50px 10px 10px 10px;
     }
 
-    .about-close, 
+    .about-close,
     .info-close {
         position: fixed;
     }
