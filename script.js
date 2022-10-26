@@ -8,6 +8,7 @@ const infoCloseBtn = document.getElementById("info-cls");
 const infoBtnMobile = document.getElementById("info-btn-mobile");
 const menu = document.getElementById("menu-mobile");
 const menuBtn = document.getElementById("menu-btn");
+const menuLabels = document.querySelectorAll(".link-mobile")
 
 
 const documentHeight = () => {
@@ -27,12 +28,22 @@ const functions = () => {
         toggleClick(infoBtnMobile, info);
     }
     toggleClick(menuBtn, menu);
+    closeClick(menuLabels, menu)
 }
 
 const toggleClick = (button, element) => {
     button.addEventListener("click", (event) => {
         element.classList.toggle("open");
         event.stopPropagation();
+    });
+}
+
+const closeClick = (buttons, element) => {
+    buttons.forEach(button => {
+        button.addEventListener("click", (event) => {
+            element.classList.remove("open");
+            event.stopPropagation();
+        })
     });
 }
 
