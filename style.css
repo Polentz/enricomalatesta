@@ -220,12 +220,16 @@ a:hover::before {
     content: none;
 }
 
-.home {
-    height: 100vh;
-    width: 100vw;
+#container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: auto;
+    overflow: hidden;
+}
+
+.home {
+    height: var(--doc-height);
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -543,12 +547,7 @@ a:hover::before {
 }
 
 .page {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     height: calc(100vh - 10vh);
-    width: auto;
-    overflow: hidden;
 }
 
 .page-menu {
@@ -803,7 +802,7 @@ a:hover::before {
         padding: 10px 10px 0 10px;
     }
 
-    .page {
+    #container {
         display: block;
         overflow-y: scroll;
         -ms-overflow-style: none;
@@ -813,7 +812,7 @@ a:hover::before {
         padding-top: 10px;
     }
 
-    .page::-webkit-scrollbar {
+    #container::-webkit-scrollbar {
         display: none;
     }
 
