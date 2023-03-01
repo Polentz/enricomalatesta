@@ -67,7 +67,7 @@ const closeAll = (buttons, element) => {
 items.forEach(item => {
     const open = item.querySelectorAll(".item-title, .cms-opener");
     const content = item.querySelector(".item-content");
-    const close = item.querySelector(".item-content-close");
+    const close = item.querySelector(".item-content-close a");
     open.forEach(opener => {
         opener.addEventListener("click", () => {
             let randomLeft = Math.floor(Math.random() * 55);
@@ -86,11 +86,12 @@ items.forEach(item => {
 functions();
 
 const mediaQuery = window.matchMedia("(max-width: 600px)");
-let draggableElems = document.querySelectorAll(".item-content");
+const draggableElems = document.querySelectorAll(".item-content");
 let draggies = []
 const draggableOnDesktop = (e) => {
     if (!e.matches) {
-        for (let draggableElem of draggableElems) {
+        for (let i = 0; i < draggableElems.length; i++) {
+            const draggableElem = draggableElems[i];
             let draggie = new Draggabilly(draggableElem, {
                 containment: "body"
             });
@@ -100,3 +101,29 @@ const draggableOnDesktop = (e) => {
 };
 mediaQuery.addListener(draggableOnDesktop);
 draggableOnDesktop(mediaQuery);
+
+
+const cards = Array.prototype.slice.call(document.querySelectorAll(".item-content"));
+const cardsArray = cards.concat(Array.prototype.slice.call(document.querySelectorAll(".item-content")));
+cardsArray.forEach((card) => {
+    card.addEventListener("click", () => {
+        const restOfCards = cardsArray.filter(i => i.innerHeight != card.id);
+        card.style.zIndex = cardsArray.length;
+        restOfCards.forEach((ri) => {
+            if (ri.style.zIndex >= card.style.zIndex) {
+                ri.style.zIndex = ri.style.zIndex - 1;
+            };
+        });
+        // remember to pass (e)
+        // const current = e.currentTarget
+        // console.log(current)
+        // const restOfCards = cardsArray.splice(current, 1);
+        // console.log(restOfCards);
+        // card.style.zIndex = Math.floor(Math.random() * 99);
+        // restOfCards.forEach((rest) => {
+        //     if (rest.style.zIndex >= card.style.zIndex) {
+        //         rest.style.zIndex = rest.style.zIndex - 1;
+        //     };
+        // });
+    });
+});
