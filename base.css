@@ -187,6 +187,22 @@ u::-moz-selection {
     color: #ffb500;
 }
 
+a::-moz-selection,
+p::-moz-selection,
+h1::-moz-selection,
+h2::-moz-selection,
+span::-moz-selection,
+br::-moz-selection,
+sup::-moz-selection,
+img::-moz-selection,
+div::-moz-selection,
+strong::-moz-selection,
+em::-moz-selection,
+i::-moz-selection,
+u::-moz-selection {
+    color: #ffb500;
+}
+
 a::selection,
 p::selection,
 h1::selection,
