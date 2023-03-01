@@ -26,12 +26,12 @@
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/faviconem-72.png">
   <link href="assets/faviconem-32.png" rel="shortcut icon" type="image/x-icon">
   <link href="assets/faviconem-256.png" rel="apple-touch-icon">
-
-  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&amp;family=Oswald&amp;display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -41,7 +41,8 @@
       <a href="index.html">Enrico Malatesta</a>
       <a id="about-btn">About</a>
       <a id="info-btn">Annotazioni superficiali</a>
-      <a class="lily" href="https://lilystar1000.com/" target="_blank"></a>
+      <a href="caveja.html">Caveja</a>
+      <!-- <a class="lily" href="https://lilystar1000.com/" target="_blank"></a> -->
       <a class="mu" href="https://www.mmmu.it/" target="_blank">
         <svg viewBox="0 0 182 87" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -64,8 +65,8 @@
     <div class="menu-mobile-inner">
       <a id="about-btn-mobile" class="link-mobile">About</a>
       <a id="info-btn-mobile" class="link-mobile">Annotazioni superficiali</a>
-      <!-- <a href="" class="link-mobile">Caveja</a> -->
-      <a href="https://lilystar1000.com/" target="_blank">Lily Star 1000</a>
+      <a href="caveja.html" class="link-mobile">Caveja</a>
+      <!-- <a href="https://lilystar1000.com/" target="_blank">Lily Star 1000</a> -->
       <a href="https://www.mmmu.it/" target="_blank">MU</a>
     </div>
   </nav>
@@ -128,733 +129,1348 @@
     <div id="info-cls" class="info-close"><a>Close</a></div>
   </div>
 
-  <section id="container" class="page">
-    <div id="page-menu" class="page-menu cms-editable">
-      <ul class="page-menu-list">
-        <li class="page-menu-item cms-repeatable"><a href="#ra">RA</a></li>
-        <li class="page-menu-item cms-repeatable"><a href="#la-bessa">la Bessa</a></li>
-        <li class="page-menu-item cms-repeatable"><a href="#fare-polvere">Fare polvere</a></li>
-        <li class="page-menu-item cms-repeatable"><a href="#la-medusa-e-un-ispessimento-dell-acqua">La medusa è un
-            ispessimento dell&apos;acqua</a></li>
-        <li class="page-menu-item cms-repeatable"><a href="#sinewave-1-indaco">Sinewave_1 indaco</a></li>
-        <li class="page-menu-item cms-repeatable"><a href="#piallassa">Piallassa</a></li>
-        <li class="page-menu-item cms-repeatable"><a href="#fiume-1-11-8-2020">Fiume_1 [11-8-2020]</a></li>
-        <li class="page-menu-item cms-repeatable"><a href="#qw-2">QW.2</a></li>
-        <li class="page-menu-item cms-repeatable"><a href="#tank">Cantina sociale</a></li>
-        <li class="page-menu-item cms-repeatable"><a href="#r-1">R #1 da Sinistra verso Destra</a></li>
-        <li class="page-menu-item cms-repeatable"><a href="#r-2">R #2 vuoto alle spalle</a></li>
-        <li class="page-menu-item cms-repeatable"><a href="#fiume-2">Fiume_2 [7-6-2020]</a></li>
-        <li class="page-menu-item cms-repeatable"><a href="#daf">DAF</a></li>
-        <li class="page-menu-item cms-repeatable"><a href="#volute">Volute</a></li>
-        <li class="page-menu-item cms-repeatable"><a href="#rudimenti">Rudimenti</a></li>
-        <li class="page-menu-item cms-repeatable"><a href="#se-siamo-assenti-suonare-qui">Se siamo assenti suonare
-            qui</a></li>
-        <li class="page-menu-item cms-repeatable"><a href="#la-fiamma-di-una-candela">La fiamma di una candela</a></li>
-        <li class="page-menu-item cms-repeatable"><a href="#seconda-annotazione-sulle-candele">Seconda annotazione sulle
-            candele</a></li>
-        <li class="page-menu-item cms-repeatable"><a href="#camminata-estiva">Camminata estiva</a></li>
-        <li class="page-menu-item cms-repeatable"><a href="#maraca">Maraca</a></li>
-        <li class="page-menu-item cms-repeatable"><a href="#ambra">Ambra</a></li>
-      </ul>
-    </div>
+  <section id="container">
+    <div class="main">
+      <div id="list-content" class="list-content page-menu cms-editable">
+        <ul class="page-menu-list">
+          <li class="page-menu-item cms-repeatable"><a href="#ra">RA</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#la-bessa">la Bessa</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#fare-polvere">Fare polvere</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#la-medusa-e-un-ispessimento-dell-acqua">La medusa è un
+              ispessimento dell&apos;acqua</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#sinewave-1-indaco">Sinewave_1 indaco</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#piallassa">Piallassa</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#fiume-1-11-8-2020">Fiume_1 [11-8-2020]</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#qw-2">QW.2</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#tank">Cantina sociale</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#r-1">R #1 da Sinistra verso Destra</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#r-2">R #2 vuoto alle spalle</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#fiume-2">Fiume_2 [7-6-2020]</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#daf">DAF</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#volute">Volute</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#rudimenti">Rudimenti</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#se-siamo-assenti-suonare-qui">Se siamo assenti suonare
+              qui</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#la-fiamma-di-una-candela">La fiamma di una candela</a>
+          </li>
+          <li class="page-menu-item cms-repeatable"><a href="#seconda-annotazione-sulle-candele">Seconda annotazione
+              sulle
+              candele</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#camminata-estiva">Camminata estiva</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#maraca">Maraca</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#senza-titolo-magnete-in-ferrite">senza titolo [magnete in
+              ferrite]</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#aurelio-urbano">aurelio urbano</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#ambra">ambra</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#resa-di-una-risonanza">resa di una risonanza</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#gran-sasso">gran sasso</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#kor">kor</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#oropa">oropa</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#koderjana">KODERJANA</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#risposta-battente">risposta battente</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#cono-di-percussione">CONO DI PERCUSSIONE</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#verde-deciduo">verde deciduo</a></li>
+          <li class="page-menu-item cms-repeatable"><a href="#idiofoni">idiofoni</a></li>
+        </ul>
+      </div>
 
-    <div id="page-item" class="page-item cms-editable">
-      <div class="move-to-top">
-        <div class="page-item-wrapper cms-repeatable">
-          <div class="anchor-space"><a id="ra"></a></div>
-          <div class="page-item-text">
-            <h2 class="page-item-title">Ra<sup>1</sup></h2>
-            <p>Colpire ascoltando la pioggia<sup>2</sup></p>
-            <p></p>
-            <p><em>oppure</em></p>
-            <p></p>
-            <p>Colpire ascoltando nella pioggia<sup>3</sup></p>
-            <p></p>
-            <p>Fine [?]<sup>4</sup></p>
-            <p></p>
-            <p>[Il colpo avviene per]</p>
-            <p></p>
-            <p>• Moto rapido e violento per cui un corpo</p>
-            <p>entra in contatto con un altro;</p>
-            <p></p>
-            <p>• Movimento veloce di uno strumento</p>
-            <p>oppure di un oggetto;</p>
-            <p></p>
-            <p>• Caduta.<sup>5</sup></p>
-          </div>
-          <div class="page-item-notes light-font">
-            <p><sup>1</sup> Codice METAR per indicare la pioggia (dall&apos;inglese rain).</p>
-            <p><sup><br>2</sup> L'intento è definire, nell'ascolto, i molteplici fenomeni sonori generati dalle
-              precipitazioni e, attraverso il colpo, separarsi da essi.</p>
-            <p><sup><br>3</sup> L'intento è definire, nell'ascolto, i molteplici fenomeni sonori generati dalle
-              precipitazioni e, attraverso il colpo, condursi tra essi.</p>
-            <p><sup><br>4</sup> RA è un esercizio a durata variabile e deve essere praticato in accordo con le proprie
-              necessità in relazione alla pioggia; è importante decidere il suo inizio ed essere consapevoli di come
-              avverrà la sua fine. Il performer abita l'esercizio in funzione di una durata prestabilita: le possibilità
-              a sua disposizione vanno dall'utilizzo di un'unità temporale fissa, misurata con un cronometro, fino a
-              seguire la frequenza con cui il fenomeno pioggia si manifesta: l'assenza di pioggia diventa quindi una
-              pausa, un'interruzione indefinita dell'esercizio, mentre il ritorno della pioggia un nuovo invito a
-              all'azione. L'esercizio cerca di favorire lo studio di una ritmicità non orientata alla definizione di
-              modelli (patterns), ma alla relazione con la distribuzione di eventi/fenomeni sonori vasti e instabili.
-            </p>
-            <p><sup><br>5</sup> Il performer sceglie liberamente come produrre il colpo e mantiene tale scelta per tutta
-              la durata dell'esercizio; ogni colpo è però un accadimento unico, privo di reciprocità con il colpo ad
-              esso precedente e successivo. Il colpo deve essere presentato con la massima trasparenza nei confronti del
-              suono della pioggia.</p>
-          </div>
-          <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
-        </div>
-
-        <div class="page-item-wrapper cms-repeatable">
-          <div class="anchor-space"><a id="la-bessa"></a></div>
-          <div class="page-item-text">
-            <h2 class="page-item-title">La Bessa <sup>1</sup></h2>
-            <img src="uploads/immagini/bessa%20edit%202%20copia.jpg">
-            <br><br>
-            <p>Cammina sulla pietraia. Posiziona un dispositivo di
-              playback che diffonde un suono continuo e lascialo alle tue spalle: avanza lentamente, cercando di
-              tracciare una linea.</p>
-            <br><br>
-            <p>Prosegui fino a perdere il riferimento sonoro dato dal dispositivo.</p>
-            <p></p>
-            <p>Torna indietro avendo cura di rimanere lungo la linea tracciata.</p>
-            <p>[Ricomincia a piedi nudi]</p>
-          </div>
-          <div class="page-item-notes light-font">
-            <p><sup>1</sup> La Riserva Naturale Speciale della Bessa si trova in Piemonte, vicino alle Alpi Biellesi;
-              consiste in un altopiano caratterizzato da enormi distese di sassi circondate da vegetazione. La specifica
-              conformazione territoriale della Bessa non è dovuta a fenomeni naturali, bensì al fatto che, in epoca
-              romana, migliaia di persone furono impiegate in una miniera d'oro presente nella zona limitrofa,
-              producendo scarti di lavorazione di tale entità da sembrare il risultante di un processo geologico.
-              L'intensità superficiale della pietraia esplicita alcune problematiche basilari dell'indagine sulla
-              percezione ecologica in riferimento alla relazione tra suono, corpo e spazio; nella Bessa, infatti,
-              l'attenzione per il suono deve accompagnarsi a una presenza corporea costante e in continuo rinnovamento.
-              I sassi tendono a muoversi e scivolare sotto il peso dei passi e ogni spostamento comporta l'abbandono
-              della propria zona di comfort. La “mobilità” della Bessa rende, chi la attraversa, direttamente partecipe
-              della sua modificazione ed evoluzione superficiale.</p>
-          </div>
-          <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
-        </div>
-        <div class="page-item-wrapper cms-repeatable">
-          <div class="anchor-space"><a id="fare-polvere"></a></div>
-          <div class="page-item-text">
-            <h2 class="page-item-title">FARE polvere</h2>
-            <p>Lascia una pietra in uno spazio familiare, in una posizione che la renda ben visibile: ogni giorno, per
-              un minuto, ascolta tutti i suoni che ti circondano come se provenissero dalla pietra.</p>
-            <p></p>
-            <p>Sposta la pietra quando della polvere si è depositata sulla sua
-              superficie.</p>
-          </div>
-          <div class="page-item-notes light-font">
-            <p><sup>1</sup> FARE POLVERE è da svolgersi in un ambiente interno a un edificio che frequenti abitualmente,
-              e con il cui suono senti familiarità e confidenza.</p>
-            <p><br><sup>2 </sup>La pietra si trasforma nella fonte di tutti i suoni che ti circondano, sia interni, che
-              esterni all&apos;edificio; per un tempo limitato, e dichiarato (un minuto), cerca di aprire completamente
-              l&apos;ascolto mantenendo però l&apos;attenzione focalizzata su una specifica posizione nello spazio,
-              occupata, appunto, dal corpo della pietra.</p>
-            <p></p>
-            <p><sup>3 </sup>La pietra deve <i>fare polvere</i> prima di essere spostata: trovata una nuova posizione,
-              continua la pratica allo stesso modo, rivolgendo l'attenzione alla nuova collocazione della pietra. Il
-              <i>fare polvere </i>suggerisce un lasso temporale largo e indefinito, in cui il corpo della pietra,
-              lasciato immobile, si <i>deposita</i> nelle consuetudini con cui abiti lo spazio scelto per la pratica.
-            </p>
-          </div>
-          <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
-        </div>
-        <div class="page-item-wrapper cms-repeatable">
-          <div class="anchor-space"><a id="la-medusa-e-un-ispessimento-dell-acqua"></a></div>
-          <div class="page-item-text">
-            <h2 class="page-item-title">la medusa è un ispessimento dell&apos;acqua</h2>
-            <p>Nello spazio di lavoro, posiziona un altoparlante che diffonde un suono
-              continuo, a un volume adatto alle tue esigenze di ascolto;
-              rivolgiti frontalmente all'emissione sonora, ovvero con il volto alla stessa altezza della membrana
-              dello <i>speaker</i> e trova una posizione comoda, ma consueta. Nello svolgimento dell'esercizio è
-              importante che il corpo non venga condotto in una condizione posturale diversa da quelle che abitualmente
-              assumi nel compiere le tue mansioni o durante il riposo.</p>
-            <p></p>
-            <p>Inspira, e <em>lascia entrare</em> il suono emesso dall'altoparlante.</p>
-            <p></p>
-            <p>Abita la sensazione di riempimento; cura la pausa respiratoria che segue l'inspirazione e
-              <em>contieni</em> il suono.
-            </p>
-            <p></p>
-            <p><span style="font-weight: 400;">Espira, e </span><i><span style="font-weight: 400;">lascia
-                  uscire</span></i><span style="font-weight: 400;"> il suono emesso dall'altoparlante. </span><span
-                style="font-weight: 400;"><br></span><span style="font-weight: 400;">Abita la sensazione di
-                svuotamento; cura la pausa respiratoria che segue l'espirazione e </span><i><span
-                  style="font-weight: 400;">spargiti</span></i><span style="font-weight: 400;"> nel suono.</span>
-            </p>
-            <p></p>
-            <p><span style="font-weight: 400;">Mantieni il ciclo </span><i><span
-                  style="font-weight: 400;">inspirazione-pausa-espirazione-pausa</span></i><span
-                style="font-weight: 400;"> continuo e rilassato e osserva cosa accade al corpo, e al suono,
-                nell'estensione e contrazione data dal respiro. Trovato l'agio necessario affinchè ci sia continuità
-                energetica tra il suono (emesso dall'altoparlante) e il corpo, stabilizza il circuito (tempo, intensità,
-                rumorosità del respiro...) ed entra in una modalità di ascolto immersiva. Porta l'attenzione a ciò che
-                avviene nello spazio attorno a te, e oltre ad esso, e cerca di abitare l'azione di compenetrazione che
-                avviene tra te e l'ambiente. Definisci la vitalità del suono, e del corpo, in relazione al movimento
-                dell'aria, acquisendo la consapevolezza </span><i><span style="font-weight: 400;">di essere in qualcosa
-                  che a sua volta è in te</span></i><i><span style="font-weight: 400;"> </span></i><span
-                style="font-weight: 400;">(l'aria). La mutualità tra il respiro e l'ambiente è uno strumento utile a
-                potenziare l'ascolto dei </span><i><span style="font-weight: 400;">pattern</span></i><span
-                style="font-weight: 400;"> minimi e vasti dell'esperienza sonora</span><span style="font-weight: 400;">
-                e una risorsa continua per ampliare la capacità individuale di
-                progettazione, azione e riposo. L'esercizio prosegue fino a che la sua azione benefica è
-                esaurita.</span></p>
-            <p></p>
-            <p></p>
-            <p><span style="font-weight: 400;">[crescita]</span></p>
-            <p></p>
-            <p><span style="font-weight: 400;">Attua una transizione verso una modalità di ascolto selettiva</span><span
-                style="font-weight: 400;">: </span><i><span style="font-weight: 400;">scortica</span></i><span
-                style="font-weight: 400;"> (o </span><i><span style="font-weight: 400;">frattura</span></i><span
-                style="font-weight: 400;">) la sensazione di immersione trascurando deliberatamente il
-                sopraggiungere di nuovi stimoli ambientali. Osserva esclusivamente i fenomeni che emergono tra il
-                respiro e il suono di riferimento</span><span style="font-weight: 400;">.</span></p>
-            <p></p>
-            <p><em><span style="font-weight: 400;">indaga</span></em></p>
-            <p><span style="font-weight: 400;"></span></p>
-            <p><span style="font-weight: 400;">• Il suono è una variazione di ciò che ha luogo nel respiro.</span></p>
-            <p><span style="font-weight: 400;"></span></p>
-            <p><span style="font-weight: 400;">• Il respiro modella la consistenza del suono e permette di unirsi e
-                separarsi alla sua densità.</span></p>
-            <p><span style="font-weight: 400;"><br>• Il respiro <i>modifica</i> la proiezione dinamica del suono durante
-                l'inspirazione e l'espirazione, lasciando il corpo, nelle pause respiratorie, vulnerabile alla sua
-                intensità dinamica.<br><br><br></span></p>
-            <p><span style="font-weight: 400;">[crescita]</span></p>
-            <p><span style="font-weight: 400;"></span></p>
-            <p><span style="font-weight: 400;">Attua una transizione verso una modalità di ascolto
-                selettiva<sup>1</sup></span><span style="font-weight: 400;">: </span><span
-                style="font-weight: 400;">frattura</span><span style="font-weight: 400;"> la sensazione di
-                immersione trascurando deliberatamente il sopraggiungere di nuovi stimoli ambientali. Osserva
-                esclusivamente i fenomeni che emergono tra il respiro e il suono di riferimento<sup>2</sup></span><span
-                style="font-weight: 400;">.</span></p>
-            <p><span style="font-weight: 400;"><br></span><em><span style="font-weight: 400;">indaga</span></em></p>
-            <p><span style="font-weight: 400;"></span></p>
-            <p><span style="font-weight: 400;">• Il suono è una variazione di ciò che ha luogo nel respiro.</span></p>
-            <p><span style="font-weight: 400;"></span></p>
-            <p><span style="font-weight: 400;">• Il respiro modella la consistenza del suono e permette di unirsi e
-                separarsi alla sua densità.</span></p>
-            <p><span style="font-weight: 400;"><br>• Il respiro <i>modifica</i> la proiezione dinamica del suono durante
-                l'inspirazione e l'espirazione, lasciando il corpo, nelle pause respiratorie, vulnerabile alla sua
-                intensità dinamica<sup>3</sup> .<br></span></p>
-          </div>
-          <div class="page-item-notes light-font">
-            <p><sup>1 </sup>Il passaggio da un ascolto immersivo ad uno selettivo (e viceversa) può avvenire
-              gradualmente oppure in maniera repentina; è anche possibile che si attivi in modo involontario e in
-              accordo con la disponibilità del corpo, con la variazione dell'andamento del respiro o da una particolare
-              relazione tra il suono di riferimento e l'ambiente. Muoversi tra ascolto immersivo e selettivo
-              (volontariamente o meno) è uno degli obiettivi dell'esercizio.<br><br><sup>2 </sup>Il suono di
-              riferimento è costituito anche dal carattere della tecnologia audio utilizzata, dalla sua eventuale
-              instabilità e presenza fisica nello spazio.</p>
-            <p><br><sup>3 </sup>Le tre proposte di indagine riguardano alcune intuizioni emerse durante la pratica
-              personale dell'esercizio: sono riferimenti di partenza utili e pronti ad essere messi in discussione da
-              chiunque si cimenti nell'esercizio.<sup><span style="font-weight: 400;"> </span></sup></p>
-          </div>
-          <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
-        </div>
-        <div class="page-item-wrapper cms-repeatable">
-          <div class="anchor-space"><a id="sinewave-1-indaco"></a></div>
-          <div class="page-item-text">
-            <h2 class="page-item-title">sinewave_1 indaco</h2>
-            <p><span style="font-weight: 400;">Siedi rivolto a un altoparlante che diffonde un'onda sinusoidale a
-                433Hz</span><span style="font-weight: 400;">. Ascolta, e conduci il suono nello spazio tra le
-                sopracciglia, fissando l'attenzione nella zona tra la radice del naso e le arcate sopracciliari. Calma
-                il respiro, con fasi distese di inspirazione ed espirazione: dalle narici, osserva il movimento
-                dell'aria mettere in disordine i margini del suono e, allo stesso tempo, rinnovare la sensazione, sempre
-                più centrale, dell'onda sonora.</span></p>
-          </div>
-          <div class="page-item-notes light-font">
-            <p><sup>1</sup> L&apos;hertz (simbolo Hz) è l&apos;unità di misura del sistema internazionale della
-              frequenza. La scelta della frequenza è, ai fini dell&apos;esercizio, completamente arbitraria e basata
-              sulla sensazione personale.</p>
-          </div>
-          <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
-        </div>
-        <div class="page-item-wrapper cms-repeatable">
-          <div class="anchor-space"><a id="piallassa"></a></div>
-          <div class="page-item-text">
-            <h2 class="page-item-title">piallassa<sup>1</sup></h2>
-            <p><sup><img src="uploads/immagini/Raccogliere%20Pietre_PIALLASSA%20copia.JPG"></sup></p>
-            <p></p>
-            <p><span style="font-weight: 400;">Ascolta la </span><i><span
-                  style="font-weight: 400;">crescita</span></i><span style="font-weight: 400;"> di un solo
-                suono<sup>2</sup></span><span style="font-weight: 400;">. </span></p>
-          </div>
-          <div class="page-item-notes light-font">
-            <p><sup>1</sup> La Piallassa della Baiona è una zona naturale protetta situata nel territorio ravennate.
-              L&apos;area è caratterizzata da un bacino lagunare di acqua salmastra, con limitatissimi apporti di acqua
-              dolce e con vegetazione prevalente a giuncheti palustri e salicornieti. La laguna è formata da una rete di
-              canali distribuiti a spina di pesce che confluiscono, dal fiume Lamone, verso il porto del canale
-              Candiano.</p>
-            <p></p>
-            <p><sup>2 </sup>La Piallassa consente un ascolto ad alta definizione. Il territorio produce le condizioni
-              ottimali per captare ogni suono come evento definito e spazialmente localizzato; l'ascoltatore è spinto a
-              un continuo movimento dell'attenzione e alla definizione di ogni impulso sonoro in quanto figura su uno
-              sfondo.</p>
-            <p>Durante un pomeriggio di indagine in loco (6/9/2020) ho rifiutato questa prerogativa aurale della
-              Piallassa: tale opposizione è nata in risposta alla persuasione subita da ogni suono: un nuovo evento,
-              entrando nel mio campo di ascolto, portava all'immediata necessità di riconoscere l'origine di quel suono,
-              definire le sue qualità e seguire il suo percorso separandolo acusticamente dal contesto. Un ulteriore
-              effetto riguardava il mio proprio corpo, che tendeva a orientare la parte frontale verso la posizione del
-              nuovo suono.</p>
-            <p>Al comfort iniziale in questa precisione acustica, è seguita una mobilità estetizzante dell'attenzione e
-              la sensazione di attuare una modalità di ascolto imposta dal territorio, favorevole alla definizione di un
-              paesaggio sonoro eterogeneo e comprensibile. L'esercizio si è rivolto, per contro, nel fermare il
-              movimento dell'attenzione e il discernimento dei suoni come eventi separati e descrivibili in se stessi;
-              uscendo dal compiacimento hi-fi ed evitando la rappresentazione uditiva del paesaggio, ho ascoltato i
-              suoni della Piallassa come partecipi della vitalità complessiva del territorio; lentamente è emerso un
-              unico, vasto suono, che raggiungeva il mio corpo da ogni direzione.</p>
-          </div>
-          <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
-        </div>
-        <div class="page-item-wrapper cms-repeatable">
-          <div class="anchor-space"><a id="fiume-1-11-8-2020"></a></div>
-          <div class="page-item-text">
-            <h2 class="page-item-title">fiume_1<sup></sup>[11-8-2020]</h2>
-            <p><span style="font-weight: 400;">Raccogli una pietra lungo il percorso del fiume e portala con te.</span>
-            </p>
-            <p><span style="font-weight: 400;"></span></p>
-            <p><span style="font-weight: 400;">Abbandona la pietra nello spazio in cui svolgerai l'esercizio e lascia
-                che assorba le informazioni che la circondano; è importante che le sensazioni della giornata al fiume,
-                nella quale hai raccolto la pietra, vengano in parte dimenticate, cimentandosi nella pratica fuori
-                dall'</span><i><span style="font-weight: 400;">eco</span></i><span style="font-weight: 400;"> del
-                contesto originario della pietra<sup>1</sup></span><span style="font-weight: 400;">.</span></p>
-            <p><span style="font-weight: 400;">Inizia l'esercizio trovando una postura adeguata e distensiva; scegli una
-                zona del tuo corpo e appoggia su di essa la pietra lasciando che eserciti il proprio peso con la
-                maggiore aderenza possibile alla pelle<sup>2</sup></span><span style="font-weight: 400;">. Il corpo e la
-                pietra hanno temperature diverse<sup>4</sup></span><span style="font-weight: 400;">. Ascolta il
-              </span><i><span style="font-weight: 400;">disordine</span></i><span style="font-weight: 400;"> generato
-                dal loro contatto, ovvero porta l'attenzione al trasferimento di energia dal corpo più caldo verso
-                quello più freddo. Trascura completamente i suoni che ti circondano e concentrati sulla transizione di
-                calore fino al momento in cui la </span><i><span style="font-weight: 400;">sensazione di
-                  separazione</span></i><span style="font-weight: 400;"> tra la pelle e la superficie della pietra
-              </span><i><span style="font-weight: 400;">scompare</span></i><span style="font-weight: 400;">. I corpi
-                raggiungono la stessa temperatura e i suoni dell'ambiente sono mantenuti distanti, resi
-                remoti<sup>5</sup></span><span style="font-weight: 400;">.</span></p>
-            <p><span style="font-weight: 400;"><br>Rimuovi la pietra consentendo ai suoni dell'ambiente di
-                riemergere<sup>6</sup>.</span></p>
-          </div>
-          <div class="page-item-notes light-font">
-            <p><sup>1</sup>Per la prima realizzazione dell'esercizio puoi aspettare fino a che della polvere non si sia
-              visibilmente depositata sulla superficie della pietra.</p>
-            <p><br><sup>2 </sup>Le zone morbide e ampie del corpo aiutano la distribuzione del peso della pietra e
-              l'ascolto del disordine dato dal contatto, portando il performer a una conduzione più distesa
-              dell'esercizio.<sup><br></sup></p>
-            <p></p>
-            <p><sup>3 </sup>La pietra è tendenzialmente più fredda del corpo umano se posta in uno spazio chiuso; puoi
-              decidere di lasciarla esposta al sole per ottenere una modificazione sensibile del divenire
-              dell'esercizio.<br><sup><br>4 </sup>Trascurare i suoni dell'ambiente implica il tentativo di concentrarsi
-              solo sulla zona localizzata del corpo in cui avviene il trasferimento di energia; evita quindi di porre
-              l'attenzione al sopraggiungere di nuovi stimoli esterni: suoni, luci, odori.<br><sup><br>5 </sup>Rimossa
-              la pietra inizia una fase in cui la pelle “ripristina” le sue proprie condizioni; utilizza la sensazione
-              lasciata dalla pietra, il suo decadimento, per riportare attivamente l'attenzione sugli stimoli
-              ambientali.<sup><br></sup></p>
-          </div>
-          <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
-        </div>
-        <div class="page-item-wrapper cms-repeatable">
-          <div class="anchor-space"><a id="qw-2"></a></div>
-          <div class="page-item-text">
-            <h2 class="page-item-title">QW.2</h2>
-            <p><span style="font-weight: 400;"><a href="https://www.standardstudio.it/it/quarantine-workout"
-                  target="_blank" rel="noopener">Quarantine Workout</a> <br>a cura di Standards
-                Studio<br><br>scores:<br><br><a
-                  href="https://www.standardstudio.it/site/wp-content/uploads/2020/04/QW2_Enrico-Malatesta_Untitled1.pdf"
-                  target="_blank" rel="noopener">Untitled#1</a><br><a
-                  href="https://www.standardstudio.it/site/wp-content/uploads/2020/04/QW2_Enrico-Malatesta_Untitled2.pdf"
-                  target="_blank" rel="noopener">Untitled#2</a></span></p>
-          </div>
-          <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
-        </div>
-        <div class="page-item-wrapper cms-repeatable">
-          <div class="anchor-space"><a id="r-1"></a></div>
-          <div class="page-item-text">
-            <h2 class="page-item-title">R #1 da sinistra verso destra</h2>
-            <p><span style="font-weight: 400;">Siedi al centro di una stanza vuota dopo avere posizionato una fonte di
-                rumore bianco<sup>1</sup></span><span style="font-weight: 400;"> alla tua sinistra, vicino al muro; il
-                volume di proiezione del suono deve essere intenso e adatto alle tue esigenze; il tuo corpo è in linea
-                con la posizione dello speaker e l'emissione sonora è rivolta verso di esso; trova una posizione comoda
-                prima di intraprendere la pratica, la cui durata deve essere decisa prima del suo inizio.</span></p>
-            <p></p>
-            <p><span style="font-weight: 400;">Ascolta</span></p>
-            <p><br>• La metà sinistra del corpo è <i>vulnerabile</i> e il rumore esercita una pressione diretta su di
-              essa; lo spazio che ti separa dal muro di sinistra è <i>riempito </i>di suono; le superfici del corpo si
-              compattano, assorbono il suono e sostengono la sua presenza.</p>
-            <p><br>• La metà destra del corpo è <i>protetta</i> e il rumore non esercita una pressione diretta su di
-              essa; lo spazio che ti separa dal muro di destra è <i>privo </i>di suono; le superfici del corpo si
-              dilatano, cercano il suono e colmano la sua assenza.</p>
-            <p></p>
-            <p><span style="font-weight: 400;">Definisci le sensazioni che riguardano la metà sinistra e la metà destra
-                del corpo, mantenendo le parti separate, lontane. Trova agio in questa condizione, evita il mescolarsi
-                delle sensazioni e lascia emergere due distinte esperienze di ascolto del rumore bianco: una appartiene
-                alla tua metà sinistra, l'altra appartiene alla tua metà destra.</span></p>
-            <p><br><span style="font-weight: 400;">Avanti così, sino a esaurire il tempo concesso a </span>R<span
-                style="font-weight: 400;"> #1.</span></p>
-          </div>
-          <div class="page-item-notes light-font">
-            <p><sup>1</sup><span style="font-weight: 400;"></span>Il Rumore Bianco è un particolare tipo di rumore
-              caratterizzato dall&apos;assenza di periodicità nel tempo e da ampiezza costante su tutto lo spettro di
-              frequenze.</p>
-          </div>
-          <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
-        </div>
-        <div class="page-item-wrapper cms-repeatable">
-          <div class="anchor-space"><a id="tank"></a></div>
-          <div class="page-item-text">
-            <h2 class="page-item-title">cantina sociale</h2>
-            <p><span style="font-weight: 400;"><img src="uploads/immagini/tank.jpg"></span></p>
-            <p></p>
-            <p><span style="font-weight: 400;">In costruzione </span></p>
-          </div>
-          <div class="page-item-notes light-font">
-            <p><sup>1</sup><span style="font-weight: 400;"></span></p>
-          </div>
-          <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
-        </div>
-        <div class="page-item-wrapper cms-repeatable">
-          <div class="anchor-space"><a id="r-2"></a></div>
-          <div class="page-item-text">
-            <h2 class="page-item-title">R #2 vuoto alle spalle</h2>
-            <p><span style="font-weight: 400;">Un rumore ti raggiunge<sup>1</sup></span><span
-                style="font-weight: 400;">; fermati, individua la sorgente di quel rumore e rivolgi il tuo corpo
-                verso di essa; se il suono è continuo, concentrati, e lascia che la distanza tra te e l'emissione sonora
-                si riempia della sua energia; l'aria si addensa ed esercita una pressione crescente sul piano frontale
-                del corpo; carne e indumenti assorbono il suono, che pervade ogni tua superficie prima di proseguire il
-                proprio percorso<sup>2</sup></span><span style="font-weight: 400;">; rivolgi l'ascolto solamente al
-                davanti del corpo, dove l'aria, disordinata dal rumore, si infrange, dandoti la sensazione di una spinta
-                verso il vuoto alle tue spalle.</span></p>
-          </div>
-          <div class="page-item-notes light-font">
-            <p><sup>1</sup> R #2 vuoto alle spalle è un esercizio da attuare in ambienti sonori complessi e in accordo
-              con l'incontro imprevisto con un rumore (continuo) che intrappola la tua attenzione, imponendosi nel
-              contesto sonoro in cui ti stai muovendo. L'esercizio può essere svolto prima in uno spazio protetto, in
-              cui il performer può ascoltare le sensazioni che interessano la parte frontale del corpo in relazione al
-              rumore continuo, imparando a riconoscere le implicazioni di R #2 alle spalle; servirsi di una fonte di
-              rumore bianco.<br><br><sup>2</sup> R #2 vuoto alle spalle produce sensazioni diverse in relazione agli
-              indumenti e alle zone scoperte del corpo; rendersi consapevoli delle modificazioni che subisce l'ascolto
-              per mezzo dei tessuti che portiamo e, in questo senso, dalle necessità dettate dalle variazioni climatiche
-              stagionali.</p>
-          </div>
-          <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
-        </div>
-        <div class="page-item-wrapper cms-repeatable">
-          <div class="anchor-space"><a id="fiume-2"></a></div>
-          <div class="page-item-text">
-            <h2 class="page-item-title">FIUME_2 [7-6-2020]</h2>
-            <p><span style="font-weight: 400;">Il Ponte di ferro è una struttura di servizio e collegamento tra i due
-                argini del Savio, nei pressi di Cesena; collocato nel Parco Naturale del fiume, si presenta su di un
-                piano rialzato rispetto al percorso che conduce, lungo una riva, alla Centrale Idroelettrica di Mulino
-                Cento e, nella riva opposta, al </span><i><span style="font-weight: 400;">prato umido</span></i><span
-                style="font-weight: 400;"> di Cà Bianchi. La struttura e la passerella pedonale di griglie in piatto
-                di ferro, rendono il ponte particolarmente risonante e rispondente alle sollecitazioni, come ad esempio,
-                quelle generate dal camminare. L'esercizio sfrutta il ponte per esplorare due modalità di ascolto dei
-                fenomeni di risonanza prodotti dal peso del corpo e dall'energia che si genera durante il passaggio da
-                una riva all'altra del fiume.<br><br></span></p>
-            <p><span style="font-weight: 400;">1] Il performer attraversa ripetutamente il ponte. Ascoltare i suoni
-                generati dai passi modificando l'andamento del cammino, la distribuzione dei pesi e il carico di impatto
-                dei piedi sulla superficie della passerella; mantenersi sempre in contatto con le sensazioni (raccolte e
-                trasmesse) dei piedi, e attivare la risonanza del ponte<sup>1</sup></span><span
-                style="font-weight: 400;">.</span></p>
-            <p><span style="font-weight: 400;"><br>2] Il performer trova una posizione distante dal ponte. Ascoltare i
-                suoni generati dal passaggio di altre persone<sup>2</sup></span><span style="font-weight: 400;">,
-                portando l'attenzione alle risonanze della struttura e ad altri fenomeni acustici che da essa si
-                sprigionano; trascurare completamente l'ambiente, rimanendo concentrati sul ponte, nell'alternarsi di
-                presenza e assenza di suono<sup>3</sup></span><span style="font-weight: 400;">. </span></p>
-          </div>
-          <div class="page-item-notes light-font">
-            <p><sup>1</sup> Sperimentare la parte 1. dell'esercizio anche a piedi nudi.<br><br><sup>2 </sup>Il parco
-              del fiume, nei pressi del ponte di ferro, non è particolarmente frequentato: la parte 2. dell'esercizio
-              prevede la disponibilità a un tempo di ascolto dilatato in cui, probabilmente, prevale l'assenza di
-              attraversamenti della passerella e, di conseguenza, di attività risonante.<br><br><sup>3 </sup>Per
-              converso, è possibile sperimentare la parte <strong>2</strong>. evitando ogni focalizzazione dell'ascolto;
-              il suono del ponte, dato dal passaggio di una persona, non prevale sul contesto. La risonanza della
-              struttura avviene assieme a tutti gli altri suoni e si mescola all'ambiente.</p>
-          </div>
-          <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
-        </div>
-        <div class="page-item-wrapper cms-repeatable">
-          <div class="anchor-space"><a id="daf"></a></div>
-          <div class="page-item-text">
-            <h2 class="page-item-title">DAF</h2>
-            <p><span style="font-weight: 400;">Colpisci il tamburo a cornice<sup>1</sup></span><span
-                style="font-weight: 400;"> a mani aperte, iniziando sempre con la parte
-                debole<sup>2</sup></span><span style="font-weight: 400;">; continua sino a che la membrana e la pelle
-                della mano trovano una vibrazione (e un calore) comune; ascolta se il suono è di carne, oppure di osso;
-                le unghie sono schegge<sup>3</sup></span></p>
-          </div>
-          <div class="page-item-notes light-font">
-            <p><sup>1</sup> Il tamburo a cornice è uno strumento musicale a percussione che consiste di una singola
-              pelle, montata e tesa su un cerchio di legno o metallo. L'estrema diffusione di questo strumento, la
-              moltitudine di forme e manifestazioni socio-culturali alle quali appartiene ha condotto, nell'ambito
-              dell'organologia classica, a definire tamburi a cornice, tutti i tamburi mono-pelle la cui profondità è
-              minore rispetto al diametro. L'annotazione riguarda una serie di esercizi di base delle percussioni emersi
-              e sviluppati durante la mia pratica quotidiana di questi strumenti nei mesi di marzo, aprile e maggio
-              2020. Le modalità di ascolto proposte, tuttavia, possono essere indagate anche senza servirsi di un
-              tamburo a cornice o di altri membranofoni: è possibile, infatti utilizzare qualsiasi superficie risonante,
-              elastica e responsiva (ad esclusione del proprio corpo, e di quello altrui) e dotata di un'estensione tale
-              da poter accogliere diverse forme di impulso date dalla mano. Capacità e conoscenze specifiche nell'ambito
-              degli strumenti a percussione non sono in ogni caso fondamentali ai fini della pratica, la quale, invita
-              ad ampliare le modalità di osservazione e ascolto. Il titolo indica il nome di un grande tamburo a cornice
-              del Medio Oriente utilizzato nell&apos;esecuzione di musica classica e popolare; la cornice è solitamente
-              realizzata in legno duro e ha inseriti molti anelli metallici che vengono scossi durante la
-              percussione.<br><br><sup>2</sup> Il suono aperto è prodotto solitamente percuotendo il tamburo nella parte
-              mediana, tra la cornice e il centro, facendo vibrare la membrana liberamente. Per converso, il suono
-              chiuso si ottiene colpendo lo strumento verso la parte centrale, con un impatto secco, spesso dato con la
-              mano aperta, e che viene lasciata a contatto con la membrana, per non consentirle di entrare in risonanza;
-              la chiusura del suono si raggiunge anche colpendo il tamburo sul bordo, dove la pelle è ripiegata sulla
-              cornice di legno. Tecnicamente è importante alternare i colpi iniziando sempre con la propria mano debole
-              (la parte debole), lentamente, e ascoltando la risonanza di ogni colpo per la sua intera
-              durata.<br><br><sup>3 </sup>Nella conduzione dei colpi singoli alternati, indagare ogni suono come evento
-              unico e complesso, in cui la relazione tra mano e membrana, e la reciproca eccitazione superficiale, viene
-              proiettata nel suono che si genera. Discernere quindi, per ogni colpo, le modalità con cui l'impatto
-              <em>apre</em> la risonanza in relazione a minime variazioni di intensità e inclinazione della mano in
-              riferimento alla membrana; allo stesso tempo, nell'atto di percuotere, accogliere la risposta che la pelle
-              del tamburo restituisce (e imprime) all'arto battente, lasciando una sensazione che agisce talvolta sulla
-              carne, talvolta sulle ossa, e che perdura nel corpo del suonatore: carne e ossa, a loro volta, si
-              trasferiscono al tamburo che, nella risonanza, ospita la loro diversa densità. Le unghie sono schegge.
-            </p>
-          </div>
-          <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
-        </div>
-        <div class="page-item-wrapper cms-repeatable">
-          <div class="anchor-space"><a id="volute"></a></div>
-          <div class="page-item-text">
-            <h2 class="page-item-title">volute</h2>
-            <p><span style="font-weight: 400;">Il fumo si alza tra la stanza e la strada<sup>1</sup></span><span
-                style="font-weight: 400;">.</span></p>
-            <p><br><span style="font-weight: 400;">Il rumore bianco, trasportato dal fumo, assume le forme del movimento
-                dell'aria<sup>2</sup></span><span style="font-weight: 400;">; danza all'interno e, un attimo dopo, si
-                dissolve verso l'esterno; una sola volta, in 21 minuti, raggiunge il mio volto<sup>3</sup></span><span
-                style="font-weight: 400;">.</span></p>
-          </div>
-          <div class="page-item-notes light-font">
-            <p><sup>1</sup> Nell'estate 2021 sono solito bruciare coni di incenso alla mirra nelle soglie (porta,
-              finestre) del mio studio, che è collocato al piano terra di un edificio condominiale e attiguo a una
-              strada pedonale del centro storico di Cesena. Oltre al piacere dato dalla fragranza, sono attratto dal
-              movimento del fumo e dalla tensione che si genera nel momento in cui, allontanandosi dal cono, perde
-              linearità, descrive ampie volute e si disperde nell&apos;aria.</p>
-            <p></p>
-            <p><sup>2 </sup>In alcune occasioni posiziono un altoparlante in prossimità del cono di incenso e riproduco
-              un rumore bianco: l'esercizio consiste nell'immaginare che il suono sia trasportato nel fumo, perda la sua
-              continuità lineare, e assuma le forme del movimento dell'aria, rese manifeste dal
-              fumo.<br><br><sup>3</sup> Sabato 18 settembre (ore 15:57), dopo un breve temporale, ho acceso un cono di
-              incenso sul gradino di ingresso dello studio, lasciando porte e finestre aperte: seduto all'interno, nella
-              parte più distante alla porta, ho osservato il movimento del fumo spostare le sensazioni date dal rumore.
-              Nei 21 minuti di attività della brace, una sola volta, un forte impulso d'aria, pieno di suono e odore, ha
-              raggiunto il mio volto.</p>
-          </div>
-          <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
-        </div>
-        <div class="page-item-wrapper cms-repeatable">
-          <div class="anchor-space"><a id="rudimenti"></a></div>
-          <div class="page-item-text">
-            <h2 class="page-item-title">RUDIMENTI<sup>1 </sup></h2>
-            <p><span style="font-weight: 400;">Colpi distesi sul fiore delle pelle<sup>2.</sup></span><span
-                style="font-weight: 400;">La risonanza diffonde il proprio odore<sup>3</sup>.<br></span></p>
-          </div>
-          <div class="page-item-notes light-font">
-            <p><sup>1 </sup>Il rudimento base degli strumenti a percussione consiste nella successione di colpi singoli
-              alternati (a mano o a battente), a velocità e intensità variabile.<br><br><sup>2 </sup>Il ​fiore della
-              pelle​ è la parte pregiata delle membrane naturali che vengono montate sui tamburi; appartengono al fiore
-              gli strati più esterni, le cui uniche irregolarità morfologiche sono date dalla presenza dei bulbi
-              piliferi, dai pori e dalla linea dorsale. Per ottenere maggiore uniformità superficiale, alcune
-              percussioni montano pelli di feti di agnello o di capra; esse sono estremamente sottili: i pori sono
-              ancora chiusi e non essendosi sviluppati gli alveoli dei bulbi piliferi queste membrane sono dotate di una
-              liscezza che determina un&apos;immediata reazione agli impulsi e una maggiore velocità vibratoria. Lo
-              spessore e la liscezza sono qualità fondamentali: alcune forme musicali percussive si sono sviluppate ed
-              evolute sulla base della membrana battente presente sul tamburo. In Nord–Africa, Medio Oriente, Asia
-              Centrale e alcune zone dell'Est Europa esistono tamburi in cui vengono montate pelli di pesce,
-              sottilissime e altamente rispondenti; traslucida, elastica e oleosa, tale superficie produce stimolazioni
-              tattili e visive uniche per il percuotente. In Calabria (Italia Meridionale) e Marche (Italia Centrale) si
-              trovano tamburi a cornice con pelle di gatto; spessa e poco risonante tale membrana veniva fissata
-              capovolta al cerchio per enfatizzare ulteriormente la sua sordità. Il pelo dell'animale era rivolto allo
-              spazio della presa (e quindi mai percossa) mentre lo strato più robusto grasso e “ancora attaccato” alla
-              carne, nella zona battente del tamburo. La pelle non subiva tiraggio oltre alla cucitura al telaio e
-              veniva, prima di ogni utilizzo, ammollata con acqua per mortificare definitivamente ogni potenzialità
-              risonante; il suono della percussione, in questo caso, si esprime esclusivamente nell&apos;energia di
-              impatto della mano sulla superficie.<br>[...]</p>
-            <p>Nell'alternanza dei colpi è importante mantenere l'impatto della mano negli strati più superficiali del
-              tamburo: il suono emerge per distensione dell'energia in tutto il corpo dello strumento e non per la
-              compressione muscolare di una parte localizzata della membrana; il colpo dischiude la completa vitalità
-              della superficie</p>
-            <p>La configurazione ritmica a colpi singoli alternati è fondamentale allo studio del tamburo ed è la base
-              su cui vengono prodotte molte figurazioni complesse.</p>
-            <p>Con Il rullo a colpi singoli si entra in confidenza con la membrana e ad ascoltare la sua capacità
-              rispondente senza reprimerla: le minime variazioni di eccitabilità della superficie informano della
-              complessità dello strumento, ed enfatizzano l'accordo di diversità (o solidarietà) che intercorre tra la
-              mano sinistra e la mano destra nell'atto di percuotere; inizialmente è importante non ricercare controllo,
-              e non fissare la prestazione del tamburo a un presupposto ritmico definito e regolare. L&apos;ascolto è
-              rivolto al suono di ogni colpo e si pratica lo studio dei colpi alternati aspettando la fine di ogni
-              risonanza, prima di procedere al colpo successivo, senza trascurare il legame di alternanza che produce il
-              pattern.</p>
-            <p>Per tutta la durata dell&apos;esercizio avere cura dell'intensità dei colpi, esplorando, a ogni impatto,
-              sia le variazioni sonore date dal cambiamento di presa del battente (maggiore pressione della mano,
-              posizione delle dita etc), sia le zone del tamburo, cercando di utilizzare le variazioni superficiali (ad
-              esempio la maggiore durezza della pelle in alcune aree) per trasformare la relazione colpo–risonanza e,
-              conseguentemente, temporalità e dinamica del suono.</p>
-            <p></p>
-            <p><sup>3 </sup>Il riferimento all&apos;odore riguarda un particolare momento in cui, durante una giornata
-              di pioggia, praticando l'esercizio con una pelle appena montata a ogni colpo corrispondeva una differente
-              proiezione di odore da parte del tamburo.<sup><br></sup></p>
-          </div>
-          <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
-        </div>
-        <div class="page-item-wrapper cms-repeatable">
-          <div class="anchor-space"><a id="se-siamo-assenti-suonare-qui"></a></div>
-          <div class="page-item-text">
-            <h2 class="page-item-title"><sup><span style="font-size: 16px;">SE SIAMO ASSENTI SUONARE QUI</span></sup>
-            </h2>
-            <h2 class="page-item-title"><sup><img src="uploads/immagini/cymbal.jpg"> </sup></h2>
-            <p><span style="font-weight: 400;">In costruzione.<br></span></p>
-          </div>
-          <div class="page-item-notes light-font">
-            <p><sup>1</sup><br><br><sup>2</sup></p>
-            <p></p>
-            <p><sup>3</sup><sup><br></sup></p>
-          </div>
-          <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
-        </div>
-        <div class="page-item-wrapper cms-repeatable">
-          <div class="anchor-space"><a id="la-fiamma-di-una-candela"></a></div>
-          <div class="page-item-text">
-            <h2 class="page-item-title">la fiamma di una candela<sup>1</sup></h2>
-            <p><span style="font-weight: 400;">Accendi una candela in una stanza buia<sup>2</sup>. La candela non deve
-                spegnersi per cause diverse del suo stesso consumarsi. Accendi la candela solo dopo aver infilato un
-                pezzo di metallo a metà del suo cilindro di cera e posizionato, alla sua base, un piattino di
-                metallo<sup>3</sup>.<br><br>Stenditi a terra, sul dorso, e ascolta tutti i suoni che ti circondano; non
-                hai propositi: i suoni riverberano ovunque attorno a te, e così la luce della candela che, a sua volta,
-                riverbera ovunque, nella stanza che hai scelto.<br><br>La risonanza del piattino, ovvero la caduta del
-                pezzo di metallo, è per te un segnale: alzati in piedi e continua ad ascoltare tutti i suoni che ti
-                circondano, senza propositi. Avanti così, restando in piedi, fino a che la candela si spegne.</span></p>
-          </div>
-          <div class="page-item-notes light-font">
-            <p><sup>1 </sup>Gaston Bachelard &quot;La fiamma di una candela&quot; ©SE srl, 1996 e 2005
-              Milano.<br><br><sup>2 </sup>La candela deve essere lunga almeno 15 cm e a lenta combustione.</p>
-            <p></p>
-            <p><sup>3 </sup>Il chiodo, cadendo, deve colpire la superficie del piattino e metterla in risonanza. La
-              pratica proposta è emersa dopo una ricerca sulle candele-orologio. un metodo relativamente economico ed
-              efficace consisteva nell&apos;utilizzare una candela con delle tacche<strong></strong>o dei segni
-              spaziati (e di solito numerati): bruciando, con il suo consumarsi, il lume indicava il passare del tempo.
-              Con l&apos;inserimento di un chiodo la candela diventava anche una sveglia: bastava inserire il metallo in
-              corrispondenza della tacca desiderata, e il chiodo cadeva sul piatto di metallo alla base, con un clangore
-              che faceva da segnale di allarme. Le candele-orologio venivano prodotte utilizzando una cera con un tempo
-              di scioglimento conosciuto, per garantire la massima precisione.</p>
-          </div>
-          <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
-        </div>
-        <div class="page-item-wrapper cms-repeatable">
-          <div class="anchor-space"><a id="seconda-annotazione-sulle-candele"></a></div>
-          <div class="page-item-text">
-            <h2 class="page-item-title">seconda annotazione sullE candele</h2>
-            <p><span style="font-weight: 400;">In orario diurno, accendi una candela in una stanza esposta a luce
-                naturale. <br>Trova una posizione comoda e, facendo ricorso a materiali reperibili nella stanza
-                [<em>found objects</em><sup>1</sup>] produci un suono continuo, utilizzando un atto blando e sostenibile
-                per una durata indefinita. <br><br>Avanti così, fino a che la fiamma della candela non diventa la più
-                potente sorgente di luce.</span></p>
-          </div>
-          <div class="page-item-notes light-font">
-            <p><sup>1 </sup>L&apos;utilizzo di <em>oggetti trovati</em> per produrre suono è una pratica originaria e
-              strettamente legata alla musica stessa: l&apos;invenzione degli strumenti musicali e la loro elaborazione
-              tecnica si è quasi certamente sviluppata a partire dai suoni di oggetti e materiali reperibili in natura,
-              dall&apos;atto di produrre suono con essi e dalle modalità con cui tali suoni venivano ascoltati in
-              relazione ai suoni dell&apos;ambiente.<br><br></p>
-            <p></p>
-            <p><a style="font-family: Oswald; font-size: 16px; text-transform: uppercase;" target="_blank"
-                rel="noopener">Download PDF</a></p>
-          </div>
-        </div>
-        <div class="page-item-wrapper cms-repeatable">
-          <div class="anchor-space"><a id="camminata-estiva"></a></div>
-          <div class="page-item-text">
-            <h2 class="page-item-title">camminata estiva</h2>
-            <p class="p1"><span class="s1">Ascolta il suono di due cicale. Muovendoti lentamente trova una posizione in
-                cui il frinire<sup>1</sup> di una cicala [C dx] è localizzato alla tua destra, e il frinire dell'altra
-                [C sx] è localizzato alla tua sinistra. Continua a camminare, senza meta, mantenendo sempre, e
-                distintamente, il suono di [C dx] alla tua destra e il suono di [C sx] alla tua sinistra. <br><br>Avanti
-                così, fino a che una delle due cicale interrompe il suo canto.</span></p>
-          </div>
-          <div class="page-item-notes light-font">
-            <p><sup>1 </sup>Frinire: le cicale emettono un suono caratteristico, intenso e dotato di una frequenza e
-              ritmicità stridente, che viene provocato dalla vibrazione di alcune lamine poste sull&apos;addome
-              dell&apos;insetto (timballi); tale suono viene poi amplificato da speciali camere d&apos;aria che fanno
-              riecheggiare lo stridio in tutta l&apos;area circostante.<br><br></p>
-            <p></p>
-            <p><a style="font-family: Oswald; font-size: 16px; text-transform: uppercase;" target="_blank"
-                rel="noopener">Download PDF</a></p>
-          </div>
-        </div>
-        <div class="page-item-wrapper cms-repeatable">
-          <div class="anchor-space"><a id="maraca"></a></div>
-          <div class="page-item-text">
-            <h2 class="page-item-title">Maraca<sup>1</sup></h2>
+      <div id="main-content" class="main-content cms-editable">
+        <div class="move-to-top">
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="ra"></a></div>
             <div class="page-item-text">
-              <p class="p1"><span class="s1">Scuotere la formica bianca lasciando che punga le superfici seccate al
-                  sole<sup>2</sup>.</span></p>
+              <h2 class="page-item-title">Ra<sup>1</sup></h2>
+              <p>Colpire ascoltando la pioggia<sup>2</sup></p>
+              <p> </p>
+              <p><em>oppure</em></p>
+              <p> </p>
+              <p>Colpire ascoltando nella pioggia<sup>3</sup></p>
+              <p> </p>
+              <p>Fine [?]<sup>4</sup></p>
+              <p> </p>
+              <p>[Il colpo avviene per]</p>
+              <p> </p>
+              <p>• Moto rapido e violento per cui un corpo</p>
+              <p>entra in contatto con un altro;</p>
+              <p> </p>
+              <p>• Movimento veloce di uno strumento</p>
+              <p>oppure di un oggetto;</p>
+              <p> </p>
+              <p>• Caduta.<sup>5</sup></p>
             </div>
             <div class="page-item-notes light-font">
-              <p><sup>1 </sup>La Maraca (o crepitacolo) appartiene alla famiglia degli idiofoni, strumenti​ sonori fatti
-                con materiali naturali e che non abbisognano di tensione addizionale, di corde o di pelli per risuonare.
-                Questi materiali <em>si fanno strumenti</em> durante l'azione del sonatore e il loro suono rende
-                manifesta l'estensione aurale del movimento della mano o del corpo del performer. In ambiti di
-                organologia classica, gli idiofoni si suddividono in base alle varie modalità con cui i materiali
-                vengono indotti alla vibrazione: concussione, percussione, frizione, raschiamento, scuotimento,
-                pizzicamento, storcimento.</p>
-              <p></p>
-              <p><sup>2 </sup>&lt;&lt;La maraca della quale si serve lo sciamano nei suoi rituali si chiama
-                <em>nyaxsàru</em>, parola derivata da <em>nyaxsà</em>, ovvero formica bianca che punge. Con questa
-                denominazione si allude alla rapidità con la quale si disperdono questi insetti quando si disturba il
-                loro nido; è la stessa rapidità con quale si propaga il rumore della maraca. Quest'ultima è il
-                prolungamento del braccio dello sciamano&gt;&gt;.
+              <p><sup>1</sup> Codice METAR per indicare la pioggia (dall&apos;inglese rain).</p>
+              <p><sup><br>2</sup> L&apos;intento è definire, nell&apos;ascolto, i molteplici fenomeni sonori generati
+                dalle precipitazioni e, attraverso il colpo, separarsi da essi.</p>
+              <p><sup><br>3</sup> L&apos;intento è definire, nell&apos;ascolto, i molteplici fenomeni sonori generati
+                dalle precipitazioni e, attraverso il colpo, condursi tra essi.</p>
+              <p><sup><br>4</sup> RA è un esercizio a durata variabile e deve essere praticato in accordo con le proprie
+                necessità in relazione alla pioggia; è importante decidere il suo inizio ed essere consapevoli di come
+                avverrà la sua fine. Il performer abita l&apos;esercizio in funzione di una durata prestabilita: le
+                possibilità a sua disposizione vanno dall&apos;utilizzo di un&apos;unità temporale fissa, misurata con
+                un
+                cronometro, fino a seguire la frequenza con cui il fenomeno pioggia si manifesta: l&apos;assenza di
+                pioggia diventa quindi una pausa, un&apos;interruzione indefinita dell&apos;esercizio, mentre il ritorno
+                della pioggia un nuovo invito a all&apos;azione. L&apos;esercizio cerca di favorire lo studio di una
+                ritmicità non orientata alla definizione di modelli (patterns), ma alla relazione con la distribuzione
+                di
+                eventi/fenomeni sonori vasti e instabili.</p>
+              <p><sup><br>5</sup> Il performer sceglie liberamente come produrre il colpo e mantiene tale scelta per
+                tutta
+                la durata dell&apos;esercizio; ogni colpo è però un accadimento unico, privo di reciprocità con il colpo
+                ad esso precedente e successivo. Il colpo deve essere presentato con la massima trasparenza nei
+                confronti
+                del suono della pioggia.</p>
+            </div>
+            <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="la-bessa"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title">La Bessa <sup>1</sup></h2>
+              <img src="uploads/immagini/bessa%20edit%202%20copia.jpg"> <br><br>
+              <p>Cammina sulla pietraia. Posiziona un dispositivo di playback che diffonde un suono continuo e lascialo
+                alle tue spalle: avanza lentamente, cercando di tracciare una linea.</p>
+              <br>
+              <p>Prosegui fino a perdere il riferimento sonoro dato dal dispositivo.</p>
+              <p> </p>
+              <p>Torna indietro avendo cura di rimanere lungo la linea tracciata.</p>
+              <p>[Ricomincia a piedi nudi]</p>
+            </div>
+            <div class="page-item-notes light-font">
+              <p><sup>1</sup> La Riserva Naturale Speciale della Bessa si trova in Piemonte, vicino alle Alpi Biellesi;
+                consiste in un altopiano caratterizzato da enormi distese di sassi circondate da vegetazione. La
+                specifica
+                conformazione territoriale della Bessa non è dovuta a fenomeni naturali, bensì al fatto che, in epoca
+                romana, migliaia di persone furono impiegate in una miniera d&apos;oro presente nella zona limitrofa,
+                producendo scarti di lavorazione di tale entità da sembrare il risultante di un processo geologico.
+                L&apos;intensità superficiale della pietraia esplicita alcune problematiche basilari dell&apos;indagine
+                sulla percezione ecologica in riferimento alla relazione tra suono, corpo e spazio; nella Bessa,
+                infatti,
+                l&apos;attenzione per il suono deve accompagnarsi a una presenza corporea costante e in continuo
+                rinnovamento. I sassi tendono a muoversi e scivolare sotto il peso dei passi e ogni spostamento comporta
+                l&apos;abbandono della propria zona di comfort. La “mobilità” della Bessa rende, chi la attraversa,
+                direttamente partecipe della sua modificazione ed evoluzione superficiale.</p>
+            </div>
+            <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="fare-polvere"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title">FARE polvere</h2>
+              <p>Lascia una pietra in uno spazio familiare, in una posizione che la renda ben visibile: ogni giorno, per
+                un minuto, ascolta tutti i suoni che ti circondano come se provenissero dalla pietra.</p>
+              <p> </p>
+              <p>Sposta la pietra quando della polvere si è depositata sulla sua superficie.</p>
+            </div>
+            <div class="page-item-notes light-font">
+              <p><sup>1</sup> FARE POLVERE è da svolgersi in un ambiente interno a un edificio che frequenti
+                abitualmente,
+                e con il cui suono senti familiarità e confidenza.</p>
+              <p><br><sup>2 </sup>La pietra si trasforma nella fonte di tutti i suoni che ti circondano, sia interni,
+                che
+                esterni all&apos;edificio; per un tempo limitato, e dichiarato (un minuto), cerca di aprire
+                completamente
+                l&apos;ascolto mantenendo però l&apos;attenzione focalizzata su una specifica posizione nello spazio,
+                occupata, appunto, dal corpo della pietra.</p>
+              <p> </p>
+              <p><sup>3 </sup>La pietra deve <i>fare polvere</i> prima di essere spostata: trovata una nuova posizione,
+                continua la pratica allo stesso modo, rivolgendo l&apos;attenzione alla nuova collocazione della pietra.
+                Il <i>fare polvere </i>suggerisce un lasso temporale largo e indefinito, in cui il corpo della pietra,
+                lasciato immobile, si <i>deposita</i> nelle consuetudini con cui abiti lo spazio scelto per la pratica.
               </p>
-              <p></p>
-              <p>Gerardo Reichel-Dolmatoff, “Il cosmo amazzonico” Simbolismo degli indigeni tukano del Vaupés –
-                Adelphi, Milano 2014, pp.<br><br></p>
-              <p></p>
+            </div>
+            <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="la-medusa-e-un-ispessimento-dell-acqua"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title">la medusa è un ispessimento dell&apos;acqua</h2>
+              <p>Nello spazio di lavoro, posiziona un altoparlante che diffonde un suono continuo, a un volume adatto
+                alle
+                tue esigenze di ascolto; rivolgiti frontalmente all&apos;emissione sonora, ovvero con il volto alla
+                stessa
+                altezza della membrana dello <i>speaker</i> e trova una posizione comoda, ma consueta. Nello svolgimento
+                dell&apos;esercizio è importante che il corpo non venga condotto in una condizione posturale diversa da
+                quelle che abitualmente assumi nel compiere le tue mansioni o durante il riposo.</p>
+              <p> </p>
+              <p>Inspira, e <em>lascia entrare</em> il suono emesso dall&apos;altoparlante.</p>
+              <p> </p>
+              <p>Abita la sensazione di riempimento; cura la pausa respiratoria che segue l&apos;inspirazione e
+                <em>contieni</em> il suono.
+              </p>
+              <p> </p>
+              <p><span style="font-weight: 400;">Espira, e </span><i><span style="font-weight: 400;">lascia
+                    uscire</span></i><span style="font-weight: 400;"> il suono emesso dall&apos;altoparlante.
+                </span><span style="font-weight: 400;"><br></span><span style="font-weight: 400;">Abita la sensazione di
+                  svuotamento; cura la pausa respiratoria che segue l&apos;espirazione e </span><i><span
+                    style="font-weight: 400;">spargiti</span></i><span style="font-weight: 400;"> nel suono.</span>
+              </p>
+              <p> </p>
+              <p><span style="font-weight: 400;">Mantieni il ciclo </span><i><span
+                    style="font-weight: 400;">inspirazione-pausa-espirazione-pausa</span></i><span
+                  style="font-weight: 400;"> continuo e rilassato e osserva cosa accade al corpo, e al suono,
+                  nell&apos;estensione e contrazione data dal respiro. Trovato l&apos;agio necessario affinchè ci sia
+                  continuità energetica tra il suono (emesso dall&apos;altoparlante) e il corpo, stabilizza il circuito
+                  (tempo, intensità, rumorosità del respiro...) ed entra in una modalità di ascolto immersiva. Porta
+                  l&apos;attenzione a ciò che avviene nello spazio attorno a te, e oltre ad esso, e cerca di abitare
+                  l&apos;azione di compenetrazione che avviene tra te e l&apos;ambiente. Definisci la vitalità del
+                  suono,
+                  e del corpo, in relazione al movimento dell&apos;aria, acquisendo la consapevolezza </span><i><span
+                    style="font-weight: 400;">di essere in qualcosa che a sua volta è in te</span></i><i><span
+                    style="font-weight: 400;"> </span></i><span style="font-weight: 400;">(l&apos;aria). La mutualità
+                  tra il respiro e l&apos;ambiente è uno strumento utile a potenziare l&apos;ascolto dei </span><i><span
+                    style="font-weight: 400;">pattern</span></i><span style="font-weight: 400;"> minimi e vasti
+                  dell&apos;esperienza sonora</span><span style="font-weight: 400;"> e una risorsa continua per ampliare
+                  la capacità individuale di progettazione, azione e riposo. L&apos;esercizio prosegue fino a che la sua
+                  azione benefica è esaurita.</span></p>
+              <p> </p>
+              <p> </p>
+              <p><span style="font-weight: 400;">[crescita]</span></p>
+              <p> </p>
+              <p><span style="font-weight: 400;">Attua una transizione verso una modalità di ascolto
+                  selettiva</span><span style="font-weight: 400;">: </span><i><span
+                    style="font-weight: 400;">scortica</span></i><span style="font-weight: 400;"> (o </span><i><span
+                    style="font-weight: 400;">frattura</span></i><span style="font-weight: 400;">) la sensazione di
+                  immersione trascurando deliberatamente il
+                  sopraggiungere di nuovi stimoli ambientali. Osserva esclusivamente i fenomeni che emergono tra il
+                  respiro e il suono di riferimento</span><span style="font-weight: 400;">.</span></p>
+              <p> </p>
+              <p><em><span style="font-weight: 400;">indaga</span></em></p>
+              <p> </p>
+              <p><span style="font-weight: 400;">• Il suono è una variazione di ciò che ha luogo nel respiro.</span></p>
+              <p> </p>
+              <p><span style="font-weight: 400;">• Il respiro modella la consistenza del suono e permette di unirsi e
+                  separarsi alla sua densità.</span></p>
+              <p><span style="font-weight: 400;"><br>• Il respiro <i>modifica</i> la proiezione dinamica del suono
+                  durante
+                  l&apos;inspirazione e l&apos;espirazione, lasciando il corpo, nelle pause respiratorie, vulnerabile
+                  alla
+                  sua intensità dinamica.<br><br><br></span></p>
+              <p><span style="font-weight: 400;">[crescita]</span></p>
+              <p> </p>
+              <p><span style="font-weight: 400;">Attua una transizione verso una modalità di ascolto
+                  selettiva<sup>1</sup></span><span style="font-weight: 400;">: </span><span
+                  style="font-weight: 400;">frattura</span><span style="font-weight: 400;"> la sensazione di
+                  immersione trascurando deliberatamente il sopraggiungere di nuovi stimoli ambientali. Osserva
+                  esclusivamente i fenomeni che emergono tra il respiro e il suono di
+                  riferimento<sup>2</sup></span><span style="font-weight: 400;">.</span></p>
+              <p><span style="font-weight: 400;"><br></span><em><span style="font-weight: 400;">indaga</span></em></p>
+              <p> </p>
+              <p><span style="font-weight: 400;">• Il suono è una variazione di ciò che ha luogo nel respiro.</span></p>
+              <p> </p>
+              <p><span style="font-weight: 400;">• Il respiro modella la consistenza del suono e permette di unirsi e
+                  separarsi alla sua densità.</span></p>
+              <p><span style="font-weight: 400;"><br>• Il respiro <i>modifica</i> la proiezione dinamica del suono
+                  durante
+                  l&apos;inspirazione e l&apos;espirazione, lasciando il corpo, nelle pause respiratorie, vulnerabile
+                  alla
+                  sua intensità dinamica<sup>3</sup> .<br></span></p>
+            </div>
+            <div class="page-item-notes light-font">
+              <p><sup>1 </sup>Il passaggio da un ascolto immersivo ad uno selettivo (e viceversa) può avvenire
+                gradualmente oppure in maniera repentina; è anche possibile che si attivi in modo involontario e in
+                accordo con la disponibilità del corpo, con la variazione dell&apos;andamento del respiro o da una
+                particolare relazione tra il suono di riferimento e l&apos;ambiente. Muoversi tra ascolto immersivo e
+                selettivo (volontariamente o meno) è uno degli obiettivi dell&apos;esercizio.<br><br><sup>2 </sup>Il
+                suono
+                di riferimento è costituito anche dal carattere della tecnologia audio utilizzata, dalla sua eventuale
+                instabilità e presenza fisica nello spazio.</p>
+              <p><br><sup>3 </sup>Le tre proposte di indagine riguardano alcune intuizioni emerse durante la pratica
+                personale dell&apos;esercizio: sono riferimenti di partenza utili e pronti ad essere messi in
+                discussione
+                da chiunque si cimenti nell&apos;esercizio.<sup><span style="font-weight: 400;"> </span></sup></p>
+            </div>
+            <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="sinewave-1-indaco"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title">sinewave_1 indaco</h2>
+              <p><span style="font-weight: 400;">Siedi rivolto a un altoparlante che diffonde un&apos;onda sinusoidale a
+                  433Hz</span><span style="font-weight: 400;">. Ascolta, e conduci il suono nello spazio tra le
+                  sopracciglia, fissando l&apos;attenzione nella zona tra la radice del naso e le arcate sopracciliari.
+                  Calma il respiro, con fasi distese di inspirazione ed espirazione: dalle narici, osserva il movimento
+                  dell&apos;aria mettere in disordine i margini del suono e, allo stesso tempo, rinnovare la sensazione,
+                  sempre più centrale, dell&apos;onda sonora.</span></p>
+            </div>
+            <div class="page-item-notes light-font">
+              <p><sup>1</sup> L&apos;hertz (simbolo Hz) è l&apos;unità di misura del sistema internazionale della
+                frequenza. La scelta della frequenza è, ai fini dell&apos;esercizio, completamente arbitraria e basata
+                sulla sensazione personale.</p>
+            </div>
+            <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="piallassa"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title">piallassa<sup>1</sup></h2>
+              <p><img src="uploads/immagini/piallassa.jpg"></p>
+              <p> </p>
+              <p><span style="font-weight: 400;">Ascolta la </span><i><span
+                    style="font-weight: 400;">crescita</span></i><span style="font-weight: 400;"> di un singolo
+                  suono<sup>2</sup></span><span style="font-weight: 400;">. </span></p>
+            </div>
+            <div class="page-item-notes light-font">
+              <p><sup>1</sup> La Piallassa della Baiona è una zona naturale protetta situata nel territorio ravennate.
+                L&apos;area è caratterizzata da un bacino lagunare di acqua salmastra, con limitatissimi apporti di
+                acqua
+                dolce e con vegetazione prevalente a giuncheti palustri e salicornieti. La laguna è formata da una rete
+                di
+                canali distribuiti a spina di pesce che confluiscono, dal fiume Lamone, verso il porto del canale
+                Candiano.</p>
+              <p> </p>
+              <p><sup>2 </sup>La Piallassa consente un ascolto ad alta definizione. Il territorio produce le condizioni
+                ottimali per captare ogni suono come evento definito e spazialmente localizzato; l&apos;ascoltatore è
+                spinto a un continuo movimento dell&apos;attenzione e alla definizione di ogni impulso sonoro in quanto
+                figura su uno sfondo.</p>
+              <p>Durante un pomeriggio di indagine in loco (6/9/2020) ho rifiutato questa prerogativa aurale della
+                Piallassa: tale opposizione è nata in risposta alla persuasione subita da ogni suono: un nuovo evento,
+                entrando nel mio campo di ascolto, portava all&apos;immediata necessità di riconoscere l&apos;origine di
+                quel suono, definire le sue qualità e seguire il suo percorso separandolo acusticamente dal contesto. Un
+                ulteriore effetto riguardava il mio proprio corpo, che tendeva a orientare la parte frontale verso la
+                posizione del nuovo suono.</p>
+              <p>Al comfort iniziale in questa precisione acustica, è seguita una mobilità estetizzante
+                dell&apos;attenzione e la sensazione di attuare una modalità di ascolto imposta dal territorio,
+                favorevole
+                alla definizione di un paesaggio sonoro eterogeneo e comprensibile. L&apos;esercizio si è rivolto, per
+                contro, nel fermare il movimento dell&apos;attenzione e il discernimento dei suoni come eventi separati
+                e
+                descrivibili in se stessi; uscendo dal compiacimento hi-fi ed evitando la rappresentazione uditiva del
+                paesaggio, ho ascoltato i suoni della Piallassa come partecipi della vitalità complessiva del
+                territorio;
+                lentamente è emerso un unico, vasto suono, che raggiungeva il mio corpo da ogni direzione.</p>
+            </div>
+            <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="fiume-1-11-8-2020"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title">fiume_1[11-8-2020]</h2>
+              <p><span style="font-weight: 400;">Raccogli una pietra lungo il percorso del fiume e portala con
+                  te.</span>
+              </p>
+              <p> </p>
+              <p><span style="font-weight: 400;">Abbandona la pietra nello spazio in cui svolgerai l&apos;esercizio e
+                  lascia che assorba le informazioni che la circondano; è importante che le sensazioni della giornata al
+                  fiume, nella quale hai raccolto la pietra, vengano in parte dimenticate, cimentandosi nella pratica
+                  fuori dall&apos;</span><i><span style="font-weight: 400;">eco</span></i><span
+                  style="font-weight: 400;">
+                  del contesto originario della pietra<sup>1</sup></span><span style="font-weight: 400;">.</span></p>
+              <p><span style="font-weight: 400;">Inizia l&apos;esercizio trovando una postura adeguata e distensiva;
+                  scegli una zona del tuo corpo e appoggia su di essa la pietra lasciando che eserciti il proprio peso
+                  con
+                  la maggiore aderenza possibile alla pelle<sup>2</sup></span><span style="font-weight: 400;">. Il corpo
+                  e
+                  la pietra hanno temperature diverse<sup>4</sup></span><span style="font-weight: 400;">. Ascolta il
+                </span><i><span style="font-weight: 400;">disordine</span></i><span style="font-weight: 400;"> generato
+                  dal loro contatto, ovvero porta l&apos;attenzione al trasferimento di energia dal corpo più caldo
+                  verso
+                  quello più freddo. Trascura completamente i suoni che ti circondano e concentrati sulla transizione di
+                  calore fino al momento in cui la </span><i><span style="font-weight: 400;">sensazione di
+                    separazione</span></i><span style="font-weight: 400;"> tra la pelle e la superficie della pietra
+                </span><i><span style="font-weight: 400;">scompare</span></i><span style="font-weight: 400;">. I corpi
+                  raggiungono la stessa temperatura e i suoni dell&apos;ambiente sono mantenuti distanti, resi
+                  remoti<sup>5</sup></span><span style="font-weight: 400;">.</span></p>
+              <p><span style="font-weight: 400;"><br>Rimuovi la pietra consentendo ai suoni dell&apos;ambiente di
+                  riemergere<sup>6</sup>.</span></p>
+            </div>
+            <div class="page-item-notes light-font">
+              <p><sup>1</sup>Per la prima realizzazione dell&apos;esercizio puoi aspettare fino a che della polvere non
+                si
+                sia visibilmente depositata sulla superficie della pietra.</p>
+              <p><br><sup>2 </sup>Le zone morbide e ampie del corpo aiutano la distribuzione del peso della pietra e
+                l&apos;ascolto del disordine dato dal contatto, portando il performer a una conduzione più distesa
+                dell&apos;esercizio.<sup><br></sup></p>
+              <p> </p>
+              <p><sup>3 </sup>La pietra è tendenzialmente più fredda del corpo umano se posta in uno spazio chiuso; puoi
+                decidere di lasciarla esposta al sole per ottenere una modificazione sensibile del divenire
+                dell&apos;esercizio.<br><sup><br>4 </sup>Trascurare i suoni dell&apos;ambiente implica il tentativo di
+                concentrarsi solo sulla zona localizzata del corpo in cui avviene il trasferimento di energia; evita
+                quindi di porre l&apos;attenzione al sopraggiungere di nuovi stimoli esterni: suoni, luci,
+                odori.<br><sup><br>5 </sup>Rimossa la pietra inizia una fase in cui la pelle “ripristina” le sue proprie
+                condizioni; utilizza la sensazione lasciata dalla pietra, il suo decadimento, per riportare attivamente
+                l&apos;attenzione sugli stimoli ambientali.<sup><br></sup></p>
+            </div>
+            <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="qw-2"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title">QW.2</h2>
+              <p><span style="font-weight: 400;"><a href="https://www.standardstudio.it/it/quarantine-workout"
+                    target="_blank" rel="noopener">Quarantine Workout</a> <br>a cura di Standards
+                  Studio<br><br>scores:<br><br><a
+                    href="https://www.standardstudio.it/site/wp-content/uploads/2020/04/QW2_Enrico-Malatesta_Untitled1.pdf"
+                    target="_blank" rel="noopener">Untitled#1</a><br><a
+                    href="https://www.standardstudio.it/site/wp-content/uploads/2020/04/QW2_Enrico-Malatesta_Untitled2.pdf"
+                    target="_blank" rel="noopener">Untitled#2</a></span></p>
+            </div>
+            <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="r-1"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title">R #1 da sinistra verso destra</h2>
+              <p><span style="font-weight: 400;">Siedi al centro di una stanza vuota dopo avere posizionato una fonte di
+                  rumore bianco<sup>1</sup></span><span style="font-weight: 400;"> alla tua sinistra, vicino al muro; il
+                  volume di proiezione del suono deve essere intenso e adatto alle tue esigenze; il tuo corpo è in linea
+                  con la posizione dello speaker e l&apos;emissione sonora è rivolta verso di esso; trova una posizione
+                  comoda prima di intraprendere la pratica, la cui durata deve essere decisa prima del suo
+                  inizio.</span>
+              </p>
+              <p> </p>
+              <p><span style="font-weight: 400;">Ascolta</span></p>
+              <p><br>• La metà sinistra del corpo è <i>vulnerabile</i> e il rumore esercita una pressione diretta su di
+                essa; lo spazio che ti separa dal muro di sinistra è <i>riempito </i>di suono; le superfici del corpo si
+                compattano, assorbono il suono e sostengono la sua presenza.</p>
+              <p><br>• La metà destra del corpo è <i>protetta</i> e il rumore non esercita una pressione diretta su di
+                essa; lo spazio che ti separa dal muro di destra è <i>privo </i>di suono; le superfici del corpo si
+                dilatano, cercano il suono e colmano la sua assenza.</p>
+              <p> </p>
+              <p><span style="font-weight: 400;">Definisci le sensazioni che riguardano la metà sinistra e la metà
+                  destra
+                  del corpo, mantenendo le parti separate, lontane. Trova agio in questa condizione, evita il mescolarsi
+                  delle sensazioni e lascia emergere due distinte esperienze di ascolto del rumore bianco: una
+                  appartiene
+                  alla tua metà sinistra, l&apos;altra appartiene alla tua metà destra.</span></p>
+              <p><br><span style="font-weight: 400;">Avanti così, sino a esaurire il tempo concesso a </span>R<span
+                  style="font-weight: 400;"> #1.</span></p>
+            </div>
+            <div class="page-item-notes light-font">
+              <p><sup>1</sup>Il Rumore Bianco è un particolare tipo di rumore caratterizzato dall&apos;assenza di
+                periodicità nel tempo e da ampiezza costante su tutto lo spettro di frequenze.</p>
+            </div>
+            <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="tank"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title">cantina sociale</h2>
+              <p><span style="font-weight: 400;"><img src="uploads/immagini/tank.jpg"></span></p>
+              <p> </p>
+              <p><span style="font-weight: 400;">In costruzione </span></p>
+            </div>
+            <div class="page-item-notes light-font">
+              <p><sup>1</sup></p>
+            </div>
+            <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="r-2"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title">R #2 vuoto alle spalle</h2>
+              <p><span style="font-weight: 400;">Un rumore ti raggiunge<sup>1</sup></span><span
+                  style="font-weight: 400;">; fermati, individua la sorgente di quel rumore e rivolgi il tuo corpo
+                  verso di essa; se il suono è continuo, concentrati, e lascia che la distanza tra te e l&apos;emissione
+                  sonora si riempia della sua energia; l&apos;aria si addensa ed esercita una pressione crescente sul
+                  piano frontale del corpo; carne e indumenti assorbono il suono, che pervade ogni tua superficie prima
+                  di
+                  proseguire il proprio percorso<sup>2</sup></span><span style="font-weight: 400;">; rivolgi
+                  l&apos;ascolto solamente al davanti del corpo, dove l&apos;aria, disordinata dal rumore, si infrange,
+                  dandoti la sensazione di una spinta verso il vuoto alle tue spalle.</span></p>
+            </div>
+            <div class="page-item-notes light-font">
+              <p><sup>1</sup> R #2 vuoto alle spalle è un esercizio da attuare in ambienti sonori complessi e in accordo
+                con l&apos;incontro imprevisto con un rumore (continuo) che intrappola la tua attenzione, imponendosi
+                nel
+                contesto sonoro in cui ti stai muovendo. L&apos;esercizio può essere svolto prima in uno spazio
+                protetto,
+                in cui il performer può ascoltare le sensazioni che interessano la parte frontale del corpo in relazione
+                al rumore continuo, imparando a riconoscere le implicazioni di R #2 alle spalle; servirsi di una fonte
+                di
+                rumore bianco.<br><br><sup>2</sup> R #2 vuoto alle spalle produce sensazioni diverse in relazione agli
+                indumenti e alle zone scoperte del corpo; rendersi consapevoli delle modificazioni che subisce
+                l&apos;ascolto per mezzo dei tessuti che portiamo e, in questo senso, dalle necessità dettate dalle
+                variazioni climatiche stagionali.</p>
+            </div>
+            <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="fiume-2"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title">FIUME_2 [7-6-2020]</h2>
+              <p><span style="font-weight: 400;">Il Ponte di ferro è una struttura di servizio e collegamento tra i due
+                  argini del Savio, nei pressi di Cesena; collocato nel Parco Naturale del fiume, si presenta su di un
+                  piano rialzato rispetto al percorso che conduce, lungo una riva, alla Centrale Idroelettrica di Mulino
+                  Cento e, nella riva opposta, al </span><i><span style="font-weight: 400;">prato umido</span></i><span
+                  style="font-weight: 400;"> di Cà Bianchi. La struttura e la passerella pedonale di griglie in piatto
+                  di ferro, rendono il ponte particolarmente risonante e rispondente alle sollecitazioni, come ad
+                  esempio,
+                  quelle generate dal camminare. L&apos;esercizio sfrutta il ponte per esplorare due modalità di ascolto
+                  dei fenomeni di risonanza prodotti dal peso del corpo e dall&apos;energia che si genera durante il
+                  passaggio da una riva all&apos;altra del fiume.<br><br></span></p>
+              <p><span style="font-weight: 400;">1] Il performer attraversa ripetutamente il ponte. Ascoltare i suoni
+                  generati dai passi modificando l&apos;andamento del cammino, la distribuzione dei pesi e il carico di
+                  impatto dei piedi sulla superficie della passerella; mantenersi sempre in contatto con le sensazioni
+                  (raccolte e trasmesse) dei piedi, e attivare la risonanza del ponte<sup>1</sup></span><span
+                  style="font-weight: 400;">.</span></p>
+              <p><span style="font-weight: 400;"><br>2] Il performer trova una posizione distante dal ponte. Ascoltare i
+                  suoni generati dal passaggio di altre persone<sup>2</sup></span><span style="font-weight: 400;">,
+                  portando l&apos;attenzione alle risonanze della struttura e ad altri fenomeni acustici che da essa si
+                  sprigionano; trascurare completamente l&apos;ambiente, rimanendo concentrati sul ponte,
+                  nell&apos;alternarsi di presenza e assenza di suono<sup>3</sup></span><span
+                  style="font-weight: 400;">.
+                </span></p>
+            </div>
+            <div class="page-item-notes light-font">
+              <p><sup>1</sup> Sperimentare la parte 1. dell&apos;esercizio anche a piedi nudi.<br><br><sup>2 </sup>Il
+                parco del fiume, nei pressi del ponte di ferro, non è particolarmente frequentato: la parte 2.
+                dell&apos;esercizio prevede la disponibilità a un tempo di ascolto dilatato in cui, probabilmente,
+                prevale
+                l&apos;assenza di attraversamenti della passerella e, di conseguenza, di attività
+                risonante.<br><br><sup>3
+                </sup>Per converso, è possibile sperimentare la parte <strong>2</strong>. evitando ogni focalizzazione
+                dell&apos;ascolto; il suono del ponte, dato dal passaggio di una persona, non prevale sul contesto. La
+                risonanza della struttura avviene assieme a tutti gli altri suoni e si mescola all&apos;ambiente.</p>
+            </div>
+            <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="daf"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title">DAF</h2>
+              <p><span style="font-weight: 400;">Colpisci il tamburo a cornice<sup>1</sup></span><span
+                  style="font-weight: 400;"> a mani aperte, iniziando sempre con la parte
+                  debole<sup>2</sup></span><span style="font-weight: 400;">; continua sino a che la membrana e la pelle
+                  della mano trovano una vibrazione (e un calore) comune; ascolta se il suono è di carne, oppure di
+                  osso;
+                  le unghie sono schegge<sup>3</sup></span></p>
+            </div>
+            <div class="page-item-notes light-font">
+              <p><sup>1</sup> Il tamburo a cornice è uno strumento musicale a percussione che consiste di una singola
+                pelle, montata e tesa su un cerchio di legno o metallo. L&apos;estrema diffusione di questo strumento,
+                la
+                moltitudine di forme e manifestazioni socio-culturali alle quali appartiene ha condotto,
+                nell&apos;ambito
+                dell&apos;organologia classica, a definire tamburi a cornice, tutti i tamburi mono-pelle la cui
+                profondità
+                è minore rispetto al diametro. L&apos;annotazione riguarda una serie di esercizi di base delle
+                percussioni
+                emersi e sviluppati durante la mia pratica quotidiana di questi strumenti nei mesi di marzo, aprile e
+                maggio 2020. Le modalità di ascolto proposte, tuttavia, possono essere indagate anche senza servirsi di
+                un
+                tamburo a cornice o di altri membranofoni: è possibile, infatti utilizzare qualsiasi superficie
+                risonante,
+                elastica e responsiva (ad esclusione del proprio corpo, e di quello altrui) e dotata di
+                un&apos;estensione
+                tale da poter accogliere diverse forme di impulso date dalla mano. Capacità e conoscenze specifiche
+                nell&apos;ambito degli strumenti a percussione non sono in ogni caso fondamentali ai fini della pratica,
+                la quale, invita ad ampliare le modalità di osservazione e ascolto. Il titolo indica il nome di un
+                grande
+                tamburo a cornice del Medio Oriente utilizzato nell&apos;esecuzione di musica classica e popolare; la
+                cornice è solitamente realizzata in legno duro e ha inseriti molti anelli metallici che vengono scossi
+                durante la percussione.<br><br><sup>2</sup> Il suono aperto è prodotto solitamente percuotendo il
+                tamburo
+                nella parte mediana, tra la cornice e il centro, facendo vibrare la membrana liberamente. Per converso,
+                il
+                suono chiuso si ottiene colpendo lo strumento verso la parte centrale, con un impatto secco, spesso dato
+                con la mano aperta, e che viene lasciata a contatto con la membrana, per non consentirle di entrare in
+                risonanza; la chiusura del suono si raggiunge anche colpendo il tamburo sul bordo, dove la pelle è
+                ripiegata sulla cornice di legno. Tecnicamente è importante alternare i colpi iniziando sempre con la
+                propria mano debole (la parte debole), lentamente, e ascoltando la risonanza di ogni colpo per la sua
+                intera durata.<br><br><sup>3 </sup>Nella conduzione dei colpi singoli alternati, indagare ogni suono
+                come
+                evento unico e complesso, in cui la relazione tra mano e membrana, e la reciproca eccitazione
+                superficiale, viene proiettata nel suono che si genera. Discernere quindi, per ogni colpo, le modalità
+                con
+                cui l&apos;impatto <em>apre</em> la risonanza in relazione a minime variazioni di intensità e
+                inclinazione
+                della mano in riferimento alla membrana; allo stesso tempo, nell&apos;atto di percuotere, accogliere la
+                risposta che la pelle del tamburo restituisce (e imprime) all&apos;arto battente, lasciando una
+                sensazione
+                che agisce talvolta sulla carne, talvolta sulle ossa, e che perdura nel corpo del suonatore: carne e
+                ossa,
+                a loro volta, si trasferiscono al tamburo che, nella risonanza, ospita la loro diversa densità. Le
+                unghie
+                sono schegge.</p>
+            </div>
+            <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="volute"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title">volute</h2>
+              <p><span style="font-weight: 400;">Il fumo si alza tra la stanza e la strada<sup>1</sup></span><span
+                  style="font-weight: 400;">.</span></p>
+              <p><br><span style="font-weight: 400;">Il rumore bianco, trasportato dal fumo, assume le forme del
+                  movimento
+                  dell&apos;aria<sup>2</sup></span><span style="font-weight: 400;">; danza all&apos;interno e, un attimo
+                  dopo, si dissolve verso l&apos;esterno; una sola volta, in 21 minuti, raggiunge il mio
+                  volto<sup>3</sup></span><span style="font-weight: 400;">.</span></p>
+            </div>
+            <div class="page-item-notes light-font">
+              <p><sup>1</sup> Nell&apos;estate 2021 sono solito bruciare coni di incenso alla mirra nelle soglie (porta,
+                finestre) del mio studio, che è collocato al piano terra di un edificio condominiale e attiguo a una
+                strada pedonale del centro storico di Cesena. Oltre al piacere dato dalla fragranza, sono attratto dal
+                movimento del fumo e dalla tensione che si genera nel momento in cui, allontanandosi dal cono, perde
+                linearità, descrive ampie volute e si disperde nell&apos;aria.</p>
+              <p> </p>
+              <p><sup>2 </sup>In alcune occasioni posiziono un altoparlante in prossimità del cono di incenso e
+                riproduco
+                un rumore bianco: l&apos;esercizio consiste nell&apos;immaginare che il suono sia trasportato nel fumo,
+                perda la sua continuità lineare, e assuma le forme del movimento dell&apos;aria, rese manifeste dal
+                fumo.<br><br><sup>3</sup> Sabato 18 settembre (ore 15:57), dopo un breve temporale, ho acceso un cono di
+                incenso sul gradino di ingresso dello studio, lasciando porte e finestre aperte: seduto
+                all&apos;interno,
+                nella parte più distante alla porta, ho osservato il movimento del fumo spostare le sensazioni date dal
+                rumore. Nei 21 minuti di attività della brace, una sola volta, un forte impulso d&apos;aria, pieno di
+                suono e odore, ha raggiunto il mio volto.</p>
+            </div>
+            <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="rudimenti"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title">RUDIMENTI<sup>1 </sup></h2>
+              <p><span style="font-weight: 400;">Colpi distesi sul fiore delle pelle<sup>2.</sup></span><span
+                  style="font-weight: 400;">La risonanza diffonde il proprio odore<sup>3</sup>.<br></span></p>
+            </div>
+            <div class="page-item-notes light-font">
+              <p><sup>1 </sup>Il rudimento base degli strumenti a percussione consiste nella successione di colpi
+                singoli
+                alternati (a mano o a battente), a velocità e intensità variabile.<br><br><sup>2 </sup>Il ​fiore della
+                pelle​ è la parte pregiata delle membrane naturali che vengono montate sui tamburi; appartengono al
+                fiore
+                gli strati più esterni, le cui uniche irregolarità morfologiche sono date dalla presenza dei bulbi
+                piliferi, dai pori e dalla linea dorsale. Per ottenere maggiore uniformità superficiale, alcune
+                percussioni montano pelli di feti di agnello o di capra; esse sono estremamente sottili: i pori sono
+                ancora chiusi e non essendosi sviluppati gli alveoli dei bulbi piliferi queste membrane sono dotate di
+                una
+                liscezza che determina un&apos;immediata reazione agli impulsi e una maggiore velocità vibratoria. Lo
+                spessore e la liscezza sono qualità fondamentali: alcune forme musicali percussive si sono sviluppate
+                ed
+                evolute sulla base della membrana battente presente sul tamburo. In Nord–Africa, Medio Oriente, Asia
+                Centrale e alcune zone dell&apos;Est Europa esistono tamburi in cui vengono montate pelli di pesce,
+                sottilissime e altamente rispondenti; traslucida, elastica e oleosa, tale superficie produce
+                stimolazioni
+                tattili e visive uniche per il percuotente. In Calabria (Italia Meridionale) e Marche (Italia Centrale)
+                si
+                trovano tamburi a cornice con pelle di gatto; spessa e poco risonante tale membrana veniva fissata
+                capovolta al cerchio per enfatizzare ulteriormente la sua sordità. Il pelo dell&apos;animale era
+                rivolto
+                allo spazio della presa (e quindi mai percossa) mentre lo strato più robusto grasso e “ancora
+                attaccato”
+                alla carne, nella zona battente del tamburo. La pelle non subiva tiraggio oltre alla cucitura al telaio
+                e
+                veniva, prima di ogni utilizzo, ammollata con acqua per mortificare definitivamente ogni potenzialità
+                risonante; il suono della percussione, in questo caso, si esprime esclusivamente nell&apos;energia di
+                impatto della mano sulla superficie.<br>[...]</p>
+              <p>Nell&apos;alternanza dei colpi è importante mantenere l&apos;impatto della mano negli strati più
+                superficiali del tamburo: il suono emerge per distensione dell&apos;energia in tutto il corpo dello
+                strumento e non per la compressione muscolare di una parte localizzata della membrana; il colpo
+                dischiude
+                la completa vitalità della superficie</p>
+              <p>La configurazione ritmica a colpi singoli alternati è fondamentale allo studio del tamburo ed è la base
+                su cui vengono prodotte molte figurazioni complesse.</p>
+              <p>Con Il rullo a colpi singoli si entra in confidenza con la membrana e ad ascoltare la sua capacità
+                rispondente senza reprimerla: le minime variazioni di eccitabilità della superficie informano della
+                complessità dello strumento, ed enfatizzano l&apos;accordo di diversità (o solidarietà) che intercorre
+                tra
+                la mano sinistra e la mano destra nell&apos;atto di percuotere; inizialmente è importante non ricercare
+                controllo, e non fissare la prestazione del tamburo a un presupposto ritmico definito e regolare.
+                L&apos;ascolto è rivolto al suono di ogni colpo e si pratica lo studio dei colpi alternati aspettando la
+                fine di ogni risonanza, prima di procedere al colpo successivo, senza trascurare il legame di alternanza
+                che produce il pattern.</p>
+              <p>Per tutta la durata dell&apos;esercizio avere cura dell&apos;intensità dei colpi, esplorando, a ogni
+                impatto, sia le variazioni sonore date dal cambiamento di presa del battente (maggiore pressione della
+                mano, posizione delle dita etc), sia le zone del tamburo, cercando di utilizzare le variazioni
+                superficiali (ad esempio la maggiore durezza della pelle in alcune aree) per trasformare la relazione
+                colpo–risonanza e, conseguentemente, temporalità e dinamica del suono.</p>
+              <p> </p>
+              <p><sup>3 </sup>Il riferimento all&apos;odore riguarda un particolare momento in cui, durante una giornata
+                di pioggia, praticando l&apos;esercizio con una pelle appena montata a ogni colpo corrispondeva una
+                differente proiezione di odore da parte del tamburo.<sup><br></sup></p>
+            </div>
+            <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="se-siamo-assenti-suonare-qui"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title"><sup><span style="font-size: 16px;">SE SIAMO ASSENTI SUONARE QUI</span></sup>
+              </h2>
+              <h2 class="page-item-title"><sup><img src="uploads/immagini/cymbal.jpg"> </sup></h2>
+              <p><span style="font-weight: 400;">In costruzione.<br></span></p>
+            </div>
+            <div class="page-item-notes light-font">
+              <p><sup>1</sup><br><br><sup>2</sup></p>
+              <p> </p>
+              <p><sup>3</sup><sup><br></sup></p>
+            </div>
+            <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="la-fiamma-di-una-candela"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title">la fiamma di una candela<sup>1</sup></h2>
+              <p><span style="font-weight: 400;">Accendi una candela in una stanza buia<sup>2</sup>. La candela non deve
+                  spegnersi per cause diverse del suo stesso consumarsi. Accendi la candela solo dopo aver infilato un
+                  pezzo di metallo a metà del suo cilindro di cera e posizionato, alla sua base, un piattino di
+                  metallo<sup>3</sup>.<br><br>Stenditi a terra, sul dorso, e ascolta tutti i suoni che ti circondano;
+                  non
+                  hai propositi: i suoni riverberano ovunque attorno a te, e così la luce della candela che, a sua
+                  volta,
+                  riverbera ovunque, nella stanza che hai scelto.<br><br>La risonanza del piattino, ovvero la caduta del
+                  pezzo di metallo, è per te un segnale: alzati in piedi e continua ad ascoltare tutti i suoni che ti
+                  circondano, senza propositi. Avanti così, restando in piedi, fino a che la candela si spegne.</span>
+              </p>
+            </div>
+            <div class="page-item-notes light-font">
+              <p><sup>1 </sup>Gaston Bachelard &quot;La fiamma di una candela&quot; ©SE srl, 1996 e 2005
+                Milano.<br><br><sup>2 </sup>La candela deve essere lunga almeno 15 cm e a lenta combustione.</p>
+              <p> </p>
+              <p><sup>3 </sup>Il chiodo, cadendo, deve colpire la superficie del piattino e metterla in risonanza. La
+                pratica proposta è emersa dopo una ricerca sulle candele-orologio. un metodo relativamente economico ed
+                efficace consisteva nell&apos;utilizzare una candela con delle taccheo dei segni spaziati (e di solito
+                numerati): bruciando, con il suo consumarsi, il lume indicava il passare del tempo. Con
+                l&apos;inserimento
+                di un chiodo la candela diventava anche una sveglia: bastava inserire il metallo in corrispondenza della
+                tacca desiderata, e il chiodo cadeva sul piatto di metallo alla base, con un clangore che faceva da
+                segnale di allarme. Le candele-orologio venivano prodotte utilizzando una cera con un tempo di
+                scioglimento conosciuto, per garantire la massima precisione.</p>
+            </div>
+            <div class="download-btn"><a target="_blank" rel="noopener">Download PDF</a></div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="seconda-annotazione-sulle-candele"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title">seconda annotazione sullE candele</h2>
+              <p><span style="font-weight: 400;">In orario diurno, accendi una candela in una stanza esposta a luce
+                  naturale. <br>Trova una posizione comoda e, facendo ricorso a materiali reperibili nella stanza
+                  [<em>found objects</em><sup>1</sup>] produci un suono continuo, utilizzando un atto blando e
+                  sostenibile
+                  per una durata indefinita. <br><br>Avanti così, fino a che la fiamma della candela non diventa la più
+                  potente sorgente di luce.</span></p>
+            </div>
+            <div class="page-item-notes light-font">
+              <p><sup>1 </sup>L&apos;utilizzo di <em>oggetti trovati</em> per produrre suono è una pratica originaria e
+                strettamente legata alla musica stessa: l&apos;invenzione degli strumenti musicali e la loro
+                elaborazione
+                tecnica si è quasi certamente sviluppata a partire dai suoni di oggetti e materiali reperibili in
+                natura,
+                dall&apos;atto di produrre suono con essi e dalle modalità con cui tali suoni venivano ascoltati in
+                relazione ai suoni dell&apos;ambiente.<br><br></p>
+              <p> </p>
               <p><a style="font-family: Oswald; font-size: 16px; text-transform: uppercase;" target="_blank"
                   rel="noopener">Download PDF</a></p>
             </div>
           </div>
-        </div>
-        <div class="page-item-wrapper cms-repeatable">
-          <div class="anchor-space"><a id="ambra"></a></div>
-          <div class="page-item-text">
-            <h2 class="page-item-title"><sup><span style="font-size: 16px;">Ambra</span></sup></h2>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="camminata-estiva"></a></div>
             <div class="page-item-text">
-              <p class="p1"><span class="s1">Macchia Mediterranea. Il battimani del tuo confidente è tenue, inaridito: a
-                  quel segnale t</span><span class="s1">u cadi a terra e ti risollevi senza fare alcun suono. Cammina e,
-                  di tanto in tanto, r</span><span class="s1">ipeti, fino a sera<sup>1</sup>.<br></span></p>
-              <p class="p1"><br>[Lettura]<br><br>&lt;&lt;In fondo alla gola stretta, il ruscello era coperto di alberi
-                d&apos;ambra (<em>Liquidambar orientalis</em>), le foglie così dentellate e grigie come la loro
-                corteccia.<br>Bastava battere le mani perché cadessero. Cadevano per risollevarsi in nugoli, rosse
-                lucenti, punteggiate di nero, rigate di bianco&gt;&gt;.<br><br>Raoul Schrott , &quot;Il deserto di
-                Lop&quot; La Grande Illusion, Pavia 2022, pp.106</p>
+              <h2 class="page-item-title">camminata estiva</h2>
+              <p class="p1"><span class="s1">Ascolta il suono di due cicale. Muovendoti lentamente trova una posizione
+                  in
+                  cui il frinire<sup>1</sup> di una cicala [C dx] è localizzato alla tua destra, e il frinire
+                  dell&apos;altra [C sx] è localizzato alla tua sinistra. Continua a camminare, senza meta, mantenendo
+                  sempre, e distintamente, il suono di [C dx] alla tua destra e il suono di [C sx] alla tua sinistra.
+                  <br><br>Avanti così, fino a che una delle due cicale interrompe il suo canto.</span></p>
             </div>
             <div class="page-item-notes light-font">
-              <p><sup>1 </sup>La pratica si svolge con un compagno o una compagna; una persona di cui ti fidi, con la
-                quale è piacevole passare del tempo assieme. Richiede un intero pomeriggio, alternando momenti leggeri,
-                di scambio di parole e letture, a momenti di calma silenziosa e concentrazione pura.<br><br></p>
-              <p></p>
+              <p><sup>1 </sup>Frinire: le cicale emettono un suono caratteristico, intenso e dotato di una frequenza e
+                ritmicità stridente, che viene provocato dalla vibrazione di alcune lamine poste sull&apos;addome
+                dell&apos;insetto (timballi); tale suono viene poi amplificato da speciali camere d&apos;aria che fanno
+                riecheggiare lo stridio in tutta l&apos;area circostante.<br><br></p>
+              <p> </p>
               <p><a style="font-family: Oswald; font-size: 16px; text-transform: uppercase;" target="_blank"
                   rel="noopener">Download PDF</a></p>
+            </div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="maraca"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title">Maraca<sup>1</sup></h2>
+              <div class="page-item-text">
+                <p class="p1"><span class="s1">Scuotere la formica bianca lasciando che punga le superfici seccate al
+                    sole<sup>2</sup>.</span></p>
+              </div>
+              <div class="page-item-notes light-font">
+                <p><sup>1 </sup>La Maraca (o crepitacolo) appartiene alla famiglia degli idiofoni, strumenti​ sonori
+                  fatti
+                  con materiali naturali e che non abbisognano di tensione addizionale, di corde o di pelli per
+                  risuonare.
+                  Questi materiali <em>si fanno strumenti</em> durante l&apos;azione del sonatore e il loro suono rende
+                  manifesta l&apos;estensione aurale del movimento della mano o del corpo del performer. In ambiti di
+                  organologia classica, gli idiofoni si suddividono in base alle varie modalità con cui i materiali
+                  vengono indotti alla vibrazione: concussione, percussione, frizione, raschiamento, scuotimento,
+                  pizzicamento, storcimento.</p>
+                <p> </p>
+                <p><sup>2 </sup>&lt;&lt;La maraca della quale si serve lo sciamano nei suoi rituali si chiama
+                  <em>nyaxsàru</em>, parola derivata da <em>nyaxsà</em>, ovvero formica bianca che punge. Con questa
+                  denominazione si allude alla rapidità con la quale si disperdono questi insetti quando si disturba il
+                  loro nido; è la stessa rapidità con quale si propaga il rumore della maraca. Quest&apos;ultima è il
+                  prolungamento del braccio dello sciamano&gt;&gt;.
+                </p>
+                <p> </p>
+                <p>Gerardo Reichel-Dolmatoff, “Il cosmo amazzonico” Simbolismo degli indigeni tukano del Vaupés –
+                  Adelphi, Milano 2014, pp.<br><br></p>
+                <p> </p>
+                <p><a style="font-family: Oswald; font-size: 16px; text-transform: uppercase;" target="_blank"
+                    rel="noopener">Download PDF</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="senza-titolo-magnete-in-ferrite"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title">Senza titolo [magnete in ferrite]</h2>
+              <div class="page-item-text">
+                <div class="page-item-text">
+                  <div class="page" title="Page 1">
+                    <div class="section">
+                      <div class="layoutArea">
+                        <div class="column">
+                          <p>Un magnete in ferrite viene consegnato a ogni performer e serve a discernere la
+                            composizione
+                            materiale dei Prati di Caprara<sup>1</sup>. Il performer si dirige verso i corpi metallici
+                            che
+                            incontra nel suo cammino e avvicina loro il magnete, fino a che non avviene il distacco del
+                            corpo magnetico dalla mano di presa. La forza di attrazione, che si esercita tra la calamita
+                            e
+                            le superfici ferromagnetiche sparse nei prati, produce un impatto sonoro non mediato dal
+                            contatto diretto e preclude una modalità di ascolto basata sul tatto.</p>
+                          <p><br>ascolta:</p>
+                          <p><br>• la risonanza della superficie colpita dal magnete.</p>
+                          <p><br>• la risonanza tattile: la mano viene abbandonata dal magnete, ma trattiene i residui
+                            della sua presenza, nel calore e nella polvere.</p>
+                          <p><br>• la resistenza del magnete al suo recupero dalla superficie metallica. <br><br></p>
+                          <p>Avanti così, un impatto dopo l’altro, per 45 minuti </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="page-item-notes light-font">
+                <p><sup>1 </sup>Con il toponimo Prati di Caprara si definisce una ex area militare di Bologna collocata
+                  in
+                  prossimità del centro storico, fuori Porta San Felice. L’area si sviluppa tra la via Emilia Ponente,
+                  in
+                  prossimità dell&apos;Ospedale Maggiore, il torrente Ravone e la canaletta Ghisiliera.</p>
+                <p> </p>
+                <p> </p>
+                <p><a style="font-family: Oswald; font-size: 16px; text-transform: uppercase;" target="_blank"
+                    rel="noopener">Download PDF</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="aurelio-urbano"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title"><sup><span style="font-size: 16px;">aurelio urbano</span></sup></h2>
+              <div class="page-item-text">
+                <p class="p1">istruzioni per una performance sonora eventuale</p>
+                <p class="p2"><span class="Apple-converted-space"> </span></p>
+                <p class="p3">[luogo]</p>
+                <p class="p1">Prati di Caprara<sup>2</sup></p>
+                <p class="p3"> </p>
+                <p class="p3">[preparazione]</p>
+                <p class="p1">Il performer attacca un magnete in ferrite a un suo indumento, ai lacci delle scarpe
+                  oppure
+                  a un <i>found object</i> e cammina, lasciando che il corpo magnetico si trascini a terra.<span
+                    class="Apple-converted-space"> </span>Avanti così, almeno per 15 minuti.</p>
+                <p class="p4"> </p>
+                <p class="p4">[azione]</p>
+                <p class="p1">Il performer, rivolto a un pubblico eventuale, compie un’aziona sonora improvvisata,
+                  servendosi dei materiali rimasti attaccati al suo magnete.<br><br>[fine]</p>
+                <p class="p2"><span class="Apple-converted-space"> </span></p>
+              </div>
+              <div class="page-item-notes light-font">
+                <p><sup>1 </sup>Aurelio Urbano, detto Minghôn (1907 – 2003) visse tra Sammauro in Valle e Borgo di
+                  Ronta,
+                  frazioni di Cesena. Mezzadro in gioventù e poi, in età adulta, piccolo proprietario terriero di un
+                  fondo
+                  coltivato ad alberi da frutto: peschi, meli, peri. Uomo di poche parole e con capacità manuali che,
+                  dal
+                  lavoro agricolo, entrava con facilità nel merito delle mansioni domestiche. Forbici, ago e filo gli
+                  utensili preferiti: sarto occasionale per amore dei tessuti, conservò per decenni una camicia,
+                  rammendata che ancora portava i pantaloni corti.</p>
+                <p class="p1">In una mattina di fine estate, Minghôn decise di indossare un completo semplice, fresco:
+                  pantaloni kaki con le <i>pinces </i>e cintura di corda naturale, camicia bianca di cotone (con
+                  bretelle
+                  di elastico in cuoio), scarpa di rete marrone con tomaia intrecciata; in testa un borsalino bianco con
+                  fascia nera. Dopo alcune faccende e un pasto frugale uscì percorrendo a piedi il viale di casa fino al
+                  fosso di confine, per poi tagliare tra i campi e raggiungere il bar; il quotidiano incontro con gli
+                  amici del Borgo: un <i>bicîr ad bêi </i>e l’inevitabile Maraffone<i>. </i>Seduto a un tavolino esterno
+                  del circolo parrocchiale, durante la partita a carte, notò la mancanza delle impalcature nel cantiere
+                  adiacente la chiesa: i ponteggi smontati, il materiale da costruzione e gli attrezzi rimossi, in tutta
+                  probabilità la sera prima. Chiusa l’ultima mano al gioco salutò sbrigativo, prendendo la via del
+                  ritorno
+                  tra i mugugni degli astanti, in cerca di rivincita. Una volta a casa, prese dal capanno un secchio e
+                  un
+                  bastone, buttato tra gli attrezzi: un ramo di noce nodoso incastrato, a un’estremità, a un grosso
+                  magnete annerito e sporco, intriso di grasso meccanico; si incamminò subito, senza cambiarsi d’abito,
+                  a
+                  passo spedito lungo la strada bianca, abbagliante. Alla vista del campanile ricordò la Messa di
+                  Riuscita, che sarebbe stata detta nel pomeriggio per il vecchio Fafîn e, accompagnato dal suono
+                  dimesso
+                  della campana a lutto, raggiunse il cantiere. Minghôn, come tanti altri (forse tutti nel Borgo)
+                  approfittò della nota consuetudine dei muratori, ovvero di non raccogliere i componenti minuti alla
+                  chiusura del cantiere: si lasciano cadere, si disperdono, mischiandosi al terreno.<span
+                    class="Apple-converted-space"> </span></p>
+                <p class="p1">Con il manico del secchio all’avambraccio sinistro, iniziò lentamente a camminare, con il
+                  bastone tenuto saldo, radente terra. Il magnete, colpito da ogni direzione da chiodi ritorti, viti e
+                  frammenti di ferro, produsse inizialmente una risonanza argentina che scomparve rapidamente, fino a
+                  diventare un tintinnio appuntito, quasi impercettibile, nell’accumulo crescente e difforme di
+                  materiale
+                  ferromagnetico. La camminata rese, in poco meno di un’ora, 1kg abbondante di ferro, che si aggiunse a
+                  varie raccolte precedenti. Il suono della campana annunciò il servizio di suffragio. Preso da un lieve
+                  turbamento si raccolse in una breve preghiera per <i>clà péla ad tambûr ad </i>Fafîn prima di
+                  incamminarsi verso casa, per la seconda volta in quel giorno. Ormai ai margini del cantiere incontrò
+                  una
+                  lieve resistenza e un improvviso strappo fermò il suo passo: il lembo sinistro del pantalone rimase
+                  intricato a una spranga in ferro e il tondo nervato, nascosto tra gli erbaglioni, si prese un
+                  brandello
+                  di tessuto kaki. Poco male, qualcosa con cui tenersi occupati dopo cena, pensò. A casa, tra il frinire
+                  di qualche cicala oltre il tramonto e con indosso i vestiti da lavoro, iniziò a mischiare il ferro ad
+                  altro ferro, e ad altro ancora, riposto nel capanno ai margini del campo incolto; un odore pungente,
+                  polveroso, si sparse nell’aria, assieme al colore della ruggine. L’indomani prese il tutto,
+                  ammucchiato
+                  a badilate su di una carriola, e lo spinse al primo <i>fêrvech. </i>La resa fu di qualche lira: in
+                  bottega, acquistò dei pezzetti di carne e qualche osso grasso, per il brodo domenicale.</p>
+                <p class="p1"> </p>
+                <p class="p1"><sup>2 </sup>Con il toponimo Prati di Caprara si definisce una ex area militare di Bologna
+                  collocata in prossimità del centro storico, fuori Porta San Felice. L’area si sviluppa tra la via
+                  Emilia Ponente, in prossimità dell&apos;Ospedale Maggiore, il torrente Ravone e la canaletta
+                  Ghisiliera.</p>
+                <p> </p>
+                <p> </p>
+                <p><a style="font-family: Oswald; font-size: 16px; text-transform: uppercase;" target="_blank"
+                    rel="noopener">Download PDF</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="ambra"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title"><sup><span style="font-size: 16px;">ambra</span></sup></h2>
+              <div class="page-item-text">
+                <p class="p1">Macchia Mediterranea alta. Tu cammini, in ascolto: al battimani amico, segnale tenue tra
+                  la
+                  vegetazione, tu cadi a terra e subito ti risollevi, senza diffondere alcun suono. Avanti così,
+                  spostandosi nel verde, con battiti di mani non frequenti, rare cadute e parole lette ad alta voce,
+                  fino
+                  a sera.</p>
+                <p class="p3"> </p>
+                <p class="p3">brano:<em><br></em></p>
+                <p class="p3"> </p>
+                <p class="p3">&lt;&lt;In fondo alla gola stretta, il ruscello era coperto di alberi d&apos;ambra
+                  (Liquidambar orientalis), le foglie così dentellate e grigie come la loro corteccia. <br>Bastava
+                  battere
+                  le mani perché cadessero. Cadevano per risollevarsi in nugoli, rosse lucenti, punteggiate di nero,
+                  rigate di bianco.<br>Le farfalle (Callimorpha quadripuctaria) giungevano nella valle per assorbire
+                  umidità in quella frescura e potersi accoppiare. Anche se, dopo il lungo volo, in gran parte esauste
+                  morivano&gt;&gt;.<br><br>Raoul Schrott , &quot;Il deserto di Lop&quot; La Grande Illusion, Pavia 2022,
+                  pp.106 </p>
+              </div>
+              <div class="page-item-notes light-font">
+                <p class="p1"><sup>1 </sup>La pratica si svolge con un compagno o una compagna; una persona di cui ti
+                  fidi, con la quale è piacevole passare del tempo assieme. Richiede un intero pomeriggio, alternando
+                  momenti leggeri, con scambi di parole e letture, a momenti di calma silenziosa e concentrazione pura.
+                </p>
+                <p> </p>
+                <p> </p>
+                <p><a style="font-family: Oswald; font-size: 16px; text-transform: uppercase;" target="_blank"
+                    rel="noopener">Download PDF</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="resa-di-una-risonanza"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title"><sup><span style="font-size: 16px;">Resa di unA risonanza</span></sup></h2>
+              <div class="page-item-text">
+                <p><span style="font-weight: 400;">Il performer scuote una campana dotata di batacchio con la mano
+                    sinistra; la risonanza dello strumento deve essere continua, senza variazioni rilevanti di andamento
+                    e
+                    intensità sonora. Appena il batacchio </span><i><span
+                      style="font-weight: 400;">scampana</span></i><span style="font-weight: 400;"> deciso il
+                    performer, servendosi della mano destra, avvicina alla campana dei magneti in ferrite, lasciando che
+                    si attacchino, uno dopo l’altro alla superficie dello strumento. </span></p>
+                <p class="p1"> </p>
+                <p><span style="font-weight: 400;">[Ascolta]</span></p>
+                <p class="p1"> </p>
+                <p><span style="font-weight: 400;">A ogni impatto magnetico, il suono della campana si modifica, in
+                    accordo alla riduzione della sua superficie capace di vibrare liberamente ai colpi dati dal
+                    batacchio.
+                    <br><br></span><span style="font-weight: 400;">Avanti così, attaccando magneti fino a che tutta la
+                    campana ne è ricoperta e la sua risonanza si arrende.</span></p>
+                <p> </p>
+                <p><span style="font-weight: 400;">[Ripetere, invertendo le mani]</span></p>
+              </div>
+              <div class="page-item-notes light-font">
+                <p class="p1"><sup>1 </sup>L&apos;esercizio deve essere preparato in modo che il performer non abbia
+                  impedimento alcuno durante la pratica: il peso del campanaccio deve essere adatto al corpo del
+                  performer, i magneti in ferrite in comoda presa e lo spazio di azione ampio, capace di garantire
+                  l&apos;ascolto delle minime variazioni risonanti dello strumento. L&apos;attacco dei magneti deve
+                  avvenire lento: l&apos;azione deve avere una durata minima di 30 minuti.</p>
+                <p> </p>
+                <p> </p>
+                <p><a style="font-family: Oswald; font-size: 16px; text-transform: uppercase;" target="_blank"
+                    rel="noopener">Download PDF</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="gran-sasso"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title">gran sasso<sup>1</sup></h2>
+              <div class="page-item-text">
+                <p class="p1">Le campane delle bestie si scuotono, sparse nel fianco roccioso; ne esce un suono terso,
+                  senza peso e di forme concordi allo spostamento di tutti quei corpi flemmatici e affamati, che seguono
+                  il verde, sui sedimenti di marna e dolomia. Il sistema di risonanza metallica, ad altezza costante,
+                  rende presente la grande assenza; nel suono delle campane, si trascina il silenzio del massiccio, che
+                  sferza l’orecchio e le narici con l’odore di un&apos;estate in declino.<span
+                    class="Apple-converted-space"> </span></p>
+              </div>
+              <div class="page-item-notes light-font">
+                <p class="p1"><sup>1 </sup>Il Gran Sasso d&apos;Italia è il massiccio montuoso più alto degli <a
+                    title="Appennini" href="https://it.wikipedia.org/wiki/Appennini">Appennini</a> e dell&apos;<a
+                    class="mw-redirect" title="Italia peninsulare"
+                    href="https://it.wikipedia.org/wiki/Italia_peninsulare">Italia peninsulare</a>, situato interamente
+                  in <a title="Abruzzo" href="https://it.wikipedia.org/wiki/Abruzzo">Abruzzo</a>, nella dorsale più
+                  orientale dell&apos;<a title="Appennino abruzzese"
+                    href="https://it.wikipedia.org/wiki/Appennino_abruzzese">Appennino abruzzese</a>, al confine fra le
+                  province di L&apos;Aquila, Teramo e Pescara.</p>
+                <p> </p>
+                <p> </p>
+                <p><a style="font-family: Oswald; font-size: 16px; text-transform: uppercase;" target="_blank"
+                    rel="noopener">Download PDF</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="kor"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title">KOR<sup>1</sup></h2>
+              <div class="page-item-text">
+                <p class="p1">Dopo alcuni giorni di pratica al tamburo, con colpi battenti a intensità tale da riempire
+                  di
+                  suono tutta lo spazio della chiesa, alzo lo sguardo e noto che una rete di protezione in corda
+                  intrecciata è posta a diversi metri di altezza, sopra la mia testa, e che vi sono adagiati nove cocci
+                  di
+                  intonaco ocra, staccatisi dall’abside: la rete, rigonfia del loro peso, ne trattiene la caduta,
+                  avvenuta
+                  in occasioni sconosciute.</p>
+                <p class="p2"> </p>
+                <p class="p1">Raffiguro nel pensiero un diverso accadimento: la rete assente, la caduta di quei cocci
+                  ocra, uno a uno, contro la sottostante tribuna teatrale, i suoni di impatto e, infine, le <i>storture
+                    ritmiche</i> che tali colpi avrebbero creato nel mio rullo a colpi singoli alternati.<span
+                    class="Apple-converted-space"> </span></p>
+                <p class="p2"> </p>
+                <p class="p1">Destra Sinistra Destra Sinistra Destra Sinistra.</p>
+              </div>
+              <div class="page-item-notes light-font">
+                <p class="p1"><sup>1 </sup>Spazio Kor è un ente culturale che opera ad Asti, in Piemonte. Lo spazio del
+                  nostro progetto è la chiesa sconsacrata di San Giuseppe di Asti, architettura barocca restaurata dal
+                  Comune di Asti e convertita in un affascinante teatro.</p>
+                <p> </p>
+                <p> </p>
+                <p><a style="font-family: Oswald; font-size: 16px; text-transform: uppercase;" target="_blank"
+                    rel="noopener">Download PDF</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="oropa"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title">OROPA<sup>1</sup></h2>
+              <div class="page-item-text">
+                <p class="p1">Oropa: in cammino.<br><br>Risalendo il corso di avanzamento del torrente si propone, lungo
+                  il sentiero, un’apertura: un giardino selvatico, ombroso e raffrescato dall’umidezza di una gradinata
+                  di
+                  macigni. Riparo, cibo. Solitudine: con il viso volto alla riva, ascolto l’acqua che si muove vicina,
+                  in
+                  uno sciabordio continuo che scava fuori il rosa delle rocce: resto fermo e il rumore raggiunge,
+                  vaporizzato e fresco, l’orecchio destro e abbandona l’orecchio sinistro con un’agitazione
+                  spinosa<sup>2</sup>. Il torrente è la sua direzione. Io sono due metà di corpo. Conduco l’ascolto ai
+                  margini più estremi del suono, a destra e a sinistra, come a <i>scomporre</i> il mio corpo per
+                  lanciarlo
+                  dove il suono è un accumulo di onde (dentro onde), un accumulo bianco di energia. Ricompongo le due
+                  metà, lasciando convergere le attenzioni verso il centro, posandole su ciò che avviene avanti a me:
+                  suoni minuti di rivoli, e altri rivoli che si frangono dentro di essi, ramoscelli anneriti e
+                  prigionieri, che si decorticano a vicenda, colpendosi ritmicamente tra i sassi, gocce prevedibili, ma
+                  impazzite.<span class="Apple-converted-space"> </span></p>
+                <p class="p1">Il solco torrentizio, nella riva opposta, si eleva repentino in una muraglia terrosa,
+                  forata
+                  di radici, e dalla cui sommità ricade un verde vegetale che delimita il campo visivo. Sorpasso la
+                  parete
+                  di terra con l’udito ed emerge un suono remoto, il rintocco metallico di un campanaccio da bestia;
+                  alla
+                  singola risonanza iniziale si aggiungono, a poco a poco, altri suoni, tutti simili a campane, sparsi e
+                  a
+                  volte simultanei, con lontananze diverse e in lento movimento di mandria. Ormai convinto della
+                  presenza
+                  di animali oltre l’ostacolo naturale, bramo una conferma visiva. Rompo la posizione fissa del mio
+                  corpo
+                  e, con essa, la <i>tensione stereofonica</i><sup>3</sup> dei suoni dell’acqua: guado il torrente e
+                  oltrepasso, con una certa fatica e aiutandomi con le mani, la ripida parete di terra odorosa per
+                  raggiungere, infine, una pianura di silenzio pneumatico in cui nulla, ne bestie ne altro vivente,
+                  calpestano la distesa erbosa<sup>4</sup>.<span class="Apple-converted-space"> </span></p>
+              </div>
+              <div class="page-item-notes light-font">
+                <p class="p1"><sup>1 </sup><span class="s1">L&apos;Oropa è un torrente del <a
+                      href="https://it.wikipedia.org/wiki/Piemonte"><span class="s2">Piemonte</span></a>, affluente in
+                    destra orografica del <span class="s2">Cervo, fiume che attraversa le province di Biella e
+                      Vercelli.<br><br><sup>2 </sup>Il torrente genera vari livelli di suono continuo, simile a rumore
+                      bianco–rosa.<br><br><sup>3 </sup>La stereofonia è una <a title="Tecnica"
+                        href="https://it.wikipedia.org/wiki/Tecnica">tecnica</a> di registrazione e riproduzione del <a
+                        title="Suono" href="https://it.wikipedia.org/wiki/Suono">suono</a> che prevede due flussi
+                      informativi sonori, ognuno dei quali destinato a essere riprodotto da un diverso <a
+                        title="Diffusore acustico" href="https://it.wikipedia.org/wiki/Diffusore_acustico">diffusore
+                        acustico</a> posizionato nell&apos;ambiente d&apos;ascolto, diversamente rispetto
+                      all&apos;altro,
+                      secondo regole prestabilite. Si basa sull&apos;attitudine dell&apos;udito umano a distinguere la
+                      provenienza dei suoni. La stereofonia si contrappone alla monofonia che prevede invece un unico
+                      flusso informativo sonoro.<br><br><sup>4 </sup>Durante la trascrizione di questa annotazione, che
+                      documenta un&apos;esperienza avvenuta tra il 17 e il 21 luglio 2017 nei pressi di Biella, ho
+                      involontariamente ascoltato una lecture di Alan Watts in cui descrive brevemente il concetto
+                      giapponese di </span></span><span class="s1">Yūgen: &lt;&lt;</span>The Japanese has a word: Yūgen,
+                  which has no English equivalent whatsoever. Yūgen is in a way digging change; it describes
+                  poetically…You have the feeling of Yūgen when you see out in the distant water some ships hidden
+                  behind
+                  a far off island…You have the feeling of Yūgen when you watch wild geese suddenly see and than lost in
+                  the clouds; you have the feeling of Yūgen when you look across Mount Tamalpais and you have never been
+                  to the other side and you see the sky beyond: you don&apos;t go over there to look and see what’s on
+                  the
+                  other side, that wouldn’t be Yūgen, you let the other side be the other side. It evokes something in
+                  your imagination but you don’t attempt to define it, to pin it down. So in the same way, the coming
+                  and
+                  going of things in the world is marvelous. They go! Where do they go? Don’t answer because that would
+                  spoil the mystery. Let them vanish into the mystery&gt;&gt;.</p>
+                <p class="p1"><span class="s1"><span class="s2"><br><br></span></span></p>
+                <p><a style="font-family: Oswald; font-size: 16px; text-transform: uppercase;" target="_blank"
+                    rel="noopener">Download PDF</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="koderjana"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title">KODERJANA</h2>
+              <div class="page-item-text">
+                <p><span style="font-weight: 400;">Dopo un diluvio, entra nella vecchia scuola di Topolò<sup>1</sup>.
+                    Spalanca le due finestre, poste a destra dell’ingresso; non spostare nulla e siediti al centro, sul
+                    legno polveroso, rivolto alla porta. Chiudi gli occhi. Calma l’ascolto e permetti al rumore [bianco]
+                    del Koderjana di risalire la valle e sfociare nella stanza dalle due aperture. Respira. Rendi il
+                    suono
+                    del fiume sempre più presente nello spazio attorno a te: lascia che cresca, che riempia, fino a
+                    sentire il muro [bianco] posto alla tua destra, e opposto alle due finestre, riverberare la sua
+                    energia acustica. </span></p>
+                <p class="p1"> </p>
+                <p><span style="font-weight: 400;">[infine, ancora a </span><span style="font-weight: 400;">occhi
+                    chiusi]
+                    <br><br>Raffigura nel pensiero il muro [bianco] posto alla tua destra: il rumore del Koderjana si
+                    infiltra in ogni sua crepa e squarcio, e lo oltrepassa; si infrange contro il muro a secco e vibra
+                    l&apos;intera collina.</span></p>
+              </div>
+              <div class="page-item-notes light-font">
+                <p class="p1"><sup>1 </sup>Topolò è una frazione del comune di Grimacco, in Friuli-Venezia Giulia. Il
+                  Koderjàna è un affluente del Kòzca; nasce dal Kolòurat e si riversa nel Kòzca a Hlòdič.
+                  L&apos;annotazione è stata presa durante un seminario di ascolto tenuto presso la vecchia scuola di
+                  Topolò, durante la Stazione di Topolò / Postaja Topolove, nel luglio 2015.</p>
+                <p> </p>
+                <p> </p>
+                <p><a style="font-family: Oswald; font-size: 16px; text-transform: uppercase;" target="_blank"
+                    rel="noopener">Download PDF</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="risposta-battente"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title">RISPOSTA BATTENTE<strong> </strong></h2>
+              <div class="page-item-text">
+                <p class="p4"><span class="s1">Risposta Battente è un esercizio performativo rivolto a una coppia di
+                    performer. </span></p>
+                <p class="p3"><span class="s1"><strong> </strong></span></p>
+                <p class="p5"><span class="s2">Vagando per il Villaggio Artigiano di Modena Ovest, senza parlare, i due
+                    compagni trovano ed entrano in un vasto fabbricato abbandonato<span
+                      style="font-weight: 400;"><sup>1</sup></span>.</span><span class="s1"><br><br></span></p>
+                <p class="p6"><em><span class="s3">Ricerca</span></em><span class="s1"><br></span><span class="s2">Il
+                    primo performer indaga l’acustica del luogo battendo le mani, in cerca di aree in cui i fenomeni di
+                    eco e risonanza sono abbondanti e diversificati.  </span></p>
+                <p class="p2"> </p>
+                <p class="p5"><span class="s1">Il secondo performer cerca una superficie dura e sottile, che possa
+                    tenere
+                    tra le mani e portare davanti al volto, coprendolo interamente alla vista del primo
+                    performer. </span>
+                </p>
+                <p class="p2"> </p>
+                <p class="p7"><em><span class="s1">Preparazione</span></em></p>
+                <p class="p5"><span class="s1">I performer pongono i propri corpi allineati e alla massima distanza
+                    possibile.</span></p>
+                <p class="p2"> </p>
+                <p class="p7"><span class="s1"><em>Realizzazione</em></span></p>
+                <p class="p5"><span class="s1">Il primo performer cammina a un’andatura costante e batte le mani a ogni
+                    passo, dirigendosi verso il compagno. </span></p>
+                <p class="p2"> </p>
+                <p class="p5"><span class="s1">Il secondo performer resta fermo e frappone la superficie trovata tra il
+                    proprio volto e il compagno, distendendo gradualmente le braccia (senza modifiche in altezza) a ogni
+                    battimani.</span></p>
+                <p class="p2"> </p>
+                <p class="p7"><em><span class="s1">Conclusione</span></em><span class="s4"><br></span><span
+                    class="s1">Avanti così, in ascolto assoluto, fino a che il primo performer, battendo le mani,
+                    sfiora con le dita la superficie trovata dal secondo performer<sup>2</sup>.</span></p>
+              </div>
+              <div class="page-item-notes light-font">
+                <p class="p1"><sup>1 </sup>Risposta battente è parte della ricerca svolta nel Villaggio Artigiano di
+                  Modena Ovest all&apos;interno del progetto <a href="https://www.manicula.it/" target="_blank"
+                    rel="noopener">Manicula</a>. <br><br><sup>2 </sup>Note alla realizzazione di Risposta battente:
+                  <br><span class="s1">Abbandonare completamente le parole, sin dall’inizio del camminata al Villaggio
+                    Artigiano.<br></span><span class="s1"><br>Il movimento in avanti del primo performer e la
+                    distensione
+                    delle braccia del secondo performer devono avvenire in assoluta reciprocità, facendo in modo che
+                    all’ultimo battimani corrisponda il raggiungimento della massima distensione delle braccia. </span>
+                </p>
+                <p class="p2"> </p>
+                <p class="p9"><span class="s1">Primo performer: ascoltare la risposta acustica dello spazio circostante
+                    –
+                    echi e riverberi – e come la superficie trovata riflette l’energia del proprio battimani durante
+                    l’avvicinamento.</span></p>
+                <p class="p3"><span class="s1"><strong> </strong></span></p>
+                <p class="p9"><span class="s1">Secondo performer: ascoltare le sensazioni che la superficie trasmette
+                    alle
+                    mani di presa rispondendo agli impulsi del battimani.</span></p>
+                <p> </p>
+                <p> </p>
+                <p><a style="font-family: Oswald; font-size: 16px; text-transform: uppercase;" target="_blank"
+                    rel="noopener">Download PDF</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="cono-di-percussione"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title">CONO DI PERCUSSIONE<sup>1</sup></h2>
+              <div class="page-item-text">
+                <p><span style="font-weight: 400;">Ripetizione per 7 performer, </span><span
+                    style="font-weight: 400;">in
+                    una giornata di tarda estate, in uno spazio di azione  vuoto e silenzioso, privo di luce
+                    artificiale.</span><span style="font-weight: 400;"><br><br></span></p>
+                <p><span style="font-weight: 400;">Mano sinistra: pirite massiva<br>M</span><span
+                    style="font-weight: 400;">ano destra: ciottolo di selce<sup>2</sup></span></p>
+                <p> </p>
+                <p><span style="font-weight: 400;">Spazio di azione: vuoto e silenzioso, privo di luce
+                    artificiale.</span><span style="font-weight: 400;"><br></span></p>
+                <p class="p7"> </p>
+                <p><span style="font-weight: 400;">La pratica inizia senza alcuna preparazione e al sopraggiungere di
+                    luce
+                    crepuscolare.</span></p>
+                <p class="p7"> </p>
+                <p><span style="font-weight: 400;">I performer colpiscono ripetutamente la pirite massiva con il
+                    ciottolo
+                    di selce, in cerca di un impatto pieno e vibrante, capace di eccitare i riverberi – e gli echi –
+                    dello
+                    spazio di azione.  </span><span style="font-weight: 400;"><br></span><span
+                    style="font-weight: 400;">La forza battente impressa dal movimento del braccio, la pressione di
+                    presa delle mani sulle pietre, la durezza della pelle e la temperatura (del corpo e dell’ambiente)
+                    modificano la risposta sonora data dalla percussione e l’emersione dei fenomeni acustici. I
+                    performer,
+                    in ascolto e avendo cura di queste componenti dell’esecuzione del colpo, modellano gli urti per
+                    raggiungere la massima risposta acustica – di pietre e spazio – con il minore consumo possibile di
+                    risorse vitali, evitando il dolore alle mani e le ferite da schegge.</span></p>
+                <p class="p7"> </p>
+                <p><span style="font-weight: 400;">I performer continuano la percussione delle pietre fino a che il buio
+                    li avvolge completamente e le eventuali scintille scaturite dagli impatti diventano le più potenti
+                    fonti luminose. </span></p>
+              </div>
+              <div class="page-item-notes light-font">
+                <p class="p1"><sup>1 </sup>Un cono di percussione, o cono d&apos;urto, o cono in frantumi, è una
+                  struttura
+                  rocciosa con fratture a forma di cono divergenti che si trovano solo nei crateri di impatti di
+                  meteoriti o esplosioni nucleari.<br><br><sup>2 </sup>La pirite massiva e la selce sono pietre focaie
+                  ovvero particolari tipi di pietre adoperate per produrre scintille, necessarie ad accendere l’esca per
+                  il fuoco.<span class="s1"><br></span><span class="s1"><br></span></p>
+                <p> </p>
+                <p><a style="font-family: Oswald; font-size: 16px; text-transform: uppercase;" target="_blank"
+                    rel="noopener">Download PDF</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="verde-deciduo"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title">VERDE DECIDUO</h2>
+              <div class="page-item-text">
+                <p class="p1">Una pianta caducifoglie si frappone tra il tuo corpo e un altoparlante che diffonde un
+                  rumore rosa<sup>1</sup>. Trova una posizione comoda, rilassati e con il viso rivolto allo
+                  <em>speaker</em>, concentrati sull&apos;emissione sonora: ascolta il percorso del rumore e il suo
+                  raggiungerti dopo l&apos;incontro/scontro con la pianta: rami, tronco, foglie.
+                </p>
+                <p class="p2"><span class="Apple-converted-space"> </span></p>
+                <p class="p1">L’esercizio è ciclico e si ripete per 4 volte nel corso di un anno, mantenendo le
+                  condizioni
+                  di distanza tra la pianta, il tuo corpo e l&apos;altoparlante, così come il volume di emissione del
+                  rumore bianco, costanti.</p>
+                <p class="p1"> </p>
+                <p class="p1">La prima sessione si svolge in primavera.<br><br>La seconda sessione si svolge in tarda
+                  estate.<span class="Apple-converted-space"> </span></p>
+                <p class="p1"><br>La terza sessione  si svolge in autunno.</p>
+                <p class="p1"><br>La quarta e ultima sessione si svolge in pieno inverno.</p>
+              </div>
+              <div class="page-item-notes light-font">
+                <p class="p1"><sup>1 </sup>La pianta, il tuo corpo e l&apos;altoparlante sono equidistanti e posti lungo
+                  uno stesso tracciato territoriale in cui nulla si staglia oltre l&apos;altezza del tuo ginocchio.
+                  Scegli
+                  un sito protetto, in cui il potenziale di disturbo è ridotto al minimo e in cui sei certo di poter
+                  tornare per le quattro sessioni della pratica. Se ritieni necessaria una maggiore comodità puoi
+                  trovare
+                  una seduta o un giaciglio, ma abbi cura che il tuo volto sia alla stessa altezza
+                  dell&apos;altoparlante.
+                  Ogni sessione deve durare almeno 45 minuti.<br><br><br></p>
+                <p><a style="font-family: Oswald; font-size: 16px; text-transform: uppercase;" target="_blank"
+                    rel="noopener">Download PDF</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="page-item-wrapper cms-repeatable">
+            <div class="anchor-space"><a id="idiofoni"></a></div>
+            <div class="page-item-text">
+              <h2 class="page-item-title">IDIOfoni</h2>
+              <div class="page-item-text">
+                <p class="p1">Superficie risonante, con pelle tesa, di animale.</p>
+                <p class="p1"> </p>
+                <p class="p1"><small>[parte di testo illeggibile molti] </small>frammenti di osso e metallo, legni
+                  battenti – di odore e fibra diversa – polvere, cenere, pietrisco di fiume sparso.</p>
+                <p class="p1"> </p>
+                <p class="p1">Cadono le mani per:</p>
+                <p class="p1"> </p>
+                <p class="p1">afferrare, malmenare, pungere, storcere, lasciare, raschiare, strappare, percuotere,
+                  pestare, scuotere, pizzicare, sfregare, roteare.</p>
+              </div>
+              <div class="page-item-notes light-font">
+                <p class="p1"><sup>1 </sup>Idiofoni:<br><br><br></p>
+                <p><a style="font-family: Oswald; font-size: 16px; text-transform: uppercase;" target="_blank"
+                    rel="noopener">Download PDF</a></p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="page-images cms-editable" id="page-images">
-      <div class="page-images-wrapper move-to-top">
-        <img class="cms-repeatable" src="uploads/immagini/nuova%20pelle%201%20copia.jpg">
-        <img class="cms-repeatable" src="uploads/immagini/superficie-7.jpg">
-        <img class="cms-repeatable" src="uploads/immagini/superficie-5.jpg">
-        <img class="cms-repeatable" src="uploads/immagini/nuova%20pelle%202%20copia.jpg">
-        <img class="cms-repeatable" src="uploads/immagini/superficie-10.jpg">
-        <img class="cms-repeatable" src="uploads/immagini/superficie-1.jpg">
-        <img class="cms-repeatable" src="uploads/immagini/nuova%20pelle%203%20copia.jpg">
-        <img class="cms-repeatable" src="uploads/immagini/superficie-4.jpg">
-        <img class="cms-repeatable" src="uploads/immagini/superficie-13.jpg">
-        <img class="cms-repeatable" src="uploads/immagini/nuova%20pelle%204%20copia.jpg">
+      <div class="media-content cms-editable" id="media-content">
+        <div class="move-to-top">
+          <div class="media-wrapper">
+            <img class="cms-repeatable" src="uploads/immagini/nuova%20pelle%201%20copia.jpg">
+            <img class="cms-repeatable" src="uploads/immagini/pelle1.jpg">
+            <img class="cms-repeatable" src="uploads/immagini/superficie-12.jpg">
+            <img class="cms-repeatable" src="uploads/immagini/superficie-7.jpg">
+            <img class="cms-repeatable" src="uploads/immagini/superficie-5.jpg">
+            <img class="cms-repeatable" src="uploads/immagini/nuova%20pelle%202%20copia.jpg">
+            <img class="cms-repeatable" src="uploads/immagini/superficie-10.jpg">
+            <img class="cms-repeatable" src="uploads/immagini/superficie-1.jpg">
+            <img class="cms-repeatable" src="uploads/immagini/nuova%20pelle%203%20copia.jpg">
+            <img class="cms-repeatable" src="uploads/immagini/superficie-4.jpg">
+            <img class="cms-repeatable" src="uploads/immagini/superficie-13.jpg">
+            <img class="cms-repeatable" src="uploads/immagini/nuova%20pelle%204%20copia.jpg">
+            <img class="cms-repeatable" src="uploads/immagini/superficie-9.jpg">
+            <img class="cms-repeatable" src="uploads/immagini/superficie-3.jpg">
+            <img class="cms-repeatable" src="uploads/immagini/superficie-6.jpg">
+            <img class="cms-repeatable" src="uploads/immagini/daf%20anelli%20copia.jpg">
+            <img class="cms-repeatable" src="uploads/immagini/superficie-8.jpg">
+          </div>
+        </div>
       </div>
     </div>
   </section>
