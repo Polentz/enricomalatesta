@@ -497,6 +497,8 @@ em.light-font,
 
 .page-item-wrapper sup {
     font-size: 10px;
+    vertical-align: super;
+    margin: 0 2px;
 }
 
 .page-item-title {
