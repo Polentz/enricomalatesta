@@ -4,42 +4,6 @@
         url("assets/fonts/oswald-variablefont_wght-webfont.woff") format("woff");
 }
 
-@font-face {
-    font-family: "FiraSansExtraLight";
-    src: url("assets/fonts/firasans-extralight-webfont.woff2") format("woff2"),
-        url("assets/fonts/firasans-extralight-webfont.woff") format("woff");
-}
-
-@font-face {
-    font-family: "FiraSansExtraLightItalic";
-    src: url("assets/fonts/firasans-extralightitalic-webfont.woff2") format("woff2"),
-        url("assets/fonts/firasans-extralightitalic-webfont.woff") format("woff");
-}
-
-@font-face {
-    font-family: "FiraSansRegular";
-    src: url("assets/fonts/firasans-regular-webfont.woff2") format("woff2"),
-        url("assets/fonts/firasans-regular-webfont.woff") format("woff");
-}
-
-@font-face {
-    font-family: "FiraSansItalic";
-    src: url("assets/fonts/firasans-italic-webfont.woff2") format("woff2"),
-        url("assets/fonts/firasans-italic-webfont.woff") format("woff");
-}
-
-@font-face {
-    font-family: "FiraSansBold";
-    src: url("assets/fonts/firasans-bold-webfont.woff2") format("woff2"),
-        url("assets/fonts/firasans-bold-webfont.woff") format("woff");
-}
-
-@font-face {
-    font-family: "FiraSansBoldItalic";
-    src: url("assets/fonts/firasans-bolditalic-webfont.woff2") format("woff2"),
-        url("assets/fonts/firasans-bolditalic-webfont.woff") format("woff");
-}
-
 :root {
     --doc-height: 100%;
     --random-top: 0;
@@ -70,7 +34,7 @@
 
 body {
     overflow: hidden;
-    font-family: "FiraSansRegular", sans-serif;
+    font-family: "Fira Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.3;
@@ -78,11 +42,13 @@ body {
 }
 
 em {
-    font-family: "FiraSansItalic", sans-serif;
+    /* font-family: "FiraSansItalic", sans-serif; */
+    font-style: italic;
 }
 
 strong {
-    font-family: "FiraSansBold", sans-serif;
+    /* font-family: "FiraSansBold", sans-serif; */
+    font-weight: 700;
 }
 
 h1 {
@@ -184,6 +150,16 @@ a:hover::before {
     padding-bottom: 2px;
 }
 
+.header-dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* #richiami-btn {
+    font-size: 14px;
+} */
+
 #container {
     width: 100%;
     height: var(--doc-height);
@@ -244,6 +220,11 @@ a:hover::before {
     margin-bottom: 50px;
 }
 
+.main-hero-wrapper:not(:first-of-type) {
+    padding-top: 10px;
+    border-top: solid 1px var(--txt-color);
+}
+
 .main-hero-image {
     display: -ms-grid;
     display: grid;
@@ -260,8 +241,11 @@ a:hover::before {
     font-family: "Oswald";
     font-size: 16px;
     font-weight: 400;
-    margin-bottom: 40px;
     text-transform: uppercase;
+}
+
+.main-hero-text h2:first-of-type {
+    margin-bottom: 40px;
 }
 
 .main-hero-text p {
@@ -284,7 +268,7 @@ a:hover::before {
 }
 
 .agenda-wrapper p:nth-child(1) {
-    font-family: "FiraSansRegular", sans-serif;
+    font-family: "Fira Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
 }
@@ -469,13 +453,13 @@ a:hover::before {
 }
 
 .light-font {
-    font-family: "FiraSansExtraLight", sans-serif;
+    font-family: "Fira Sans", sans-serif;
     font-weight: 200;
 }
 
 em.light-font,
 .light-font em {
-    font-family: "FiraSansExtraLightItalic", sans-serif;
+    font-family: "Fira Sans", sans-serif;
 }
 
 .page-item-wrapper {
@@ -484,10 +468,18 @@ em.light-font,
     border: solid 1px var(--txt-color);
     -webkit-box-shadow: 0px 0px 3px 0 var(--txt-color);
     box-shadow: 0px 0px 3px 0 var(--txt-color);
+    position: relative;
 }
 
 .page-item-wrapper div:not(:last-of-type) {
     margin-bottom: 30px;
+}
+
+.anchor-space {
+    position: absolute;
+    /* height: 60px;
+    width: 60px; */
+    top: -10px;
 }
 
 .page-item-text,
@@ -642,6 +634,10 @@ em.light-font,
     font-style: italic;
 }
 
+.list-mobile-opener {
+    display: none;
+}
+
 @media screen and (max-width: 600px) {
     body {
         overflow-y: scroll;
@@ -662,7 +658,7 @@ em.light-font,
         display: block;
         height: auto;
         overflow-y: scroll;
-        margin-bottom: 10%;
+        margin-bottom: 10vh;
     }
 
     .main-content,
@@ -672,19 +668,27 @@ em.light-font,
     }
 
     .agenda {
-        padding: 20px;
+        padding-top: 10px;
         position: relative;
     }
 
     .agenda::before {
         content: '';
         position: absolute;
-        width: calc(100% - 20px);
+        width: 100%;
         height: 1px;
         background: var(--txt-color);
         top: 0;
-        left: 10px;
+        left: 0;
         pointer-events: none;
+    }
+
+    .main-hero-wrapper {
+        margin-bottom: 50px;
+    }
+
+    .main-hero-text {
+        padding: 0 0 10px 0;
     }
 
     .media-wrapper {
@@ -697,7 +701,7 @@ em.light-font,
 
     #header-mobile {
         display: block;
-        height: 10%;
+        height: 10vh;
         width: 100%;
         position: fixed;
         bottom: 0;
@@ -730,7 +734,7 @@ em.light-font,
         height: auto;
         width: 100%;
         position: fixed;
-        bottom: calc(10% + 1px);
+        bottom: calc(10vh + 1px);
         left: 0;
         background-color: var(--bg-color);
         z-index: 999;
@@ -789,13 +793,9 @@ em.light-font,
         justify-self: end;
     }
 
-    /* .lily {
-        margin: 0;
-    } */
-
     .about {
         width: 100%;
-        height: calc(90% - 1px);
+        height: calc(90vh - 1px);
         position: fixed;
         top: 0;
         left: 0;
@@ -829,13 +829,21 @@ em.light-font,
         padding: 10px 10px 0 10px;
     }
 
-    .page-menu {
+    .list-mobile-opener {
+        display: block;
+        text-align: right;
+    }
+
+    .list-content .cms-repeatable {
         display: none;
     }
 
-    .media-content {
-        width: 100%;
-        padding: 0 10px;
+    .list-content .cms-repeatable.open {
+        display: block;
+    }
+
+    .page-item-wrapper {
+        padding: 15px;
     }
 
     .media-wrapper {
@@ -849,7 +857,7 @@ em.light-font,
 
     .info {
         width: 100%;
-        max-height: calc(90% - 1px);
+        max-height: calc(90vh - 1px);
         height: 100%;
         position: fixed;
         top: 0;

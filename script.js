@@ -6,10 +6,16 @@ const info = document.getElementById("info");
 const infoOpenBtn = document.getElementById("info-btn");
 const infoCloseBtn = document.getElementById("info-cls");
 const infoBtnMobile = document.getElementById("info-btn-mobile");
+const richiami = document.getElementById("richiami");
+const richiamiOpenBtn = document.getElementById("richiami-btn");
+const richiamiCloseBtn = document.getElementById("richiami-cls");
+const richiamiBtnMobile = document.getElementById("richiami-btn-mobile");
 const menu = document.getElementById("menu-mobile");
 const menuBtn = document.getElementById("menu-btn");
 const menuLabels = document.querySelectorAll(".link-mobile");
 const items = document.querySelectorAll(".item");
+const listOpenenr = document.querySelector(".list-mobile-opener");
+const listElements = document.querySelectorAll(".list-content .cms-repeatable");
 
 const documentHeight = () => {
     const doc = document.documentElement
@@ -26,7 +32,12 @@ const functions = () => {
         toggleClick(infoOpenBtn, info);
         closeClick(infoCloseBtn, info);
         toggleClickMobile(infoBtnMobile, info);
-    }
+    };
+    if (richiami) {
+        toggleClick(richiamiOpenBtn, richiami);
+        closeClick(richiamiCloseBtn, richiami);
+        toggleClickMobile(richiamiBtnMobile, richiami);
+    };
     toggleClick(menuBtn, menu);
     closeAll(menuLabels, menu);
 };
@@ -64,6 +75,16 @@ const closeAll = (buttons, element) => {
     });
 };
 
+functions();
+
+if (listOpenenr) {
+    listOpenenr.addEventListener("click", () => {
+        listElements.forEach(element => {
+            element.classList.toggle("open");
+        });
+    });
+};
+
 items.forEach(item => {
     const open = item.querySelectorAll(".item-title, .cms-opener");
     const content = item.querySelector(".item-content");
@@ -82,9 +103,6 @@ items.forEach(item => {
     });
 });
 
-
-functions();
-
 const mediaQuery = window.matchMedia("(max-width: 600px)");
 const draggableElems = document.querySelectorAll(".item-content");
 let draggies = []
@@ -96,8 +114,8 @@ const draggableOnDesktop = (e) => {
                 containment: "body"
             });
             draggies.push(draggie);
-        }
-    }
+        };
+    };
 };
 mediaQuery.addListener(draggableOnDesktop);
 draggableOnDesktop(mediaQuery);

@@ -30,6 +30,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&amp;family=Oswald&amp;display=swap"
     rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
   <link rel="stylesheet" href="base.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -40,7 +41,10 @@
     <div class="header-inner">
       <a href="index.html">Enrico Malatesta</a>
       <a id="about-btn">About</a>
-      <a id="info-btn">Annotazioni superficiali</a>
+      <span class="header-dropdown">
+        <a id="info-btn">Annotazioni superficiali</a>
+        <a id="richiami-btn">(Richiami)</a>
+      </span>
       <a href="caveja.html">Caveja</a>
       <!-- <a class="lily" href="https://lilystar1000.com/" target="_blank"></a> -->
       <a class="mu" href="https://www.mmmu.it/" target="_blank">
@@ -65,6 +69,7 @@
     <div class="menu-mobile-inner">
       <a id="about-btn-mobile" class="link-mobile">About</a>
       <a id="info-btn-mobile" class="link-mobile">Annotazioni superficiali</a>
+      <a id="richiami-btn-mobile" class="link-mobile">(Richiami)</a>
       <a href="caveja.html" class="link-mobile">Caveja</a>
       <!-- <a href="https://lilystar1000.com/" target="_blank">Lily Star 1000</a> -->
       <a href="https://www.mmmu.it/" target="_blank">MU</a>
@@ -129,10 +134,29 @@
     <div id="info-cls" class="info-close"><a>Close</a></div>
   </div>
 
+  <div id="richiami" class="info">
+    <div id="info-wrapper" class="info-wrapper cms-editable">
+      <div class="info-content cms-lock">
+        <div class="info-content-text cms-unlock" data-type="text">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, unde! Hic accusantium minus omnis harum
+            ipsa quam error doloremque ipsam? Id delectus asperiores laudantium accusantium, eum sed earum nam aliquid
+            labore ad quidem itaque deserunt optio cumque animi soluta deleniti velit, magni nostrum autem omnis ratione
+            ipsum quasi. Deleniti, atque.</p>
+          <p class="light-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet harum provident iure et
+            at eum dignissimos ullam perspiciatis tempora culpa, eaque, nam sint maxime pariatur architecto illo
+            temporibus! Earum iste quia sequi aut totam veritatis, possimus soluta. Pariatur, atque voluptatem dolore
+            officiis dolorem sunt culpa asperiores nesciunt accusantium sequi ea!</p>
+        </div>
+      </div>
+    </div>
+    <div id="richiami-cls" class="info-close"><a>Close</a></div>
+  </div>
+
   <section id="container">
     <div class="main">
       <div id="list-content" class="list-content page-menu cms-editable">
         <ul class="page-menu-list">
+          <li class="page-menu-item list-mobile-opener">Select from List</li>
           <li class="page-menu-item cms-repeatable"><a href="#ra">RA</a></li>
           <li class="page-menu-item cms-repeatable"><a href="#la-bessa">la Bessa</a></li>
           <li class="page-menu-item cms-repeatable"><a href="#fare-polvere">Fare polvere</a></li>

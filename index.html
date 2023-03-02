@@ -26,10 +26,7 @@
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/faviconem-72.png">
   <link href="assets/faviconem-32.png" rel="shortcut icon" type="image/x-icon">
   <link href="assets/faviconem-256.png" rel="apple-touch-icon">
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&amp;family=Oswald&amp;display=swap"
-    rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
   <link rel="stylesheet" href="base.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -39,7 +36,10 @@
     <div class="header-inner">
       <a href="index.html">Enrico Malatesta</a>
       <a id="about-btn">About</a>
-      <a href="annotazioni-superficiali.html">Annotazioni superficiali</a>
+      <span class="header-dropdown">
+        <a href="annotazioni-superficiali.html">Annotazioni superficiali</a>
+        <a id="richiami-btn">(Richiami)</a>
+      </span>
       <a href="caveja.html">Caveja</a>
       <!-- <a class="lily" href="https://lilystar1000.com/" target="_blank"></a> -->
       <a class="mu" href="https://www.mmmu.it/" target="_blank">
@@ -64,6 +64,7 @@
     <div class="menu-mobile-inner">
       <a class="link-mobile" id="about-btn-mobile">About</a>
       <a href="annotazioni-superficiali.html" class="link-mobile">Annotazioni superficiali</a>
+      <a id="richiami-btn-mobile" class="link-mobile">(Richiami)</a>
       <a href="caveja.html" class="link-mobile">Caveja</a>
       <!-- <a href="https://lilystar1000.com/" target="_blank">Lily Star 1000</a> -->
       <a href="https://www.mmmu.it/" target="_blank">MU</a>
@@ -111,6 +112,24 @@
     <div id="about-cls" class="about-close"><a>Close</a></div>
   </div>
 
+  <div id="richiami" class="info">
+    <div id="info-wrapper" class="info-wrapper cms-editable">
+      <div class="info-content cms-lock">
+        <div class="info-content-text cms-unlock" data-type="text">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, unde! Hic accusantium minus omnis harum
+            ipsa quam error doloremque ipsam? Id delectus asperiores laudantium accusantium, eum sed earum nam aliquid
+            labore ad quidem itaque deserunt optio cumque animi soluta deleniti velit, magni nostrum autem omnis ratione
+            ipsum quasi. Deleniti, atque.</p>
+          <p class="light-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet harum provident iure et
+            at eum dignissimos ullam perspiciatis tempora culpa, eaque, nam sint maxime pariatur architecto illo
+            temporibus! Earum iste quia sequi aut totam veritatis, possimus soluta. Pariatur, atque voluptatem dolore
+            officiis dolorem sunt culpa asperiores nesciunt accusantium sequi ea!</p>
+        </div>
+      </div>
+    </div>
+    <div id="richiami-cls" class="info-close"><a>Close</a></div>
+  </div>
+
   <section id="container">
     <div class="main">
       <div id="main-content" class="main-content cms-editable">
@@ -126,7 +145,7 @@
               TERRITORIES in a common network.</p>
             <p>Manicula consists in a collection of ACTIVE LISTENING and OBSERVATION EXERCISES aimed at investigating
               the acoustic and visual phenomena present in some parts of the city; the areas of activation of the
-              practices are not declared, but indicated by <a>reference symbol</a>. The project is a kind of TREASURE
+              practices are not declared, but indicated by reference symbol. The project is a kind of TREASURE
               HUNT and it does not require the presence and mediation of a performer/artist/guide. Each individual
               decides how to undertake the search for symbols and how to use the available scores to investigate, on the
               one hand, the relationship between SOUND AND SPACE through the use of the body and, on the other hand, the
@@ -134,8 +153,8 @@
               of the city. Manicula also invites people to continue the exploration by enriching it with their own
               personal research. No specific knowledge or skills are required to try the proposed exercises.</p>
             <p>Manicula is an OPEN PROJECT that also includes live performances, workshop as well as a visual and
-              textual JOURNAL that documents the research and the<strong> </strong>WALKING PATHS carried out in situ by
-              the authors.<br><br><a href="https://www.manicula.it/" target="_blank" rel="noopener">www.manicula.it</a>
+              textual JOURNAL that documents the research and the WALKING PATHS carried out in situ by
+              the authors.
             </p>
             <p><br>• <a href="uploads/pdf/press-progetti-per-home/MANICULA_press%20ITA.pdf" target="_blank"
                 rel="noopener">MANICULA_press ITA_pdf</a></p>
