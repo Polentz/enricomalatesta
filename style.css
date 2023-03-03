@@ -163,6 +163,7 @@ a:hover::before {
 #richiami-btn {
     font-family: "Fira Sans", sans-serif;
     font-weight: 200;
+    font-size: 14px;
     line-height: 1;
     margin-top: 2px;
 }
@@ -644,7 +645,7 @@ em.light-font,
 .caveja-content:nth-of-type(30) {
     border-image-source: url(assets/svgs/grec-2.png);
     border-width: 14px;
-    border-image-repeat: repeat;
+    /* border-image-repeat: repeat; */
 }
 
 .caveja-content h2,
