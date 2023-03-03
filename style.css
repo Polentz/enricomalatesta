@@ -42,12 +42,10 @@ body {
 }
 
 em {
-    /* font-family: "FiraSansItalic", sans-serif; */
     font-style: italic;
 }
 
 strong {
-    /* font-family: "FiraSansBold", sans-serif; */
     font-weight: 700;
 }
 
@@ -103,7 +101,6 @@ a:hover::before {
     bottom: 0;
     left: 0;
     background-color: var(--bg-color);
-    /* z-index: 999; */
     z-index: 1;
 }
 
@@ -161,6 +158,13 @@ a:hover::before {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+}
+
+#richiami-btn {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 200;
+    line-height: 1;
+    margin-top: 2px;
 }
 
 #container {
@@ -480,8 +484,6 @@ em.light-font,
 
 .anchor-space {
     position: absolute;
-    /* height: 60px;
-    width: 60px; */
     top: -10px;
 }
 
@@ -614,7 +616,35 @@ em.light-font,
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 30px;
+    border-image-slice: 120 120;
+    border-image-outset: 0px;
+    border-image-repeat: round;
+    border-style: outset;
+}
 
+.caveja-content:nth-of-type(odd) {
+    border-image-source: url(assets/svgs/grec-1.png);
+    border-width: 12px;
+}
+
+.caveja-content:nth-of-type(even) {
+    border-image-source: url(assets/svgs/grec-3.png);
+    border-width: 14px;
+}
+
+.caveja-content:nth-of-type(3),
+.caveja-content:nth-of-type(6),
+.caveja-content:nth-of-type(9),
+.caveja-content:nth-of-type(12),
+.caveja-content:nth-of-type(15),
+.caveja-content:nth-of-type(18),
+.caveja-content:nth-of-type(21),
+.caveja-content:nth-of-type(24),
+.caveja-content:nth-of-type(27),
+.caveja-content:nth-of-type(30) {
+    border-image-source: url(assets/svgs/grec-2.png);
+    border-width: 14px;
+    border-image-repeat: repeat;
 }
 
 .caveja-content h2,
@@ -845,6 +875,7 @@ em.light-font,
         display: block;
     }
 
+    .caveja-content,
     .page-item-wrapper {
         padding: 15px;
     }
@@ -899,6 +930,10 @@ em.light-font,
         position: absolute;
         top: 0;
         right: 0;
+    }
+
+    .caveja-content {
+        border-image-repeat: repeat;
     }
 
 }
