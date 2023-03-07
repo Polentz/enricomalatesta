@@ -1,7 +1,8 @@
+const popupElements = document.querySelectorAll(".about, .info")
 const about = document.getElementById("about");
 const aboutOpenBtn = document.getElementById("about-btn");
-const aboutcloseBtn = document.getElementById("about-cls");
-const aboutBtnMobile = document.getElementById("about-btn-mobile")
+const aboutCloseBtn = document.getElementById("about-cls");
+const aboutBtnMobile = document.getElementById("about-btn-mobile");
 const info = document.getElementById("info");
 const infoOpenBtn = document.getElementById("info-btn");
 const infoCloseBtn = document.getElementById("info-cls");
@@ -24,25 +25,32 @@ const documentHeight = () => {
 window.addEventListener("resize", documentHeight)
 documentHeight();
 
-const functions = () => {
-    toggleClick(aboutOpenBtn, about);
-    closeClick(aboutcloseBtn, about);
-    toggleClickMobile(aboutBtnMobile, about);
-    if (info) {
-        toggleClick(infoOpenBtn, info);
-        closeClick(infoCloseBtn, info);
-        toggleClickMobile(infoBtnMobile, info);
-    };
-    if (richiami) {
-        toggleClick(richiamiOpenBtn, richiami);
-        closeClick(richiamiCloseBtn, richiami);
-        toggleClickMobile(richiamiBtnMobile, richiami);
-    };
-    toggleClick(menuBtn, menu);
-    closeAll(menuLabels, menu);
+const toggleClassOpen = (button, element) => {
+    button.addEventListener("click", () => {
+        element.classList.toggle("open");
+    });
 };
 
-const toggleClick = (button, element) => {
+const removeClassOpen = (button, element) => {
+    button.addEventListener("click", () => {
+        element.classList.remove("open");
+    });
+};
+
+const toggleClassOpenMobile = (button, elements, element) => {
+    button.addEventListener("click", () => {
+        if (elements) {
+            elements.forEach(el => {
+                if (el.classList.contains("open")) {
+                    el.classList.remove("open")
+                };
+            });
+        };
+        element.classList.toggle("open");
+    });
+};
+
+const openMobileMenu = (button, element) => {
     button.addEventListener("click", () => {
         element.classList.toggle("open");
         if (menuBtn.innerHTML == "CLOSE") {
@@ -53,20 +61,7 @@ const toggleClick = (button, element) => {
     });
 };
 
-const closeClick = (button, element) => {
-    button.addEventListener("click", () => {
-        element.classList.remove("open");
-        menuBtn.innerHTML = "MENU";
-    });
-};
-
-const toggleClickMobile = (button, element) => {
-    button.addEventListener("click", () => {
-        element.classList.toggle("open");
-    });
-};
-
-const closeAll = (buttons, element) => {
+const closeMobileMenu = (buttons, element) => {
     buttons.forEach(button => {
         button.addEventListener("click", () => {
             element.classList.remove("open");
@@ -75,7 +70,21 @@ const closeAll = (buttons, element) => {
     });
 };
 
-functions();
+toggleClassOpen(aboutOpenBtn, about);
+toggleClassOpenMobile(aboutBtnMobile, popupElements, about);
+removeClassOpen(aboutCloseBtn, about);
+if (infoOpenBtn) {
+    toggleClassOpen(infoOpenBtn, info);
+    toggleClassOpenMobile(infoBtnMobile, popupElements, info);
+    removeClassOpen(infoCloseBtn, info);
+};
+if (richiamiOpenBtn) {
+    toggleClassOpen(richiamiOpenBtn, richiami);
+    toggleClassOpenMobile(richiamiBtnMobile, popupElements, richiami);
+    removeClassOpen(richiamiCloseBtn, richiami);
+};
+openMobileMenu(menuBtn, menu);
+closeMobileMenu(menuLabels, menu);
 
 if (listOpenenr) {
     listOpenenr.addEventListener("click", () => {
@@ -132,16 +141,5 @@ cardsArray.forEach((card) => {
                 ri.style.zIndex = ri.style.zIndex - 1;
             };
         });
-        // remember to pass (e)
-        // const current = e.currentTarget
-        // console.log(current)
-        // const restOfCards = cardsArray.splice(current, 1);
-        // console.log(restOfCards);
-        // card.style.zIndex = Math.floor(Math.random() * 99);
-        // restOfCards.forEach((rest) => {
-        //     if (rest.style.zIndex >= card.style.zIndex) {
-        //         rest.style.zIndex = rest.style.zIndex - 1;
-        //     };
-        // });
     });
 });
