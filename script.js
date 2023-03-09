@@ -70,9 +70,11 @@ const closeMobileMenu = (buttons, element) => {
     });
 };
 
-toggleClassOpen(aboutOpenBtn, about);
-toggleClassOpenMobile(aboutBtnMobile, popupElements, about);
-removeClassOpen(aboutCloseBtn, about);
+if (aboutOpenBtn) {
+    toggleClassOpen(aboutOpenBtn, about);
+    toggleClassOpenMobile(aboutBtnMobile, popupElements, about);
+    removeClassOpen(aboutCloseBtn, about);
+};
 if (infoOpenBtn) {
     toggleClassOpen(infoOpenBtn, info);
     toggleClassOpenMobile(infoBtnMobile, popupElements, info);
@@ -83,8 +85,10 @@ if (richiamiOpenBtn) {
     toggleClassOpenMobile(richiamiBtnMobile, popupElements, richiami);
     removeClassOpen(richiamiCloseBtn, richiami);
 };
-openMobileMenu(menuBtn, menu);
-closeMobileMenu(menuLabels, menu);
+if (menuBtn) {
+    openMobileMenu(menuBtn, menu);
+    closeMobileMenu(menuLabels, menu);
+};
 
 if (listOpenenr) {
     listOpenenr.addEventListener("click", () => {
@@ -95,7 +99,7 @@ if (listOpenenr) {
 };
 
 items.forEach(item => {
-    const open = item.querySelectorAll(".item-title, .cms-opener");
+    const open = item.querySelectorAll(".item-title");
     const content = item.querySelector(".item-content");
     const close = item.querySelector(".item-content-close a");
     open.forEach(opener => {
@@ -105,30 +109,13 @@ items.forEach(item => {
             content.style.setProperty("--random-left", `${randomLeft}` + "%");
             content.style.setProperty("--random-top", `${randomTop}` + "%");
             content.classList.toggle("open");
+            open.innerHTML = contentTitleText;
         });
-    })
+    });
     close.addEventListener("click", () => {
         content.classList.remove("open");
     });
 });
-
-const mediaQuery = window.matchMedia("(max-width: 600px)");
-const draggableElems = document.querySelectorAll(".item-content");
-let draggies = []
-const draggableOnDesktop = (e) => {
-    if (!e.matches) {
-        for (let i = 0; i < draggableElems.length; i++) {
-            const draggableElem = draggableElems[i];
-            let draggie = new Draggabilly(draggableElem, {
-                containment: "body"
-            });
-            draggies.push(draggie);
-        };
-    };
-};
-mediaQuery.addListener(draggableOnDesktop);
-draggableOnDesktop(mediaQuery);
-
 
 const cards = Array.prototype.slice.call(document.querySelectorAll(".item-content"));
 const cardsArray = cards.concat(Array.prototype.slice.call(document.querySelectorAll(".item-content")));

@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Oswald";
-    src: url("assets/fonts/oswald-variablefont_wght-webfont.woff2") format("woff2"),
-        url("assets/fonts/oswald-variablefont_wght-webfont.woff") format("woff");
+    src: url("https://polentz.github.io/enricomalatesta/assets/fonts/oswald-variablefont_wght-webfont.woff2") format("woff2"),
+        url("https://polentz.github.io/enricomalatesta/assets/fonts/oswald-variablefont_wght-webfont.woff") format("woff");
 }
 
 :root {
@@ -60,11 +60,13 @@ img {
     width: 100%;
 }
 
+.item-title,
 a {
     cursor: pointer;
     position: relative;
 }
 
+.item-title::before,
 a::before {
     content: "";
     position: absolute;
@@ -86,6 +88,7 @@ a::before {
     transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
+.item-title:hover::before,
 a:hover::before {
     -webkit-transform-origin: 0% 50%;
     -ms-transform-origin: 0% 50%;
@@ -534,6 +537,11 @@ em.light-font,
     font-weight: 400;
     font-size: 16px;
     text-transform: uppercase;
+}
+
+.item-title {
+    display: inline;
+    cursor: pointer;
 }
 
 .item-content {

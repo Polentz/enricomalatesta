@@ -21,6 +21,7 @@
     content="Annotazioni superficiali is an online project. It is an open collection of listening exercises, scores and texts."> -->
   <meta property="og:image" content="uploads/immagini/caveja (1).jpeg">
   <meta property="og:site_name" content="Caveja">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/faviconem-144.png">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/faviconem-114.png">
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/faviconem-72.png">
@@ -130,7 +131,7 @@
 
   <div id="richiami" class="info">
     <div id="info-wrapper" class="info-wrapper cms-editable">
-      <div id="info-content" class="info-content cms-includ">
+      <div id="info-content" class="info-content cms-include">
         <div class="info-content-text" data-type="text">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, unde! Hic accusantium minus omnis harum
             ipsa quam error doloremque ipsam? Id delectus asperiores laudantium accusantium, eum sed earum nam aliquid
@@ -150,19 +151,15 @@
     <div class="main">
 
       <div id="list-content" class="list-content page-items cms-editable">
-        <ul class="page-items-list">
-          <li class="page-menu-item list-mobile-opener">Select from List</li>
-          <li class="item cms-repeatable">
-            <a class="item-title">ESEMPIO DI TITOLO</a>
-            <span class="cms-opener cms-lock">
-              <!-- not empty -->
-            </span>
-            <div class="item-content">
-              <div id="item-content" class="item-content-wrapper cms-editable">
-                <div class="item-content-title cms-repeatable">
-                  <h2>ESEMPIO DI TITOLO</h2>
+        <ul id="page-items-list" class="page-items-list cms-include">
+          <li class="item cms-lock">
+            <p class="item-title cms-lock">SCHEDA UNO</p>
+            <div class="item-content cms-lock">
+              <div class="item-content-wrapper cms-lock">
+                <div class="item-content-title cms-lock">
+                  <h2>SCHEDA UNO</h2>
                 </div>
-                <div class="item-content-text cms-repeatable">
+                <div class="item-content-text cms-lock">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At adipisci officiis vero fugit vitae,
                     nemo nostrum a, iure esse quia animi? Impedit deleniti nesciunt ipsam, sit repellendus sunt?
                     Aspernatur vero veritatis vel dolor laboriosam porro culpa fugit in fugiat quo. Tenetur error
@@ -172,58 +169,20 @@
                     nam! Numquam deleniti, quod illo eos impedit doloremque et nostrum illum repellendus odit aut
                     aspernatur eum dolor soluta est maxime repudiandae!</p>
                 </div>
-                <div class="item-content-notes light-font cms-repeatable">
+                <div class="item-content-notes light-font cms-lock">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A neque mollitia voluptate minus.
                     Quaerat assumenda exercitationem voluptatibus, quia doloremque vero commodi odit reiciendis
                     molestias repudiandae quidem cupiditate architecto eum laborum quisquam perspiciatis illum minus
                     eligendi maxime. Natus, nisi? Sunt libero incidunt unde, animi maiores iure aliquam dicta in
                     officia quasi.</p>
                 </div>
-                <div class="item-content-image cms-repeatable">
-                  <img src="uploads/immagini/Aural-Tools-BILIA.jpg">
-                  <img src="uploads/immagini/Aural-Tools-BILIA.jpg">
-                </div>
-              </div>
-              <div class="item-content-close"><a>Close</a></div>
-            </div>
-          </li>
-
-          <li class="item cms-repeatable">
-            <a class="item-title">ESEMPIO DI TITOLO</a>
-            <span class="cms-opener cms-lock">
-              <!-- not empty -->
-            </span>
-            <div class="item-content">
-              <div id="item-content" class="item-content-wrapper cms-editable">
-                <div class="item-content-title cms-repeatable">
-                  <h2>ESEMPIO DI TITOLO</h2>
-                </div>
-                <div class="item-content-text cms-repeatable">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At adipisci officiis vero fugit vitae,
-                    nemo nostrum a, iure esse quia animi? Impedit deleniti nesciunt ipsam, sit repellendus sunt?
-                    Aspernatur vero veritatis vel dolor laboriosam porro culpa fugit in fugiat quo. Tenetur error
-                    sed veritatis beatae natus voluptatibus enim quidem nam ad. Cumque nisi, dolores aut obcaecati
-                    officia quidem, modi, exercitationem laudantium explicabo labore voluptate. Molestias aspernatur
-                    eaque laudantium nihil possimus dolores dolorem, tempora earum voluptate rem dicta quae culpa
-                    nam! Numquam deleniti, quod illo eos impedit doloremque et nostrum illum repellendus odit aut
-                    aspernatur eum dolor soluta est maxime repudiandae!</p>
-                </div>
-                <div class="item-content-notes light-font cms-repeatable">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A neque mollitia voluptate minus.
-                    Quaerat assumenda exercitationem voluptatibus, quia doloremque vero commodi odit reiciendis
-                    molestias repudiandae quidem cupiditate architecto eum laborum quisquam perspiciatis illum minus
-                    eligendi maxime. Natus, nisi? Sunt libero incidunt unde, animi maiores iure aliquam dicta in
-                    officia quasi.</p>
-                </div>
-                <div class="item-content-image cms-repeatable">
-                  <img src="uploads/immagini/Aural-Tools-BILIA.jpg">
+                <div class="item-content-image cms-lock">
                   <img src="uploads/immagini/Aural-Tools-BILIA.jpg">
                 </div>
               </div>
               <div class="item-content-close"><a>Close</a></div>
             </div>
           </li>
-
         </ul>
       </div>
 
@@ -249,7 +208,6 @@
             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quisquam illo aspernatur distinctio,
               quis doloribus necessitatibus sapiente. Exercitationem, perspiciatis iusto.</h4>
           </div>
-
           <div class="caveja-content cms-repeatable">
             <h2>Titolo</h2>
             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. A neque mollitia voluptate minus.
@@ -270,8 +228,6 @@
             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quisquam illo aspernatur distinctio,
               quis doloribus necessitatibus sapiente. Exercitationem, perspiciatis iusto.</h4>
           </div>
-
-
           <div class="caveja-content cms-repeatable">
             <h2>Titolo</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At adipisci officiis vero fugit vitae,
@@ -279,7 +235,6 @@
               Aspernatur vero veritatis vel dolor laboriosam porro culpa fugit in fugiat quo. Tenetur error
               sed veritatis beatae natus voluptatibus enim quidem nam ad.</p>
           </div>
-
         </div>
       </div>
 
@@ -299,6 +254,24 @@
   </section>
   <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
   <script src="script.js"></script>
+  <script>
+    const mediaQuery = window.matchMedia("(max-width: 600px)");
+    const draggableElems = document.querySelectorAll(".item-content");
+    let draggies = []
+    const draggableOnDesktop = (e) => {
+      if (!e.matches) {
+        for (let i = 0; i < draggableElems.length; i++) {
+          const draggableElem = draggableElems[i];
+          let draggie = new Draggabilly(draggableElem, {
+            containment: "body"
+          });
+          draggies.push(draggie);
+        };
+      };
+    };
+    mediaQuery.addListener(draggableOnDesktop);
+    draggableOnDesktop(mediaQuery);
+  </script>
 
 </body>
 
