@@ -112,7 +112,7 @@ items.forEach(item => {
             content.style.setProperty("--random-left", `${randomLeft}` + "%");
             content.style.setProperty("--random-top", `${randomTop}` + "%");
             content.classList.toggle("open");
-            open.innerHTML = contentTitleText;
+            // open.innerHTML = contentTitleText;
         });
     });
     close.addEventListener("click", () => {
@@ -120,16 +120,16 @@ items.forEach(item => {
     });
 });
 
-const cards = Array.prototype.slice.call(document.querySelectorAll(".item-content"));
-const cardsArray = cards.concat(Array.prototype.slice.call(document.querySelectorAll(".item-content")));
-cardsArray.forEach((card) => {
-    card.addEventListener("click", () => {
-        const restOfCards = cardsArray.filter(i => i.innerHeight != card.id);
-        card.style.zIndex = cardsArray.length;
-        restOfCards.forEach((ri) => {
-            if (ri.style.zIndex >= card.style.zIndex) {
-                ri.style.zIndex = ri.style.zIndex - 1;
-            };
-        });
-    });
-});
+// const cards = Array.prototype.slice.call(document.querySelectorAll(".item-content"));
+// const cardsArray = cards.concat(Array.prototype.slice.call(document.querySelectorAll(".item-content")));
+// cardsArray.forEach((card) => {
+//     card.addEventListener("click", () => {
+//         const restOfCards = cardsArray.filter(i => i.innerHeight != card.id);
+//         card.style.zIndex = cardsArray.length;
+//         restOfCards.forEach((ri) => {
+//             if (ri.style.zIndex >= card.style.zIndex) {
+//                 ri.style.zIndex = ri.style.zIndex - 1;
+//             };
+//         });
+//     });
+// });
