@@ -16,7 +16,7 @@ const menuBtn = document.getElementById("menu-btn");
 const menuLabels = document.querySelectorAll(".link-mobile");
 const items = document.querySelectorAll(".item");
 const listOpenenr = document.querySelector(".list-mobile-opener");
-const listElements = document.querySelectorAll(".list-content .cms-repeatable");
+const listElement = document.querySelector(".list-mobile");
 
 const documentHeight = () => {
     const doc = document.documentElement
@@ -92,9 +92,12 @@ if (menuBtn) {
 
 if (listOpenenr) {
     listOpenenr.addEventListener("click", () => {
-        listElements.forEach(element => {
-            element.classList.toggle("open");
-        });
+        listElement.classList.toggle("open");
+    });
+    listElement.addEventListener("click", () => {
+        if (listElement.classList.contains("open")) {
+            listElement.classList.remove("open");
+        };
     });
 };
 

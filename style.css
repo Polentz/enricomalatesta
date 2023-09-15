@@ -876,11 +876,11 @@ em.light-font,
         text-align: right;
     }
 
-    .list-content .cms-repeatable {
+    .list-mobile {
         display: none;
     }
 
-    .list-content .cms-repeatable.open {
+    .list-mobile.open {
         display: block;
     }
 
